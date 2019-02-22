@@ -1,3 +1,12 @@
 @import "variables.scss";
-@import "mixins.scss";
-@import "nav.scss";
+@import "side.scss";
+@import "page.scss";
+@import "animated.scss";
+@import "button.scss";
+
+html {
+    height: 100%;
+}
+body, .page {
+min-height: 100%;
+}

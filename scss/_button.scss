@@ -1,0 +1,14 @@
+.button-soco {
+    background: $primary;
+    color:#fff;
+    max-height: 28px;
+    padding: 0;
+    border-radius: 0;
+    min-width: 100px;
+    font-family: "Roboto";
+
+}
+.button-soco:hover {
+    background: $primary-hover;
+    color:#fff;
+}
