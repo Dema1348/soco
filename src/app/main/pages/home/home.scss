@@ -1,0 +1,214 @@
+#home{
+   
+    .row{
+        margin: 0;
+    }
+    .wrapp{
+        margin-left: 80px;
+        margin-right: 0;
+        padding: 20px;
+        padding-right: 0;
+    }
+    .title{
+        font-family: 'Roboto';
+        font-size: 101px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: -0.9px;
+        color: $black;
+      
+    }
+    .sub-title{
+        font-family: 'Roboto';
+        font-size: 58px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+        margin-top: -18px;
+    }
+    .box-wrapp{
+        
+        .box{
+            margin-right: 5px;
+            .title-box{
+                font-family: 'Playfair Display';
+                font-size: 22px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 0.95;
+                letter-spacing: -0.6px;
+                color: $black;
+                margin-bottom: 10px;
+                min-height: 42px;
+            }
+            .sub-title-box{
+                font-family: 'Roboto';
+                font-size: 12px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: -0.3px;
+                color: #777777;
+                min-height: 32px;
+                margin-bottom: 10px;
+            }
+            &:hover{
+                .title-box.personas{
+                    cursor: pointer;
+                    color: #eb6767;
+                }
+                .button-soco.personas{
+                    visibility: visible;
+                }
+                .title-box.rodea{
+                    cursor: pointer;
+                    color: $light-salmon;
+                }
+                .button-soco.rodea{
+                    visibility: visible;
+                }
+                .title-box.futuro{
+                    cursor: pointer;
+                    color: $soft-blue;
+                }
+                .button-soco.futuro{
+                    visibility: visible;
+                }
+                .title-box.equipo{
+                    cursor: pointer;
+                    color: $dark-periwinkle;
+                }
+                .button-soco.equipo{
+                    visibility: visible;
+                }
+                .title-box.innovacion{
+                    cursor: pointer;
+                    color: $greyish-teal;
+                }
+                .button-soco.innovacion{
+                    visibility: visible;
+                }
+            }
+        }
+    }
+
+    .slider{
+        position: absolute;
+        margin-top: -26px;
+        z-index: -1;
+        min-height: 366px;
+        margin-left: 80px;
+        margin-right: 0;
+        width: -webkit-calc(100% - 80px);
+        width:    -moz-calc(100% - 80px);
+        width:         calc(100% - 80px);
+       
+        .carousel-item{
+            min-height: 366px;
+            width: 100%;
+            .img-slide{
+                min-height: 366px;
+            }
+        }
+        .wrapp-images-slide{
+            position: relative;
+            .img-1-persona{
+                width: 135px;
+                height: 186px;
+                position: absolute;
+                top: 26px;
+            }
+            .img-2-persona{
+                position: absolute;
+                bottom: 0;
+                width: 170px;
+                height: 186px;
+                left: 0;
+            }
+            .img-3-persona{
+                position: absolute;
+                width: 130px;
+                height: 130px;
+                z-index: 1;
+                left: 135px;
+            }
+            .img-4-persona{
+                position: absolute;
+                width: 330px;
+                height: 340px;
+                left: 170px;
+                z-index: -1;
+                top: 26px;
+            }
+            .img-5-persona{
+                position: absolute;
+                width: 210px;
+                height: 240px;
+                left: 342px;
+                bottom: 0;
+                z-index: 1;
+                
+            }
+            .img-6-persona{
+                position: absolute;
+                left: 462px;
+            }
+            .img-7-persona{
+                position: absolute;
+                left: 462px;
+                top:116px;
+                z-index: 2;
+            }
+        }
+       
+    }
+    .cube-large{
+        position: absolute;
+        right: 40px;
+        top:-2px;
+    }
+    .cube-large-2{
+        position: absolute;
+        right: 0;
+        top:80px;
+    }
+
+    .cube{
+        position: absolute;
+        right: 0;
+        top:-2px;
+    }
+    .static-logo{
+        margin-top: 20px;
+        margin-right: 161px;
+        margin-bottom: 34px;
+        .img-croquis{
+            background-image: url("../assets/croquis-1.jpg");
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+        }
+        .logo-empresa{
+            margin-top: 20px; 
+            width: 129px;
+            height: 29px;
+            margin: 0 auto;
+            margin-right: 0;
+            img{
+                width: 130px;
+            }
+        }
+        .icon{
+            margin-top: 20px;
+            text-align: right;
+        }
+    }   
+}
