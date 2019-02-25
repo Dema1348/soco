@@ -11,7 +11,7 @@
   width: 80px;
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 99999999;
   /* Stay on top */
   top: 0;
   /* Stay at the top */
@@ -98,15 +98,18 @@
 }
 
 .page .content .header .router {
-  color: #9C9E9F;
   font-family: Roboto;
-  font-weight: bold;
   font-size: 13px;
-  margin-bottom: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9c9e9f;
 }
 
 .page .content .header .router span {
-  color: #1A171B;
+  color: var(--black);
 }
 
 .page .content .header .title {
@@ -119,7 +122,7 @@
 }
 
 .page .content .header .title-red {
-  color: #EB6767;
+  color: red;
   font-family: Roboto;
   font-size: 58px;
   letter-spacing: -0.9px;
@@ -239,26 +242,6 @@
 }
 
 .page .left-side .find, .page .left-side .share {
-  margin-top: 30px;
-  text-align: right;
-}
-
-.page .float-logo {
-  position: absolute;
-  right: 16px;
-  top: 0;
-}
-
-.page .float-logo .logo-empresa {
-  margin-top: 30px;
-  text-align: right;
-}
-
-.page .float-logo .logo-empresa img {
-  width: 130px;
-}
-
-.page .float-logo .find, .page .float-logo .share {
   margin-top: 30px;
   text-align: right;
 }
@@ -3563,19 +3546,795 @@
   }
 }
 
-.button-soco {
-  background: #EB6767;
-  color: #fff;
-  max-height: 28px;
-  padding: 0;
-  border-radius: 0;
-  min-width: 100px;
-  font-family: "Roboto";
+.titulo-highlights, #highlight .title {
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 0.86;
+  letter-spacing: -1.2px;
+  width: 280px;
 }
 
-.button-soco:hover {
-  background: #B85151;
-  color: #fff;
+.titulo-highlights.personas, #highlight .personas.title {
+  color: #eb6767;
+}
+
+.titulo-highlights.futura, #highlight .futura.title {
+  color: #5cb6b3;
+}
+
+.titulo-highlights.innovacion, #highlight .innovacion.title {
+  color: #63afdc;
+}
+
+.titulo-highlights.equipo, #highlight .equipo.title {
+  color: #707fc5;
+}
+
+.titulo-highlights.rodea, #highlight .rodea.title {
+  color: #fea391;
+}
+
+.titulo-slider {
+  font-family: "Playfair Display";
+  font-size: 22px;
+  line-height: 0.95;
+  letter-spacing: -0.6px;
+  color: #212121;
+}
+
+.caption-slider {
+  font-family: 'Roboto';
+  font-size: 13px;
+  line-height: 1.23;
+  letter-spacing: -0.3px;
+  color: #777777;
+}
+
+.caption-highlights, #highlight .sub-title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: #333333;
+}
+
+.contendido-h3 {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.contenido-h2 {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.texto-destado {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: #666666;
+}
+
+.titlo-pagina-oscuro {
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 0.86;
+  letter-spacing: -1.2px;
+  color: #ffffff;
+}
+
+#highlight {
+  padding-left: 80px;
+  padding-right: 0;
+  margin: 20px;
+}
+
+#highlight .row {
+  margin: 0;
+}
+
+#highlight .header {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9c9e9f;
+  margin-bottom: 46px;
+}
+
+#highlight .header span {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+#highlight .sub-title {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+#highlight .hidden {
+  visibility: hidden;
+}
+
+#highlight .boxes-personas {
+  position: relative;
+  width: 1172px;
+  height: 400px;
+}
+
+#highlight .boxes-personas .box-1 {
+  z-index: 99;
+  position: absolute;
+  overflow: hidden;
+  background-color: #cecece;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-1:hover {
+  background-color: #eb6767;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#highlight .boxes-personas .box-1:hover .text-background {
+  color: #f3777a;
+}
+
+#highlight .boxes-personas .box-1:hover .box-hidden {
+  display: block;
+}
+
+#highlight .boxes-personas .box-1 .box-hidden {
+  display: none;
+  height: 167px;
+  width: 240px;
+  padding: 20px 20px;
+}
+
+#highlight .boxes-personas .box-1 .box-show {
+  width: 240px;
+  height: 200px;
+  z-index: 100;
+  padding: 20px 20px;
+}
+
+#highlight .boxes-personas .box-1 .title-box {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1.1px;
+  color: #ffffff;
+}
+
+#highlight .boxes-personas .box-1 .sub-title-box {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  width: 120px;
+  margin-top: -14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-1 .text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-1 .text-background {
+  font-size: 173px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #d3d3d3;
+  z-index: -1;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 140px;
+  top: 75px;
+  left: -8px;
+  position: absolute;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-1 .rectangule {
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 20px 0;
+}
+
+#highlight .boxes-personas .box-2 {
+  z-index: 100;
+  position: absolute;
+  overflow: hidden;
+  background-color: #b6b5b6;
+  top: 200px;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-2:hover {
+  background-color: #eb6767;
+  z-index: 1000;
+  top: 0;
+  cursor: pointer;
+}
+
+#highlight .boxes-personas .box-2:hover .text-background {
+  color: #f3777a;
+}
+
+#highlight .boxes-personas .box-2:hover .box-hidden {
+  display: block;
+}
+
+#highlight .boxes-personas .box-2 .box-hidden {
+  display: none;
+  height: 167px;
+  width: 300px;
+  padding: 20px 20px;
+  padding-bottom: 10px;
+  margin-bottom: 33px;
+}
+
+#highlight .boxes-personas .box-2 .box-show {
+  padding: 20px 20px;
+  width: 300px;
+  height: 167px;
+  z-index: 101;
+}
+
+#highlight .boxes-personas .box-2 .title-box {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1.1px;
+  color: #ffffff;
+}
+
+#highlight .boxes-personas .box-2 .sub-title-box {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  width: 120px;
+  margin-top: -14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-2 .text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  width: 200px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-2 .text-background {
+  font-size: 240px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #bdbdbd;
+  z-index: -1;
+  white-space: nowrap;
+  overflow: hidden;
+  bottom: -12px;
+  line-height: 188px;
+  right: -92px;
+  position: absolute;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-2 .rectangule {
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  z-index: 99;
+}
+
+#highlight .boxes-personas .box-3 {
+  z-index: 100;
+  position: absolute;
+  overflow: hidden;
+  background-color: #b6b5b5;
+  left: 472px;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-3:hover {
+  background-color: #eb6767;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#highlight .boxes-personas .box-3:hover .text-background {
+  color: #f3777a;
+}
+
+#highlight .boxes-personas .box-3:hover .box-hidden {
+  display: block;
+}
+
+#highlight .boxes-personas .box-3 .box-hidden {
+  display: none;
+  height: 194px;
+  width: 220px;
+  padding: 20px 20px;
+}
+
+#highlight .boxes-personas .box-3 .box-show {
+  padding: 20px 20px;
+  width: 220px;
+  height: 205px;
+  z-index: 101;
+}
+
+#highlight .boxes-personas .box-3 .title-box {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1.1px;
+  color: #ffffff;
+}
+
+#highlight .boxes-personas .box-3 .sub-title-box {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  width: 120px;
+  margin-top: -14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-3 .text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  width: 200px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-3 .text-background {
+  font-size: 173px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #bbbabb;
+  z-index: -1;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 140px;
+  top: 75px;
+  left: 52px;
+  position: absolute;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-3 .rectangule {
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  z-index: 99;
+}
+
+#highlight .boxes-personas .box-4 {
+  z-index: 99;
+  position: absolute;
+  overflow: hidden;
+  background-color: #cecece;
+  left: 472px;
+  top: 204px;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-4:hover {
+  background-color: #eb6767;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#highlight .boxes-personas .box-4:hover .text-background {
+  color: #f3777a;
+}
+
+#highlight .boxes-personas .box-4:hover .box-hidden {
+  display: block;
+}
+
+#highlight .boxes-personas .box-4 .box-show {
+  width: 403px;
+  height: 195px;
+  z-index: 100;
+  padding: 20px 20px;
+}
+
+#highlight .boxes-personas .box-4 .title-box {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1.1px;
+  color: #ffffff;
+  text-align: right;
+}
+
+#highlight .boxes-personas .box-4 .sub-title-box {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  width: 120px;
+  margin-top: -14px;
+  text-align: right;
+  float: right;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-4 .text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  width: 199px;
+}
+
+#highlight .boxes-personas .box-4 .text-background {
+  font-size: 173px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #d3d3d3;
+  z-index: -1;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 140px;
+  top: 78px;
+  left: 45px;
+  position: absolute;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-4 .rectangule {
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  margin-top: 0;
+}
+
+#highlight .boxes-personas .box-5 {
+  z-index: 99;
+  position: absolute;
+  overflow: hidden;
+  background-color: #b6b5b6;
+  left: 875px;
+  top: 0;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-5:hover {
+  background-color: #eb6767;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#highlight .boxes-personas .box-5:hover .text-background {
+  color: #f3777a;
+}
+
+#highlight .boxes-personas .box-5:hover .box-hidden {
+  display: block;
+}
+
+#highlight .boxes-personas .box-5 .box-hidden {
+  display: none;
+  width: 297px;
+  padding: 20px 20px;
+  margin-top: -73px;
+}
+
+#highlight .boxes-personas .box-5 .box-show {
+  width: 297px;
+  height: 330px;
+  z-index: 100;
+  padding: 20px 20px;
+}
+
+#highlight .boxes-personas .box-5 .title-box {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1.1px;
+  color: #ffffff;
+}
+
+#highlight .boxes-personas .box-5 .sub-title-box {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  width: 120px;
+  margin-top: -14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-5 .text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-personas .box-5 .text-background {
+  font-size: 240px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #bdbdbd;
+  z-index: -1;
+  white-space: nowrap;
+  overflow: hidden;
+  top: 40px;
+  left: 60px;
+  line-height: 188px;
+  right: -92px;
+  position: absolute;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-personas .box-5 .rectangule {
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 20px 0;
+}
+
+#highlight .boxes-personas .box-img-0 {
+  width: 232px;
+  height: 398.8px;
+  position: absolute;
+  z-index: 99;
+  overflow: hidden;
+  left: 240px;
+}
+
+#highlight .boxes-personas .box-img-mini {
+  width: 183px;
+  height: 150px;
+  position: absolute;
+  top: 55px;
+  left: 692px;
+}
+
+#highlight .boxes-equipo {
+  position: relative;
+  width: 240px;
+  height: 400px;
+}
+
+#highlight .boxes-equipo .box-1 {
+  z-index: 99;
+  position: absolute;
+  overflow: hidden;
+  background-color: #999999;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+  left: 232px;
+}
+
+#highlight .boxes-equipo .box-1:hover {
+  background-color: #707fc5;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#highlight .boxes-equipo .box-1:hover .text-background {
+  color: #8592d1;
+}
+
+#highlight .boxes-equipo .box-1:hover .hidden {
+  visibility: visible;
+}
+
+#highlight .boxes-equipo .box-1 .box-show {
+  width: 400px;
+  height: 400px;
+  z-index: 100;
+  padding: 20px 20px;
+}
+
+#highlight .boxes-equipo .box-1 .title-box {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: -1.1px;
+  color: #ffffff;
+  text-align: right;
+}
+
+#highlight .boxes-equipo .box-1 .sub-title-box {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+  text-align: right;
+  margin-top: -14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-equipo .box-1 .text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+#highlight .boxes-equipo .box-1 .text-background {
+  font-size: 268px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #d3d3d3;
+  z-index: -1;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 186px;
+  top: 0;
+  left: -290px;
+  position: absolute;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#highlight .boxes-equipo .box-1 .rectangule {
+  width: 45px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  margin-top: 120px;
+}
+
+#highlight .boxes-equipo .box-img-0 {
+  width: 232px;
+  height: 398.8px;
+  position: absolute;
+  z-index: 99;
+  overflow: hidden;
+}
+
+#highlight .boxes-equipo .box-img-1 {
+  width: 540px;
+  height: 350px;
+  position: absolute;
+  z-index: 99;
+  overflow: hidden;
+  left: 632px;
+}
+
+#highlight .pagination {
+  margin-top: 10px;
+}
+
+#highlight .pagination.personas a.active {
+  color: #eb6767;
+  border-bottom: 2px solid #eb6767;
+}
+
+#highlight .pagination.equipo a.active {
+  color: #707fc5;
+  border-bottom: 2px solid #707fc5;
+}
+
+#highlight .pagination.futura a.active {
+  color: #5cb6b3;
+  border-bottom: 2px solid #5cb6b3;
+}
+
+#highlight .pagination.innovacion a.active {
+  color: #63afdc;
+  border-bottom: 2px solid #63afdc;
+}
+
+#highlight .pagination a {
+  margin-left: 20px;
+  font-family: 'Roboto';
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999;
+  text-decoration: none;
+}
+
+#highlight .pagination a.active {
+  font-family: 'Roboto';
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.float-logo {
+  position: fixed;
+  right: 22px;
+  top: 0;
+}
+
+.float-logo .logo-empresa {
+  margin-top: 20px;
+  width: 129px;
+  height: 29px;
+}
+
+.float-logo .logo-empresa img {
+  width: 130px;
+}
+
+.float-logo .icon {
+  margin-top: 20px;
+  text-align: right;
 }
 
 html {

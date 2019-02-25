@@ -1,0 +1,17 @@
+.float-logo{
+    position: fixed;
+    right:22px;
+    top:0;
+    .logo-empresa{
+        margin-top: 20px; 
+        width: 129px;
+        height: 29px;
+        img{
+            width: 130px;
+        }
+    }
+    .icon{
+        margin-top: 20px;
+        text-align: right;
+    }
+}
