@@ -83,6 +83,80 @@
   }
 }
 
+.float-logo {
+  position: absolute;
+  right: 22px;
+  top: 0;
+}
+
+.float-logo .cube-large {
+  position: absolute;
+  right: 145px;
+  top: -2px;
+}
+
+.float-logo .cube-large-2 {
+  position: absolute;
+  right: 345px;
+  top: 100px;
+}
+
+.float-logo .cube {
+  position: absolute;
+  right: 345px;
+  top: -2px;
+}
+
+.float-logo .logo-empresa {
+  margin-top: 20px;
+  width: 129px;
+  height: 29px;
+}
+
+.float-logo .logo-empresa img {
+  width: 130px;
+}
+
+.float-logo .icon {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.padding-body {
+  padding: 20px;
+}
+
+.header {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9c9e9f;
+  margin-bottom: 46px;
+}
+
+.header span {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.header span.white {
+  color: #ffffff !important;
+}
+
 .page {
   padding-left: 80px;
   padding-right: 0;
@@ -3621,7 +3695,7 @@
   color: #666666;
 }
 
-.titlo-pagina-oscuro {
+.titulo-pagina-oscuro, #vision .title {
   font-family: 'Roboto';
   font-size: 50px;
   font-weight: 500;
@@ -3631,45 +3705,18 @@
 }
 
 #highlight {
-  padding-left: 80px;
-  padding-right: 0;
-  margin: 20px;
+  margin-left: 80px;
+  margin-right: 0;
+  padding: 20px;
 }
 
 #highlight .row {
   margin: 0;
 }
 
-#highlight .header {
-  font-family: 'Roboto';
-  font-size: 13px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #9c9e9f;
-  margin-bottom: 46px;
-}
-
-#highlight .header span {
-  font-family: 'Roboto';
-  font-size: 13px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #333333;
-}
-
 #highlight .sub-title {
   margin-top: 10px;
   margin-bottom: 40px;
-}
-
-#highlight .hidden {
-  visibility: hidden;
 }
 
 #highlight .boxes-personas {
@@ -4316,25 +4363,228 @@
   text-align: center;
 }
 
-.float-logo {
-  position: fixed;
-  right: 22px;
-  top: 0;
+#vision {
+  margin-left: 80px;
+  margin-right: 0;
 }
 
-.float-logo .logo-empresa {
-  margin-top: 20px;
-  width: 129px;
-  height: 29px;
+#vision .row {
+  margin: 0;
 }
 
-.float-logo .logo-empresa img {
-  width: 130px;
+#vision .image-background {
+  width: 100%;
+  height: 660px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.float-logo .icon {
-  margin-top: 20px;
+#vision .cita {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+  padding: 60px 95px;
+}
+
+#vision .divider {
+  max-width: 500px;
+  height: 2px;
+  background-color: #999999;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+#vision .box-parrafos {
+  padding: 0 20px;
+  padding-right: 70px;
+  margin: 0;
+}
+
+#vision .box-parrafos p {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+#vision .box-image {
+  padding: 0;
+}
+
+#vision .box-image .img-quoute {
+  height: 864px;
+  width: 100%;
+}
+
+#vision .box-image .quote {
+  position: absolute;
+  width: 94px;
+  height: 90px;
+  top: -50px;
+  z-index: -1;
+}
+
+#vision .box-image .title-img {
+  padding: 0 95px 0 0;
+  font-family: 'Playfair Display';
+  font-size: 34px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
   text-align: right;
+  color: #eb6767;
+}
+
+#vision .tabs {
+  padding: 0 20px;
+  padding-top: 43px;
+  position: relative;
+}
+
+#vision .tabs .title-tab {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.52;
+  letter-spacing: normal;
+  color: #eb6767;
+  margin-bottom: 74px;
+}
+
+#vision .tabs .tab-img {
+  width: 100%;
+  height: 449px;
+}
+
+#vision .tabs .rectangule-img {
+  width: 480px;
+  height: 160px;
+  background-color: #eb6767;
+  position: absolute;
+  left: 63px;
+  top: 402px;
+}
+
+#vision .tabs .rectangule-img p {
+  padding: 26px 40px;
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+#vision .tabs .pagination {
+  margin-left: 365px;
+  margin-bottom: 50px;
+}
+
+#vision .tabs .pagination.personas a.active {
+  color: #eb6767;
+  border-bottom: 2px solid #eb6767;
+}
+
+#vision .tabs .pagination.equipo a.active {
+  color: #707fc5;
+  border-bottom: 2px solid #707fc5;
+}
+
+#vision .tabs .pagination.futura a.active {
+  color: #5cb6b3;
+  border-bottom: 2px solid #5cb6b3;
+}
+
+#vision .tabs .pagination.innovacion a.active {
+  color: #63afdc;
+  border-bottom: 2px solid #63afdc;
+}
+
+#vision .tabs .pagination a {
+  margin-left: 20px;
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #999999;
+  text-decoration: none;
+}
+
+#vision .tabs .pagination a.active {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+#vision .info-tab {
+  background-color: #f3f3f3;
+  min-height: 722px;
+  position: absolute;
+  margin-top: -200px;
+  z-index: -1;
+  padding-bottom: 20px;
+}
+
+#vision .info-tab .number {
+  margin-top: 292px;
+  font-family: 'Roboto';
+  font-size: 135px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.74;
+  letter-spacing: normal;
+  text-align: right;
+  color: #eb6767;
+  margin-right: 30px;
+}
+
+#vision .info-tab .parrafos {
+  margin-top: 292px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  -webkit-column-count: 2;
+  column-count: 2;
+}
+
+#vision .info-tab .parrafos p {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #666666;
+  padding: 0 20px;
 }
 
 html {
