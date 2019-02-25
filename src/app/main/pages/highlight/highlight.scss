@@ -553,6 +553,100 @@
          }
     }
 
+
+    .boxes-rodea{
+        position: relative;
+        width: 640px;
+        height: 466px;
+       
+        .box-1{
+            z-index: 99;
+            position: absolute;
+            overflow: hidden;
+            background-color: #999999;
+            transition: background-color 1s ease;
+            left: 0;
+            &:hover{
+                background-color:  $light-salmon;;
+                z-index: 1000;
+                cursor: pointer;
+
+                .text-background{
+                    color: $light-peach;
+                }
+                .hidden{
+                    visibility: visible;
+                }
+            }
+            .box-show{
+                width: 640px;
+                height: 466px;
+                padding: 20px 20px;
+            }
+            .title-box{
+                font-family: 'Roboto';
+                font-size: 48px;
+                font-weight: bold;
+                letter-spacing: -1.1px;
+                color: $white;
+                text-align: right;
+            }
+            .sub-title-box{
+                font-family: "Playfair Display";
+                font-size: 18px;
+                letter-spacing: -0.4px;
+                color: $white;
+                text-align: right;
+                margin-top: -14px;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+            }
+            .text{
+                font-family: 'Roboto';
+                font-size: 16px;
+                letter-spacing: -0.5px;
+                color: $white;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                width: 380px;
+
+            }
+            .text-background{           
+                font-size: 268px;
+                font-family: 'Roboto';
+                font-weight: bold;
+                color: #999999;
+                z-index: -1;
+                white-space: nowrap;
+                overflow: hidden;
+                line-height: 206px;
+                top: 271px;
+                left: 20px;
+                position: absolute;
+                transition: background-color 1s ease;
+            }
+            .rectangule{
+                width: 45px;
+                height: 5px;    
+                background-color: $white;
+                margin: 20px 0;    
+                margin-top: 60px;
+            }
+          
+        }
+        .box-img-0{     
+            width: 540px;
+            height: 350px;
+            position: absolute;
+            z-index: 99;
+            top:10px;
+            overflow: hidden;
+            left: 640px;        
+         }
+    }
+
     .pagination {
         margin-top: 10px;
         -ms-flex-pack: end!important;

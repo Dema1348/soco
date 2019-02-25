@@ -1,4 +1,4 @@
-(function() {
+(function () {
 	'use strict';
 
 	angular
@@ -12,12 +12,16 @@
 		vm.box3Personas = box3Personas;
 		vm.box4Personas = box4Personas;
 		vm.box5Personas = box5Personas;
-    vm.resetPersonas = resetPersonas;
-    vm.personasPhotos = { normal: '1378', mini: '1309' };
+		vm.resetPersonas = resetPersonas;
+		vm.personasPhotos = { normal: '1378', mini: '1309' };
 
-    vm.box1Equipo = box1Equipo;
-    vm.resetEquipo = resetEquipo;
-    vm.equipoPhotos = { normal: '478037', normal2: 'detalle' };
+		vm.box1Equipo = box1Equipo;
+		vm.resetEquipo = resetEquipo;
+		vm.equipoPhotos = { normal: '478037', normal2: 'detalle' };
+
+		vm.box1Rodea = box1Rodea;
+		vm.resetRodea = resetRodea;
+		vm.rodeaPhotos = {normal:'478037'}
 
 		function box1Personas() {
 			vm.personasPhotos = { normal: '1378', mini: '1309' };
@@ -43,12 +47,21 @@
 			vm.personasPhotos = { normal: '0759', mini: '0989' };
 		}
 
-    function box1Equipo() {
+		function box1Equipo() {
 			vm.equipoPhotos = { normal: '0268', normal2: 'arquitecto-trabajando' };
 		}
 
 		function resetEquipo() {
-      vm.equipoPhotos = { normal: '478037', normal2: 'detalle' };
+			vm.equipoPhotos = { normal: '478037', normal2: 'detalle' };
+		}
+
+		function box1Rodea(){
+			vm.rodeaPhotos = {normal:'478037-2'}
+
+		}
+
+		function resetRodea() {
+			vm.rodeaPhotos = {normal:'478037'}
 		}
 	}
 })();
