@@ -1,11 +1,13 @@
 @import "variables.scss";
+@import "parallax.scss";
 @import "side.scss";
 @import "extra.scss";
-@import "page.scss";
+@import "home.scss";
 @import "animated.scss";
 @import "font.scss";
 @import "highlight.scss";
 @import "vision.scss";
+@import "button.scss";
 
 html {
     height: 100%;

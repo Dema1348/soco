@@ -157,172 +157,237 @@
   color: #ffffff !important;
 }
 
-.page {
-  padding-left: 80px;
-  padding-right: 0;
-  overflow-x: hidden;
+#home .row {
+  margin: 0;
 }
 
-.page .content {
-  padding-right: 0;
-}
-
-.page .content .header {
+#home .wrapp {
+  margin-left: 80px;
+  margin-right: 0;
   padding: 20px;
+  padding-right: 0;
 }
 
-.page .content .header .router {
-  font-family: Roboto;
-  font-size: 13px;
+#home .title {
+  font-family: 'Roboto';
+  font-size: 101px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.9px;
+  color: #333333;
+}
+
+#home .sub-title {
+  font-family: 'Roboto';
+  font-size: 58px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #9c9e9f;
+  color: #333333;
+  margin-top: -18px;
 }
 
-.page .content .header .router span {
-  color: var(--black);
+#home .box-wrapp .box {
+  margin-right: 5px;
 }
 
-.page .content .header .title {
-  color: #212121;
-  font-family: Roboto;
-  font-size: 101px;
-  font-weight: bold;
-  letter-spacing: -0.9px;
-  line-height: 119px;
-}
-
-.page .content .header .title-red {
-  color: red;
-  font-family: Roboto;
-  font-size: 58px;
-  letter-spacing: -0.9px;
-  line-height: 58px;
-  max-width: 330px;
-}
-
-.page .content .header .sub-title {
-  color: #212121;
-  font-family: Roboto;
-  font-size: 58px;
-  font-weight: bold;
-  line-height: 68px;
-  margin-top: -24px;
-}
-
-.page .content .header .sub-title-red {
-  color: #212121;
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 20px;
-  margin-top: 12px;
-}
-
-.page .content .header .cube {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.page .content .header .cube-large {
-  position: absolute;
-  right: 0;
-  top: 100px;
-}
-
-.page .content .box-wrapp {
-  padding: 16px;
-}
-
-.page .content .box-wrapp .box .title {
-  color: #212121;
-  font-family: "Playfair Display";
+#home .box-wrapp .box .title-box {
+  font-family: 'Playfair Display';
   font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.95;
   letter-spacing: -0.6px;
-  line-height: 21px;
-  margin-bottom: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+  min-height: 42px;
 }
 
-.page .content .box-wrapp .box .sub-title {
-  color: #777777;
-  font-family: Roboto;
+#home .box-wrapp .box .sub-title-box {
+  font-family: 'Roboto';
   font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
   letter-spacing: -0.3px;
-  line-height: 16px;
+  color: #777777;
+  min-height: 32px;
+  margin-bottom: 10px;
 }
 
-.page .content .box-wrapp .box:hover .title {
-  color: #63AFDC;
-  cursor: -webkit-grab;
-  cursor: grab;
+#home .box-wrapp .box:hover .title-box.personas {
+  cursor: pointer;
+  color: #eb6767;
 }
 
-.page .content .carousel .carousel-item button {
+#home .box-wrapp .box:hover .button-soco.personas {
+  visibility: visible;
+}
+
+#home .box-wrapp .box:hover .title-box.rodea {
+  cursor: pointer;
+  color: #fea391;
+}
+
+#home .box-wrapp .box:hover .button-soco.rodea {
+  visibility: visible;
+}
+
+#home .box-wrapp .box:hover .title-box.futuro {
+  cursor: pointer;
+  color: #63afdc;
+}
+
+#home .box-wrapp .box:hover .button-soco.futuro {
+  visibility: visible;
+}
+
+#home .box-wrapp .box:hover .title-box.equipo {
+  cursor: pointer;
+  color: #707fc5;
+}
+
+#home .box-wrapp .box:hover .button-soco.equipo {
+  visibility: visible;
+}
+
+#home .box-wrapp .box:hover .title-box.innovacion {
+  cursor: pointer;
+  color: #5cb6b3;
+}
+
+#home .box-wrapp .box:hover .button-soco.innovacion {
+  visibility: visible;
+}
+
+#home .slider {
   position: absolute;
-  left: 16px;
-  display: none;
+  margin-top: -26px;
+  z-index: -1;
+  min-height: 366px;
+  margin-left: 80px;
+  margin-right: 0;
+  width: 100%;
 }
 
-.page .content .carousel .carousel-item .img-full {
-  max-height: 300px;
-  min-height: 300px;
+#home .slider .carousel-item {
+  min-height: 366px;
+  width: 100%;
 }
 
-.page .content .carousel .carousel-item .wrap-images {
+#home .slider .carousel-item .img-slide {
+  min-height: 366px;
+}
+
+#home .slider .wrapp-images-slide {
   position: relative;
-  max-height: 300px;
-  min-height: 300px;
 }
 
-.page .content .carousel .carousel-item .wrap-images .image1 {
-  margin-left: 30%;
+#home .slider .wrapp-images-slide .img-1-persona {
+  width: 135px;
+  height: 186px;
+  position: absolute;
+  top: 26px;
 }
 
-.page .content .carousel .carousel-item .wrap-images .image2 {
+#home .slider .wrapp-images-slide .img-2-persona {
+  position: absolute;
+  bottom: 0;
+  width: 170px;
+  height: 186px;
+  left: 0;
+}
+
+#home .slider .wrapp-images-slide .img-3-persona {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  z-index: 1;
+  left: 135px;
+}
+
+#home .slider .wrapp-images-slide .img-4-persona {
+  position: absolute;
+  width: 330px;
+  height: 340px;
+  left: 170px;
+  z-index: -1;
+  top: 26px;
+}
+
+#home .slider .wrapp-images-slide .img-5-persona {
+  position: absolute;
+  width: 210px;
+  height: 240px;
+  left: 342px;
+  bottom: 0;
+  z-index: 1;
+}
+
+#home .slider .wrapp-images-slide .img-6-persona {
+  position: absolute;
+  left: 462px;
+}
+
+#home .slider .wrapp-images-slide .img-7-persona {
+  position: absolute;
+  left: 462px;
+  top: 116px;
+  z-index: 2;
+}
+
+#home .cube-large {
+  position: absolute;
+  right: 40px;
+  top: -2px;
+}
+
+#home .cube-large-2 {
   position: absolute;
   right: 0;
-  top: -100px;
-  width: 347px;
+  top: 80px;
 }
 
-.page .content .carousel .carousel-item .wrap-images .image3 {
+#home .cube {
   position: absolute;
-  left: 0;
-  top: -100px;
-  width: 347px;
+  right: 0;
+  top: -2px;
 }
 
-.page .content .carousel .carousel-item:hover button {
-  display: initial;
+#home .static-logo {
+  margin-top: 20px;
+  margin-right: 161px;
+  margin-bottom: 34px;
 }
 
-.page .left-side.with-img {
+#home .static-logo .img-croquis {
   background-image: url("../img/croquis-1.jpg");
+  background-position: right bottom;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-size: cover;
 }
 
-.page .left-side .logo-empresa {
-  margin-top: 30px;
+#home .static-logo .logo-empresa {
+  margin-top: 20px;
+  width: 129px;
+  height: 29px;
+  margin: 0 auto;
+  margin-right: 0;
+}
+
+#home .static-logo .logo-empresa img {
+  width: 130px;
+}
+
+#home .static-logo .icon {
+  margin-top: 20px;
   text-align: right;
-}
-
-.page .left-side .logo-empresa img {
-  max-width: 130px;
-}
-
-.page .left-side .find, .page .left-side .share {
-  margin-top: 30px;
-  text-align: right;
-}
-
-.page .extra .cube-large {
-  position: absolute;
-  top: 0;
 }
 
 /*!
@@ -4375,10 +4440,7 @@
 #vision .image-background {
   width: 100%;
   height: 660px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../img/foto-1.jpg");
 }
 
 #vision .cita {
@@ -4471,6 +4533,7 @@
 #vision .tabs .tab-img {
   width: 100%;
   height: 449px;
+  background-image: url("../img/fondo-pilar-01.png");
 }
 
 #vision .tabs .rectangule-img {
@@ -4478,8 +4541,8 @@
   height: 160px;
   background-color: #eb6767;
   position: absolute;
-  left: 63px;
-  top: 402px;
+  left: 162px;
+  top: 453px;
 }
 
 #vision .tabs .rectangule-img p {
@@ -4495,7 +4558,7 @@
 }
 
 #vision .tabs .pagination {
-  margin-left: 365px;
+  margin-left: 325px;
   margin-bottom: 50px;
 }
 
@@ -4585,6 +4648,52 @@
   letter-spacing: normal;
   color: #666666;
   padding: 0 20px;
+}
+
+.button-soco {
+  color: #fff;
+  max-height: 31px;
+  padding: 0;
+  border-radius: 0;
+  min-width: 100px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 7px 10px;
+  line-height: 14px;
+}
+
+.button-soco.personas {
+  background-color: #eb6767;
+  visibility: hidden;
+}
+
+.button-soco.futuro {
+  background-color: #63afdc;
+  visibility: hidden;
+}
+
+.button-soco.innovacion {
+  background-color: #5cb6b3;
+  visibility: hidden;
+}
+
+.button-soco.rodea {
+  background-color: #fea391;
+  visibility: hidden;
+}
+
+.button-soco.equipo {
+  background-color: #707fc5;
+  visibility: hidden;
+}
+
+.button-soco:hover {
+  color: #fff;
 }
 
 html {

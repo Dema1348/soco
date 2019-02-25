@@ -1,14 +1,40 @@
 .button-soco {
-    //background: $primary;
     color:#fff;
-    max-height: 28px;
+    max-height: 31px;
     padding: 0;
     border-radius: 0;
     min-width: 100px;
     font-family: "Roboto";
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding: 7px 10px;
+    line-height: 14px;
+    &.personas{
+        background-color: #eb6767;
+       visibility: hidden;
+    }
+    &.futuro{
+        background-color: $soft-blue;
+       visibility: hidden;
+    }
+    &.innovacion{
+        background-color: $greyish-teal;
+       visibility: hidden;
+    }
+    &.rodea{
+        background-color: $light-salmon;
+       visibility: hidden;
+    }
+    &.equipo{
+        background-color: $dark-periwinkle;
+       visibility: hidden;
+    }
 
 }
 .button-soco:hover {
-    //background: $primary-hover;
     color:#fff;
 }
