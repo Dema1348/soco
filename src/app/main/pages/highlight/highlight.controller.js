@@ -23,6 +23,12 @@
 		vm.resetRodea = resetRodea;
 		vm.rodeaPhotos = {normal:'478037'}
 
+
+		vm.box1Innovacion = box1Innovacion;
+		vm.box2Innovacion = box2Innovacion;
+		vm.resetInnovacion = resetInnovacion;
+		vm.innovacionPhotos = {normal:'9621', normal2:'478039', normal3:'478039'}
+
 		function box1Personas() {
 			vm.personasPhotos = { normal: '1378', mini: '1309' };
 		}
@@ -57,11 +63,22 @@
 
 		function box1Rodea(){
 			vm.rodeaPhotos = {normal:'478037-2'}
-
 		}
 
 		function resetRodea() {
 			vm.rodeaPhotos = {normal:'478037'}
+		}
+
+		function box1Innovacion(){
+			vm.innovacionPhotos = {normal:'9621-2' , normal2:'478039', normal3:'ventanales-frontis-edificio'}
+		}
+
+		function box2Innovacion(){
+			vm.innovacionPhotos = {normal:'96210' , normal2:'478039', normal3:'4780392'}
+		}
+
+		function resetInnovacion() {
+			vm.innovacionPhotos = {normal:'9621', normal2:'478039', normal3:'478039'}
 		}
 	}
 })();
