@@ -14,8 +14,10 @@
                 views: {
                     'content@app': {
                         templateUrl: 'app/main/pages/vision/vision.html',
+                        controller: 'VisionController as vm'
+
                     }
-                }
+                },
         });
 
 

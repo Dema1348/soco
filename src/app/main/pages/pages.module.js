@@ -4,8 +4,8 @@
   angular
     .module("app.pages", [
       "app.pages.home",
-      "app.pages.highlight",
-      "app.pages.vision"
+      "app.pages.vision",
+      "app.pages.highlight"
     ])
     .config(config);
 

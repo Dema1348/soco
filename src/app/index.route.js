@@ -6,7 +6,7 @@
     .config(routerConfig);
 
   /** @ngInject */
-  function routerConfig($stateProvider, $urlRouterProvider) {
+  function routerConfig($stateProvider, $urlRouterProvider,$locationProvider) {
     $stateProvider
       .state('app', {
         abstract: true,
@@ -24,7 +24,7 @@
       });
 
 
-     
+    $locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise(function($injector, $location) {
           var $state = $injector.get("$state");

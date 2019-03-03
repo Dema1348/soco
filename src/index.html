@@ -3,17 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <base href="/">
   <title>Socovesa</title>
   <!-- <base href="/"> -->
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" /> -->
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
 
   <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
@@ -67,6 +69,8 @@
   <!-- bower:js -->
   <!-- run `gulp inject` to automatically populate bower script dependencies -->
   <!-- endbower -->
+  <script src="../bower_components/jquery/jquery.min.js"></script>
+  <script src="../bower_components/wow/wow.min.js"></script>
   <script src="../bower_components/bootstrap/js/bootstrap.min.js"></script>
 
   <!-- endbuild -->
@@ -82,7 +86,9 @@
   <!-- endbuild -->
 
     
-
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
