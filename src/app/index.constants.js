@@ -3,6 +3,8 @@
 
   angular
     .module("app")
-    .constant("$",$);
+    .constant("$",$)
+    .constant("WOW",WOW);
+
 
 })();

@@ -7,14 +7,16 @@
         .controller('MainController', MainController);
 
     /** @ngInject */
-    function MainController($scope,$rootScope)
+    function MainController($scope,$rootScope,$timeout)
     {
         // Remove the splash screen
         $scope.$on('$viewContentAnimationEnded', function (event)
         {
             if ( event.targetScope.$id === $scope.$id )
             {
-                $rootScope.$broadcast('splashScreen::remove');
+                $timeout(function(){
+                    $rootScope.$broadcast('splashScreen::remove');
+                },1000)
             }
         });   
     }

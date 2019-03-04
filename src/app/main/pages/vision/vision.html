@@ -13,7 +13,7 @@
       <img
         data-toggle="modal"
         data-target="#videoModal"
-        src="../assets/boton-play.svg"
+        src="./assets/boton-play.svg"
         class="button-play wow fadeInUp"
       />
     </div>
@@ -64,7 +64,7 @@
     </div>
     <div class="col-md-6 box-image wow fadeInRight">
       <img
-        src="../assets/quote.svg"
+        src="./assets/quote.svg"
         class="quote wow fadeInDown"
         data-wow-delay="1s"
       />
@@ -75,87 +75,219 @@
       <img
         class="img-quoute  wow fadeInRight"
         data-wow-delay="1s"
-        src="../assets/loft-camara.jpg"
-        srcset="
-          ../assets/loft-camara@2x.jpg 2x,
-          ../assets/loft-camara@3x.jpg 3x
-        "
+        src="./assets/loft-camara.jpg"
+        srcset="./assets/loft-camara@2x.jpg 2x, ./assets/loft-camara@3x.jpg 3x"
         class="loft-camara"
       />
     </div>
   </section>
-  <section class="tabs">
-    <div class="title-tab wow fadeInLeft">5 Pilares Estratégicos</div>
-    <ul class="nav nav-tabs personas wow fadeInRight" id="myTab" role="tablist">
-      <li class="nav-item">
-        <a
-          class="nav-link active"
-          id="pilar1"
-          data-toggle="tab"
-          href="#pilar-1"
-          role="tab"
-          aria-controls="pilar-1"
-          aria-selected="true"
-          >Pilar 01</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="pilar2"
-          data-toggle="tab"
-          href="#pilar-2"
-          role="tab"
-          aria-controls="pilar-2"
-          aria-selected="false"
-          >Pilar 02</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="pilar3"
-          data-toggle="tab"
-          href="#pilar-3"
-          role="tab"
-          aria-controls="pilar-3"
-          aria-selected="false"
-          >Pilar 03</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="pilar4"
-          data-toggle="tab"
-          href="#pilar-4"
-          role="tab"
-          aria-controls="pilar-4"
-          aria-selected="false"
-          >Pilar 04</a
-        >
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          id="pilar5"
-          data-toggle="tab"
-          href="#pilar-5"
-          role="tab"
-          aria-controls="pilar-5"
-          aria-selected="false"
-          >Pilar 05</a
-        >
-      </li>
-    </ul>
-    <!-- <div class="tab-img animated fadeInDown">
-        <div class="rectangule-img animated delay-1s fadeInUp">
-          <p>Diseño y <br />venta de valor</p>
-        </div>
 
-    </div> -->
+  <section class="tabs  wow fadeInUp">
+    <div class="title-tab wow fadeInLeft">5 Pilares Estratégicos</div>
+    <uib-tabset active="0">
+      <uib-tab class="personas " index="0" heading="Pilar 01">
+        <div class="tab-img animated fadeInDown">
+          <div class="rectangule-img animated delay-1s fadeInUp">
+            <p>Diseño y <br />venta de valor</p>
+          </div>
+        </div>
+        <div class="info-tab row">
+          <div class="col-sm-5 p-0">
+            <div class="number animated fadeInLeft">01</div>
+          </div>
+          <div class="col-sm-7 p-0 parrafos animated fadeInRight">
+            <p>
+              Diseñar centrados en las personas y saber transmitir el valor de
+              lo diseñado al cliente, es la estrategia competitiva de Empresas
+              Socovesa y sus marcas. Esto se logra, por un lado, con
+              metodologías y procesos de trabajo colaborativos y
+              multidisciplinarios - donde participan las gerencias de
+              Arquitectura, Desarrollo, Construcción, Comercial y Research-, las
+              que están llamadas a poner en el centro de la toma de decisiones,
+              las necesidades del habitar de las personas.
+            </p>
+            <p>
+              El proceso de diseño que se utiliza en Empresas Socovesa está
+              inspirado en el método Design Thinking (Stanford University) y
+              consta de 5 etapas: comienza con un análisis contextual del
+              territorio, el mercado y el consumidor, para luego pasar a la
+              propuesta de valor, la ideación, la entrega del brief y el diseño
+              final.
+            </p>
+            <p>
+              Pero no basta solo con tener un producto bien pensando, después
+              hay que venderlo y la “Venta de Valor” no es más que saber
+              traducirle al cliente, en su lenguaje, el valor de lo diseñado. Es
+              hacer consciente todos esos atributos que calzan con lo que la
+              persona necesita y que hacen que decida pagar más, por un producto
+              mejor.
+            </p>
+          </div>
+        </div>
+      </uib-tab>
+      <uib-tab class="personas " index="1" heading="Pilar 02">
+        <div class="tab-img animated fadeInDown">
+          <div class="rectangule-img animated delay-1s fadeInUp">
+            <p>Diseño y <br />venta de valor</p>
+          </div>
+        </div>
+        <div class="info-tab row">
+          <div class="col-sm-5 p-0">
+            <div class="number animated fadeInLeft">02</div>
+          </div>
+          <div class="col-sm-7 p-0 parrafos animated fadeInRight">
+            <p>
+              Diseñar centrados en las personas y saber transmitir el valor de
+              lo diseñado al cliente, es la estrategia competitiva de Empresas
+              Socovesa y sus marcas. Esto se logra, por un lado, con
+              metodologías y procesos de trabajo colaborativos y
+              multidisciplinarios - donde participan las gerencias de
+              Arquitectura, Desarrollo, Construcción, Comercial y Research-, las
+              que están llamadas a poner en el centro de la toma de decisiones,
+              las necesidades del habitar de las personas.
+            </p>
+            <p>
+              El proceso de diseño que se utiliza en Empresas Socovesa está
+              inspirado en el método Design Thinking (Stanford University) y
+              consta de 5 etapas: comienza con un análisis contextual del
+              territorio, el mercado y el consumidor, para luego pasar a la
+              propuesta de valor, la ideación, la entrega del brief y el diseño
+              final.
+            </p>
+            <p>
+              Pero no basta solo con tener un producto bien pensando, después
+              hay que venderlo y la “Venta de Valor” no es más que saber
+              traducirle al cliente, en su lenguaje, el valor de lo diseñado. Es
+              hacer consciente todos esos atributos que calzan con lo que la
+              persona necesita y que hacen que decida pagar más, por un producto
+              mejor.
+            </p>
+          </div>
+        </div>
+      </uib-tab>
+      <uib-tab class="personas " index="2" heading="Pilar 03">
+        <div class="tab-img animated fadeInDown">
+          <div class="rectangule-img animated delay-1s fadeInUp">
+            <p>Diseño y <br />venta de valor</p>
+          </div>
+        </div>
+        <div class="info-tab row">
+          <div class="col-sm-5 p-0">
+            <div class="number animated fadeInLeft">03</div>
+          </div>
+          <div class="col-sm-7 p-0 parrafos animated fadeInRight">
+            <p>
+              Diseñar centrados en las personas y saber transmitir el valor de
+              lo diseñado al cliente, es la estrategia competitiva de Empresas
+              Socovesa y sus marcas. Esto se logra, por un lado, con
+              metodologías y procesos de trabajo colaborativos y
+              multidisciplinarios - donde participan las gerencias de
+              Arquitectura, Desarrollo, Construcción, Comercial y Research-, las
+              que están llamadas a poner en el centro de la toma de decisiones,
+              las necesidades del habitar de las personas.
+            </p>
+            <p>
+              El proceso de diseño que se utiliza en Empresas Socovesa está
+              inspirado en el método Design Thinking (Stanford University) y
+              consta de 5 etapas: comienza con un análisis contextual del
+              territorio, el mercado y el consumidor, para luego pasar a la
+              propuesta de valor, la ideación, la entrega del brief y el diseño
+              final.
+            </p>
+            <p>
+              Pero no basta solo con tener un producto bien pensando, después
+              hay que venderlo y la “Venta de Valor” no es más que saber
+              traducirle al cliente, en su lenguaje, el valor de lo diseñado. Es
+              hacer consciente todos esos atributos que calzan con lo que la
+              persona necesita y que hacen que decida pagar más, por un producto
+              mejor.
+            </p>
+          </div>
+        </div>
+      </uib-tab>
+      <uib-tab class="personas " index="3" heading="Pilar 04">
+        <div class="tab-img animated fadeInDown">
+          <div class="rectangule-img animated delay-1s fadeInUp">
+            <p>Diseño y <br />venta de valor</p>
+          </div>
+        </div>
+        <div class="info-tab row">
+          <div class="col-sm-5 p-0">
+            <div class="number animated fadeInLeft">04</div>
+          </div>
+          <div class="col-sm-7 p-0 parrafos animated fadeInRight">
+            <p>
+              Diseñar centrados en las personas y saber transmitir el valor de
+              lo diseñado al cliente, es la estrategia competitiva de Empresas
+              Socovesa y sus marcas. Esto se logra, por un lado, con
+              metodologías y procesos de trabajo colaborativos y
+              multidisciplinarios - donde participan las gerencias de
+              Arquitectura, Desarrollo, Construcción, Comercial y Research-, las
+              que están llamadas a poner en el centro de la toma de decisiones,
+              las necesidades del habitar de las personas.
+            </p>
+            <p>
+              El proceso de diseño que se utiliza en Empresas Socovesa está
+              inspirado en el método Design Thinking (Stanford University) y
+              consta de 5 etapas: comienza con un análisis contextual del
+              territorio, el mercado y el consumidor, para luego pasar a la
+              propuesta de valor, la ideación, la entrega del brief y el diseño
+              final.
+            </p>
+            <p>
+              Pero no basta solo con tener un producto bien pensando, después
+              hay que venderlo y la “Venta de Valor” no es más que saber
+              traducirle al cliente, en su lenguaje, el valor de lo diseñado. Es
+              hacer consciente todos esos atributos que calzan con lo que la
+              persona necesita y que hacen que decida pagar más, por un producto
+              mejor.
+            </p>
+          </div>
+        </div>
+      </uib-tab>
+      <uib-tab class="personas " index="4" heading="Pilar 05">
+        <div class="tab-img animated fadeInDown">
+          <div class="rectangule-img animated delay-1s fadeInUp">
+            <p>Diseño y <br />venta de valor</p>
+          </div>
+        </div>
+        <div class="info-tab row">
+          <div class="col-sm-5 p-0">
+            <div class="number animated fadeInLeft">05</div>
+          </div>
+          <div class="col-sm-7 p-0 parrafos animated fadeInRight">
+            <p>
+              Diseñar centrados en las personas y saber transmitir el valor de
+              lo diseñado al cliente, es la estrategia competitiva de Empresas
+              Socovesa y sus marcas. Esto se logra, por un lado, con
+              metodologías y procesos de trabajo colaborativos y
+              multidisciplinarios - donde participan las gerencias de
+              Arquitectura, Desarrollo, Construcción, Comercial y Research-, las
+              que están llamadas a poner en el centro de la toma de decisiones,
+              las necesidades del habitar de las personas.
+            </p>
+            <p>
+              El proceso de diseño que se utiliza en Empresas Socovesa está
+              inspirado en el método Design Thinking (Stanford University) y
+              consta de 5 etapas: comienza con un análisis contextual del
+              territorio, el mercado y el consumidor, para luego pasar a la
+              propuesta de valor, la ideación, la entrega del brief y el diseño
+              final.
+            </p>
+            <p>
+              Pero no basta solo con tener un producto bien pensando, después
+              hay que venderlo y la “Venta de Valor” no es más que saber
+              traducirle al cliente, en su lenguaje, el valor de lo diseñado. Es
+              hacer consciente todos esos atributos que calzan con lo que la
+              persona necesita y que hacen que decida pagar más, por un producto
+              mejor.
+            </p>
+          </div>
+        </div>
+      </uib-tab>
+    </uib-tabset>
   </section>
-  <div class="tab-content wow fadeInUp ">
+  <!-- <div class="tab-content wow fadeInUp ">
     <div
       class="tab-pane fade show active"
       id="pilar-1"
@@ -376,7 +508,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="sub-menu row align-items-center justify-content-between ">
     <div class="col section wow fadeInLeft">
@@ -397,31 +529,27 @@
   <div class="float-logo wow fadeInRight">
     <img
       class="cube-large animated rollIn delay-1s"
-      src="../assets/cube-large.svg"
+      src="./assets/cube-large.svg"
       alt=""
     />
     <img
       class="cube-large-2 animated rollIn delay-1s"
-      src="../assets/cube-large.svg"
+      src="./assets/cube-large.svg"
       alt=""
     />
-    <img
-      class="cube animated rollIn delay-1s"
-      src="../assets/cube.svg"
-      alt=""
-    />
+    <img class="cube animated rollIn delay-1s" src="./assets/cube.svg" alt="" />
 
     <div class="logo-empresa ">
-      <img src="../assets/empresas-socovesa-logo-blanco.svg" alt="" />
+      <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
     </div>
     <div class="icon">
-      <img class="white" src="../assets/icono-buscar-blanco.svg" alt="" />
+      <img class="white" src="./assets/icono-buscar-blanco.svg" alt="" />
     </div>
     <div class="icon">
-      <img class="white" src="../assets/icono-compartir-blanco.svg" alt="" />
+      <img class="white" src="./assets/icono-compartir-blanco.svg" alt="" />
     </div>
     <div class="icon">
-      <img class="white" src="../assets/icono-download.svg" alt="" />
+      <img class="white" src="./assets/icono-download.svg" alt="" />
     </div>
   </div>
   <!-- Modal -->
@@ -437,10 +565,10 @@
       <div class="modal-content">
         <div class="modal-body">
           <!-- 16:9 aspect ratio -->
-          <div class="embed-responsive embed-responsive-16by9" >
+          <div class="embed-responsive embed-responsive-16by9">
             <iframe
               class="embed-responsive-item"
-              ng-src="{{ vm.srcVideo  }}"
+              ng-src="{{ vm.srcVideo }}"
               allowscriptaccess="always"
             ></iframe>
           </div>

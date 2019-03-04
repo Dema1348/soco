@@ -106,8 +106,8 @@
   }
 
   .tabs {
-    padding: 20px;
     .title-tab {
+      padding: 0 20px;
       font-family: 'Roboto';
       font-size: 48px;
       font-weight: bold;
@@ -120,8 +120,9 @@
     }
     .nav-tabs {
       margin-left: 26%;
+      margin-bottom: 53px;
       border: 0;
-      &.personas {
+      .personas {
         a {
           &.active {
             color: #eb6767;
@@ -129,7 +130,7 @@
           }
         }
       }
-      &.equipo {
+      .equipo {
         a {
           &.active {
             color: $dark-periwinkle;
@@ -137,7 +138,7 @@
           }
         }
       }
-      &.futura {
+      .futura {
         a {
           &.active {
             color: $greyish-teal;
@@ -145,7 +146,7 @@
           }
         }
       }
-      &.innovacion {
+      .innovacion {
         a {
           &.active {
             color: $soft-blue;
