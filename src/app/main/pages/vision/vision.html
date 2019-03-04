@@ -1,4 +1,4 @@
-<div id="vision">
+<div id="vision" class="vision">
   <div class="row image-background ">
     <div class="col-md-12 padding-body">
       <div class="header wow fadeIn  slower">
@@ -11,8 +11,7 @@
       <div class="divider-header wow fadeInLeft"></div>
 
       <img
-        data-toggle="modal"
-        data-target="#videoModal"
+        ng-click="vm.openModal()"
         src="./assets/boton-play.svg"
         class="button-play wow fadeInUp"
       />
@@ -86,7 +85,7 @@
     <div class="title-tab wow fadeInLeft">5 Pilares Estratégicos</div>
     <uib-tabset active="0">
       <uib-tab class="personas " index="0" heading="Pilar 01">
-        <div class="tab-img animated fadeInDown">
+        <div class="tab-img animated fadeIn">
           <div class="rectangule-img animated delay-1s fadeInUp">
             <p>Diseño y <br />venta de valor</p>
           </div>
@@ -126,7 +125,7 @@
         </div>
       </uib-tab>
       <uib-tab class="personas " index="1" heading="Pilar 02">
-        <div class="tab-img animated fadeInDown">
+        <div class="tab-img animated fadeIn">
           <div class="rectangule-img animated delay-1s fadeInUp">
             <p>Diseño y <br />venta de valor</p>
           </div>
@@ -166,7 +165,7 @@
         </div>
       </uib-tab>
       <uib-tab class="personas " index="2" heading="Pilar 03">
-        <div class="tab-img animated fadeInDown">
+        <div class="tab-img animated fadeIn">
           <div class="rectangule-img animated delay-1s fadeInUp">
             <p>Diseño y <br />venta de valor</p>
           </div>
@@ -206,7 +205,7 @@
         </div>
       </uib-tab>
       <uib-tab class="personas " index="3" heading="Pilar 04">
-        <div class="tab-img animated fadeInDown">
+        <div class="tab-img animated fadeIn">
           <div class="rectangule-img animated delay-1s fadeInUp">
             <p>Diseño y <br />venta de valor</p>
           </div>
@@ -246,7 +245,7 @@
         </div>
       </uib-tab>
       <uib-tab class="personas " index="4" heading="Pilar 05">
-        <div class="tab-img animated fadeInDown">
+        <div class="tab-img animated fadeIn">
           <div class="rectangule-img animated delay-1s fadeInUp">
             <p>Diseño y <br />venta de valor</p>
           </div>
@@ -287,229 +286,6 @@
       </uib-tab>
     </uib-tabset>
   </section>
-  <!-- <div class="tab-content wow fadeInUp ">
-    <div
-      class="tab-pane fade show active"
-      id="pilar-1"
-      role="tabpanel"
-      aria-labelledby="pilar-1-tab"
-    >
-      <div class="tab-img animated fadeInDown">
-        <div class="rectangule-img animated delay-1s fadeInUp">
-          <p>Diseño y <br />venta de valor</p>
-        </div>
-      </div>
-      <div class="info-tab row">
-        <div class="col-sm-5 p-0">
-          <div class="number animated fadeInLeft">01</div>
-        </div>
-        <div class="col-sm-7 p-0 parrafos animated fadeInRight">
-          <p>
-            Diseñar centrados en las personas y saber transmitir el valor de lo
-            diseñado al cliente, es la estrategia competitiva de Empresas
-            Socovesa y sus marcas. Esto se logra, por un lado, con metodologías
-            y procesos de trabajo colaborativos y multidisciplinarios - donde
-            participan las gerencias de Arquitectura, Desarrollo, Construcción,
-            Comercial y Research-, las que están llamadas a poner en el centro
-            de la toma de decisiones, las necesidades del habitar de las
-            personas.
-          </p>
-          <p>
-            El proceso de diseño que se utiliza en Empresas Socovesa está
-            inspirado en el método Design Thinking (Stanford University) y
-            consta de 5 etapas: comienza con un análisis contextual del
-            territorio, el mercado y el consumidor, para luego pasar a la
-            propuesta de valor, la ideación, la entrega del brief y el diseño
-            final.
-          </p>
-          <p>
-            Pero no basta solo con tener un producto bien pensando, después hay
-            que venderlo y la “Venta de Valor” no es más que saber traducirle al
-            cliente, en su lenguaje, el valor de lo diseñado. Es hacer
-            consciente todos esos atributos que calzan con lo que la persona
-            necesita y que hacen que decida pagar más, por un producto mejor.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="pilar-2"
-      role="tabpanel"
-      aria-labelledby="pilar-2-tab"
-    >
-      <div class="tab-img animated fadeInDown">
-        <div class="rectangule-img animated delay-1s fadeInUp">
-          <p>Diseño y <br />venta de valor</p>
-        </div>
-      </div>
-      <div class="info-tab row">
-        <div class="col-sm-5 p-0">
-          <div class="number animated fadeInLeft">02</div>
-        </div>
-        <div class="col-sm-7 p-0 parrafos animated fadeInRight">
-          <p>
-            Diseñar centrados en las personas y saber transmitir el valor de lo
-            diseñado al cliente, es la estrategia competitiva de Empresas
-            Socovesa y sus marcas. Esto se logra, por un lado, con metodologías
-            y procesos de trabajo colaborativos y multidisciplinarios - donde
-            participan las gerencias de Arquitectura, Desarrollo, Construcción,
-            Comercial y Research-, las que están llamadas a poner en el centro
-            de la toma de decisiones, las necesidades del habitar de las
-            personas.
-          </p>
-          <p>
-            El proceso de diseño que se utiliza en Empresas Socovesa está
-            inspirado en el método Design Thinking (Stanford University) y
-            consta de 5 etapas: comienza con un análisis contextual del
-            territorio, el mercado y el consumidor, para luego pasar a la
-            propuesta de valor, la ideación, la entrega del brief y el diseño
-            final.
-          </p>
-          <p>
-            Pero no basta solo con tener un producto bien pensando, después hay
-            que venderlo y la “Venta de Valor” no es más que saber traducirle al
-            cliente, en su lenguaje, el valor de lo diseñado. Es hacer
-            consciente todos esos atributos que calzan con lo que la persona
-            necesita y que hacen que decida pagar más, por un producto mejor.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="pilar-3"
-      role="tabpanel"
-      aria-labelledby="pilar-3-tab"
-    >
-      <div class="tab-img animated fadeInDown">
-        <div class="rectangule-img animated delay-1s fadeInUp">
-          <p>Diseño y <br />venta de valor</p>
-        </div>
-      </div>
-      <div class="info-tab row">
-        <div class="col-sm-5 p-0">
-          <div class="number animated fadeInLeft">03</div>
-        </div>
-        <div class="col-sm-7 p-0 parrafos animated fadeInRight">
-          <p>
-            Diseñar centrados en las personas y saber transmitir el valor de lo
-            diseñado al cliente, es la estrategia competitiva de Empresas
-            Socovesa y sus marcas. Esto se logra, por un lado, con metodologías
-            y procesos de trabajo colaborativos y multidisciplinarios - donde
-            participan las gerencias de Arquitectura, Desarrollo, Construcción,
-            Comercial y Research-, las que están llamadas a poner en el centro
-            de la toma de decisiones, las necesidades del habitar de las
-            personas.
-          </p>
-          <p>
-            El proceso de diseño que se utiliza en Empresas Socovesa está
-            inspirado en el método Design Thinking (Stanford University) y
-            consta de 5 etapas: comienza con un análisis contextual del
-            territorio, el mercado y el consumidor, para luego pasar a la
-            propuesta de valor, la ideación, la entrega del brief y el diseño
-            final.
-          </p>
-          <p>
-            Pero no basta solo con tener un producto bien pensando, después hay
-            que venderlo y la “Venta de Valor” no es más que saber traducirle al
-            cliente, en su lenguaje, el valor de lo diseñado. Es hacer
-            consciente todos esos atributos que calzan con lo que la persona
-            necesita y que hacen que decida pagar más, por un producto mejor.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="pilar-4"
-      role="tabpanel"
-      aria-labelledby="pilar-4-tab"
-    >
-      <div class="tab-img animated fadeInDown">
-        <div class="rectangule-img animated delay-1s fadeInUp">
-          <p>Diseño y <br />venta de valor</p>
-        </div>
-      </div>
-      <div class="info-tab row">
-        <div class="col-sm-5 p-0">
-          <div class="number animated fadeInLeft">04</div>
-        </div>
-        <div class="col-sm-7 p-0 parrafos animated fadeInRight">
-          <p>
-            Diseñar centrados en las personas y saber transmitir el valor de lo
-            diseñado al cliente, es la estrategia competitiva de Empresas
-            Socovesa y sus marcas. Esto se logra, por un lado, con metodologías
-            y procesos de trabajo colaborativos y multidisciplinarios - donde
-            participan las gerencias de Arquitectura, Desarrollo, Construcción,
-            Comercial y Research-, las que están llamadas a poner en el centro
-            de la toma de decisiones, las necesidades del habitar de las
-            personas.
-          </p>
-          <p>
-            El proceso de diseño que se utiliza en Empresas Socovesa está
-            inspirado en el método Design Thinking (Stanford University) y
-            consta de 5 etapas: comienza con un análisis contextual del
-            territorio, el mercado y el consumidor, para luego pasar a la
-            propuesta de valor, la ideación, la entrega del brief y el diseño
-            final.
-          </p>
-          <p>
-            Pero no basta solo con tener un producto bien pensando, después hay
-            que venderlo y la “Venta de Valor” no es más que saber traducirle al
-            cliente, en su lenguaje, el valor de lo diseñado. Es hacer
-            consciente todos esos atributos que calzan con lo que la persona
-            necesita y que hacen que decida pagar más, por un producto mejor.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div
-      class="tab-pane fade"
-      id="pilar-5"
-      role="tabpanel"
-      aria-labelledby="pilar-5-tab"
-    >
-      <div class="tab-img animated fadeInDown">
-        <div class="rectangule-img animated delay-1s fadeInUp">
-          <p>Diseño y <br />venta de valor</p>
-        </div>
-      </div>
-      <div class="info-tab row">
-        <div class="col-sm-5 p-0">
-          <div class="number animated fadeInLeft">05</div>
-        </div>
-        <div class="col-sm-7 p-0 parrafos animated fadeInRight">
-          <p>
-            Diseñar centrados en las personas y saber transmitir el valor de lo
-            diseñado al cliente, es la estrategia competitiva de Empresas
-            Socovesa y sus marcas. Esto se logra, por un lado, con metodologías
-            y procesos de trabajo colaborativos y multidisciplinarios - donde
-            participan las gerencias de Arquitectura, Desarrollo, Construcción,
-            Comercial y Research-, las que están llamadas a poner en el centro
-            de la toma de decisiones, las necesidades del habitar de las
-            personas.
-          </p>
-          <p>
-            El proceso de diseño que se utiliza en Empresas Socovesa está
-            inspirado en el método Design Thinking (Stanford University) y
-            consta de 5 etapas: comienza con un análisis contextual del
-            territorio, el mercado y el consumidor, para luego pasar a la
-            propuesta de valor, la ideación, la entrega del brief y el diseño
-            final.
-          </p>
-          <p>
-            Pero no basta solo con tener un producto bien pensando, después hay
-            que venderlo y la “Venta de Valor” no es más que saber traducirle al
-            cliente, en su lenguaje, el valor de lo diseñado. Es hacer
-            consciente todos esos atributos que calzan con lo que la persona
-            necesita y que hacen que decida pagar más, por un producto mejor.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <div class="sub-menu row align-items-center justify-content-between ">
     <div class="col section wow fadeInLeft">
       <i class="fas fa-chevron-left"></i> Carta JGR
@@ -553,27 +329,21 @@
     </div>
   </div>
   <!-- Modal -->
-  <div
-    class="modal fade"
-    id="videoModal"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="video"
-    aria-hidden="true"
+  <script
+   type="text/ng-template"
+    id="videoModal.html"
+    class="modal-video"
   >
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <!-- 16:9 aspect ratio -->
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              class="embed-responsive-item"
-              ng-src="{{ vm.srcVideo }}"
-              allowscriptaccess="always"
-            ></iframe>
-          </div>
-        </div>
+    <div class="modal-body" id="modal-body">
+      <!-- 16:9 aspect ratio -->
+      <div class="embed-responsive embed-responsive-16by9" ng-if="vm.src">
+        <video controls autoplay id="demoVideo"
+        >
+        <source src="./assets/{{vm.src}}" type="video/mp4">
+          Your browser does not support HTML5 video.
+
+      </video>
       </div>
     </div>
-  </div>
+  </script>
 </div>

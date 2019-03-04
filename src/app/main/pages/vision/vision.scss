@@ -276,14 +276,18 @@
       }
     }
   }
-  .modal-dialog {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding-left: 80px;
-  }
-
-  .modal-body {
-    position: relative;
-    padding: 0px;
-  }
+  
 }
+
+.modal-dialog{
+  margin-top: 80px;
+  padding-left: 80px;
+}
+.modal-body {
+  padding: 0px;
+}
+.modal-backdrop.show{
+  opacity: .7;
+}
+
+

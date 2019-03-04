@@ -1,27 +1,31 @@
 (function() {
-    "use strict";
-  
-    angular.module("app.pages.vision").controller("VisionController", VisionController);
-  
-    function VisionController($sce,$scope) {
-      var vm = this;
-      var url = "https://www.youtube.com/embed/s5JTnwg7LHo";
-      var opts= "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1";
-      vm.srcVideo=$sce.trustAsResourceUrl(url); 
-        
-      $('#videoModal').on('shown.bs.modal', function (e) {
-        vm.srcVideo=$sce.trustAsResourceUrl(url+opts); 
-        $scope.$apply();
+	'use strict';
 
-     })
+	angular
+		.module('app.pages.vision')
+		.controller('VisionController', VisionController);
 
-      $('#videoModal').on('hide.bs.modal', function (e) {
-        vm.srcVideo="";
-        $scope.$apply();
-    }) 
-    
-    
+	function VisionController($scope, $uibModal) {
+		var vm = this;
+		vm.openModal = openModal;
+
+		function openModal() {
+			console.log('open');
+			var modalInstance = $uibModal.open({
+				animation: true,
+				templateUrl: 'videoModal.html',
+				controller: ModalController,
+				controllerAs: 'vm',
+				size: 'lg',
+				appendTo: undefined,
+			});
+
     }
     
-  })();
-  
+    function ModalController(){
+      var vm = this;
+      vm.src = 'video1.mp4';
+
+    }
+	}
+})();
