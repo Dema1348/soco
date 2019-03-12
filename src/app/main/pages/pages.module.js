@@ -5,7 +5,10 @@
     .module("app.pages", [
       "app.pages.home",
       "app.pages.vision",
-      "app.pages.highlight"
+      "app.pages.highlight",
+      "app.pages.financieros",
+      "app.pages.accionistas",
+      "app.pages.equipo"
     ])
     .config(config);
 

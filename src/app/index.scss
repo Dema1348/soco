@@ -76,6 +76,10 @@
     font-size: 18px;
     font-weight: 500;
     color: $black;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
 }
 
 .contenido-h2{
@@ -83,6 +87,12 @@
     font-size: 30px;
     font-weight: bold;
     color: $black;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+  
 }
 
 .texto-destado{
@@ -91,6 +101,10 @@
     font-weight: 300;
     line-height: 1.33;
     color: $brownish-grey-two;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
 }
 
 .titulo-pagina-oscuro{
@@ -100,6 +114,9 @@
  line-height: 0.86;
  letter-spacing: -1.2px;
  color: $white;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: normal;
 }
 
 

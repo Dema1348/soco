@@ -1,0 +1,450 @@
+#vision, #financieros, #accionistas , #equipo{
+  margin-left: 80px;
+  margin-right: 0;
+
+  .row {
+    margin: 0;
+    width: 100%;
+  }
+
+  .image-background {
+    height: 660px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    &.vision{
+      background-image: url('../assets/hero-vision.jpg');
+    }
+    &.financieros{
+      background-image: url('../assets/hero-financieros.jpg');
+    }
+    &.accionistas{
+      background-image: url('../assets/hero-accionistas.jpg');
+    }
+    &.equipo{
+      background-image: url('../assets/hero-equipo.jpg');
+    }
+  }
+
+  .button-play {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .divider-header {
+    width: 80px;
+    height: 10px;
+    background-color: $white;
+    margin-top: 50px;
+    &.black{
+      background-color:#000;
+    }
+  }
+
+  .title {
+    @extend .titulo-pagina-oscuro;
+    &.black{
+      color:#000;
+    }
+  }
+
+  .cita {
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: $brownish-grey-two;
+    padding: 60px 95px;
+    padding-bottom: 50px;
+  }
+
+  .divider {
+    max-width: 500px;
+    height: 2px;
+    background-color: #999999;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+
+  .parrafos-3{
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    padding-right: 20px!important;
+
+  }
+  .background{
+    background-color: #f4f4f4;
+    padding:40px 20px;
+  }
+  .box-parrafos {
+    padding: 0 20px;
+    padding-right: 70px;
+    margin: 0;
+   
+    p {
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $brownish-grey-two;
+      margin-bottom: 20px;
+      &.big{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.33;
+      }
+    }
+    .title{
+     @extend .contenido-h2;
+    }
+    .title-big{
+      font-family: 'Roboto';
+      font-size: 48px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.04;
+      letter-spacing: normal;
+      color: $black;
+     }
+  }
+
+  .box-image {
+    padding: 0;
+    .img-chart {
+      height: 475px;
+      width: 100%;
+      padding-right: 60px;
+    }
+    .img-quoute {
+      height: 864px;
+      width: 100%;
+    }
+    .quote {
+      position: absolute;
+      width: 94px;
+      height: 90px;
+      top: -50px;
+      z-index: -1;
+    }
+    .title-img {
+      padding: 0 95px 0 0;
+      padding-bottom: 35px;
+      font-family: 'Playfair Display';
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #eb6767;
+    }
+  }
+
+  .quote-alone{
+    position: relative;
+    margin-top: 108px;
+    float: left;
+    width: 100%;
+    margin-bottom: 64px;
+    .quote {
+      position: absolute;
+      width: 94px;
+      height: 90px;
+      top: -50px;
+      right: 641px;
+      z-index: -1;
+    }
+    .title-img {
+      font-family: 'Playfair Display';
+      font-size: 34px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #eb6767;
+      float: right;
+      margin-right: 40px;
+      width: 725px;
+
+    }
+  }
+
+  .tabs-vision {
+    .title-tab {
+      padding: 0 20px;
+      font-family: 'Roboto';
+      font-size: 48px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.52;
+      letter-spacing: normal;
+      color: #eb6767;
+      margin-bottom: 50px;
+    }
+    .nav-tabs {
+      margin-left: 26%;
+      margin-bottom: 53px;
+      border: 0;
+      a {
+        &.active {
+          color: #eb6767;
+          border-bottom: 2px solid #eb6767;
+        }
+      }
+
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #999999;
+        text-decoration: none;
+        padding-bottom: 10px;
+        &.active {
+          font-family: 'Roboto';
+          font-size: 22px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+        }
+      }
+    }
+    .tab-content {
+      z-index: -1;
+      .tab-img {
+        height: 449px;
+        min-height: 449px;
+        background-image: url('../assets/fondo-pilar-01.png');
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        .rectangule-img {
+          width: 480px;
+          height: 160px;
+          background-color: #eb6767;
+          position: absolute;
+          left: 162px;
+          top: 235px;
+          p {
+            padding: 20px 40px 26px 40px;
+            font-family: 'Roboto';
+            font-size: 48px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $white;
+          }
+        }
+      }
+  
+      .info-tab {
+        background-color: $very-light-pink;
+        min-height: 722px;
+        padding-bottom: 20px;
+        margin-top: -235px;
+        .number {
+          margin-top: 297px;
+          font-family: 'Roboto';
+          font-size: 135px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 0.74;
+          letter-spacing: normal;
+          text-align: right;
+          color: #eb6767;
+          margin-right: 30px;
+        }
+        .parrafos {
+          margin-top: 297px;
+          -webkit-column-gap: 20px;
+          -moz-column-gap: 20px;
+          column-gap: 20px;
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+          p {
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.56;
+            letter-spacing: normal;
+            color: $brownish-grey-two;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  .tabs-equipo {
+    padding-bottom: 40px;
+
+    .nav-tabs {
+      margin: 0 6px;
+      padding-top: 40px;
+      
+      border: 0;     
+      a {
+        &.active {
+          color: $dark-periwinkle;
+          border-bottom: 2px solid $dark-periwinkle;
+        }
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #999999;
+        text-decoration: none;
+        padding-bottom: 10px;
+        &.active {
+          font-family: 'Roboto';
+          font-size: 22px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+        }
+      }
+    }
+    .tab-content {
+      z-index: -1;
+      .tab-img {
+        height: 449px;
+        min-height: 449px;
+        background-image: url('../assets/fondo-pilar-01.png');
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        .rectangule-img {
+          width: 480px;
+          height: 160px;
+          background-color: #eb6767;
+          position: absolute;
+          left: 162px;
+          top: 235px;
+          p {
+            padding: 20px 40px 26px 40px;
+            font-family: 'Roboto';
+            font-size: 48px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $white;
+          }
+        }
+      }
+  
+      .info-tab {
+        padding-bottom: 40px;
+        margin-top: 56px;
+        margin-left: 8px;
+        margin-right: 60px;
+        .text {    
+          font-family: 'Roboto';
+          font-size: 24px;
+          color: $brownish-grey-two;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.33;
+          letter-spacing: normal;
+        }
+        .charts {
+          height: 475px;
+        }
+      }
+    }
+  }
+ 
+
+ 
+
+  .footer {
+    min-height: 70px;
+    background-color: #dedede;
+    padding: 20px;
+  }
+  .sub-menu {
+    height: 65px;
+    width: 100%;
+    .section {
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $brownish-grey-two;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  
+}
+
+.modal-dialog{
+  margin-top: 80px;
+  padding-left: 80px;
+}
+.modal-body {
+  padding: 0px;
+}
+.modal-backdrop.show{
+  opacity: .7;
+}
+
+

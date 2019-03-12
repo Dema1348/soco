@@ -1,0 +1,80 @@
+<div id="equipo" class="equipo">
+  <div class="row image-background equipo">
+    <div class="col-md-12 padding-body">
+      <div class="header">
+        Home /<span class="white">Equipo</span>
+      </div>
+      <div class="title ">
+          Equipo
+      </div>
+      <div class="divider-header "></div>
+
+    
+    </div>
+  </div>
+  <div class="cita ">
+      Durante el año 2018, la Compañía trabajó en la definición y formalización no solo de su propósito, el cual responde a la pregunta de por qué hacemos lo que hacemos, sino también de los principios o valores que fundan el quehacer de Empresas Socovesa.  </div>
+  <div class="divider"></div>
+ 
+  
+  <div class="sub-menu row align-items-center justify-content-between ">
+    <div class="col section ">
+      <i class="fas fa-chevron-left"></i> Carta JGR
+    </div>
+    <div class="col section  text-right">
+        Transformaciones del habitar <i class="fas fa-chevron-right"></i>
+    </div>
+  </div>
+  <div class="footer row justify-content-center">
+    <button
+      type="button"
+      class="btn btn-outline-secondary button-soco-outline  "
+    >
+    Descargar Capítulo
+    </button>
+  </div>
+  <div class="float-logo ">
+    <img
+      class="cube-large "
+      src="./assets/cube-large.svg"
+      alt=""
+    />
+    <img
+      class="cube-large-2 "
+      src="./assets/cube-large.svg"
+      alt=""
+    />
+    <img class="cube " src="./assets/cube.svg" alt="" />
+
+    <div class="logo-empresa ">
+      <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
+    </div>
+    <div class="icon">
+      <img class="white" src="./assets/icono-buscar-blanco.svg" alt="" />
+    </div>
+    <div class="icon">
+      <img class="white" src="./assets/icono-compartir-blanco.svg" alt="" />
+    </div>
+    <div class="icon">
+      <img class="white" src="./assets/icono-download.svg" alt="" />
+    </div>
+  </div>
+  <!-- Modal -->
+  <script
+   type="text/ng-template"
+    id="videoModal.html"
+    class="modal-video"
+  >
+    <div class="modal-body" id="modal-body">
+      <!-- 16:9 aspect ratio -->
+      <div class="embed-responsive embed-responsive-16by9" ng-if="vm.src">
+        <video controls autoplay id="demoVideo"
+        >
+        <source src="./assets/{{vm.src}}" type="video/mp4">
+          Your browser does not support HTML5 video.
+
+      </video>
+      </div>
+    </div>
+  </script>
+</div>
