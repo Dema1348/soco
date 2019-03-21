@@ -9,21 +9,22 @@
   background-color: #FFFFFF; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  padding: .5rem 1rem;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+  padding: 30px 26px;
   .year{
       white-space: inherit;
       margin: 0;
       word-break: break-all;
-      font-family: 'Roboto', sans-serif;
-      color: #212121;
-      font-size: 16px;
       width: 26px;
       margin: 0 auto;
+      font-family: 'Roboto';
+      font-size: 16px;
       font-weight: bold;
-      line-height: 14px;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.88;
+      letter-spacing: normal;
       text-align: center;
-      margin-top: 24px;
+      color: $black;
 
       
   }
@@ -33,29 +34,22 @@
     margin-bottom: 30px;
   }
   .title{
-    -webkit-writing-mode: vertical-lr;
-    -ms-writing-mode: tb-lr;
-    writing-mode: vertical-lr;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    margin: 0 auto;
-    color: #212121;	
-    font-family: 'Roboto';	
-    font-size: 17px;	
-    font-weight: bold;	
-    letter-spacing: -0.2px;	
-    line-height: 20px;
+
+      transform: rotate(-90deg);
+      font-family: 'Roboto';
+      font-size: 17px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -0.2px;
+      color: $black;
+      margin-top: 114px;
     span{
       color: #9A9A9A;
     }
   }
-  .divider{   
-      height: 2.58px;
-      width: 20px;
-      margin: 0 auto;
-      background: #212121;
-      margin-top: 30px;
-  }
+
 }
 
 

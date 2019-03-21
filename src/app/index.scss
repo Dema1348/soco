@@ -3,169 +3,179 @@
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
 
+$black: #333333;
+$white: #ffffff;
+$brown-grey: #999999;
+$brown-grey-two: #777777;
+$brown-grey-three: #666666;
+$very-light: #dadada;
+$very-light-two: #f3f3f3;
+$salmon-dark: #ef6569;
+$salmon-light: #f3777a;
+$peach-dark: #fea391;
+$peach-light: #ffbcaf;
+$greenwater-dark: #5cb6b3;
+$greenwater-light: #76ccca;
+$blue-dark: #63afdc;
+$blue-light: #70bae5;
+$periwinkle-dark: #707fc5;
+$periwinkle-light: #8592d1;
 
- $black: #333333;
- $white: #ffffff;
- $brownish-grey-two: #666666;
- $very-light-pink-two: #dadada;
- $very-light-pink: #f3f3f3;
- $seafoam-blue: #76ccca;
- $coral-pink: #ef6569;
- $light-salmon: #fea391;
- $light-peach: #ffbcaf;
- $salmon-pink: #f3777a;
- $greyish-teal: #5cb6b3;
- $soft-blue: #63afdc;
- $lightblue: #70bae5;
- $dark-periwinkle: #707fc5;
- $soft-blue-2: #8592d1;
-
- .sk-cube-grid .sk-cube{
-    background-color:#14385C;
- }
- .titulo-highlights{
-    font-family: 'Roboto';
-    font-size: 50px;
-    font-weight: 500;
-    line-height: 0.86;
-    letter-spacing: -1.2px;
-    width: 280px;
-    &.personas{
-        color: #eb6767;
-    }
-    &.futura{
-        color: $greyish-teal;
-    }
-    &.innovacion{
-        color: $soft-blue;
-    }
-    &.equipo{
-        color: $dark-periwinkle;  
-    }
-    &.rodea{
-        color: $light-salmon;
-    }
- }
-
-.titulo-slider{
-    font-family: "Playfair Display";
-    font-size: 22px;
-    line-height: 0.95;
-    letter-spacing: -0.6px;
-    color: #212121;
+.sk-cube-grid .sk-cube {
+  background-color: #14385c;
+}
+.titulo-highlights {
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 0.86;
+  letter-spacing: -1.2px;
+  width: 280px;
+  &.personas {
+    color: #eb6767;
+  }
+  &.futura {
+    color: $greenwater-dark;
+  }
+  &.innovacion {
+    color: $blue-dark;
+  }
+  &.equipo {
+    color: $periwinkle-dark;
+  }
+  &.rodea {
+    color: $peach-dark;
+  }
 }
 
-.caption-slider{
-    font-family: 'Roboto';
-    font-size: 13px;
-    line-height: 1.23;
-    letter-spacing: -0.3px;
-    color: #777777;
+.titulo-slider {
+  font-family: 'Playfair Display';
+  font-size: 22px;
+  line-height: 0.95;
+  letter-spacing: -0.6px;
+  color: #212121;
 }
 
-.caption-highlights{
-    font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0.2px;
-    color: $black;
-}
- 
-.contendido-h3{
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-weight: 500;
-    color: $black;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
+.caption-slider {
+  font-family: 'Roboto';
+  font-size: 13px;
+  line-height: 1.23;
+  letter-spacing: -0.3px;
+  color: #777777;
 }
 
-.contenido-h2{
-    font-family: 'Roboto';
-    font-size: 30px;
-    font-weight: bold;
-    color: $black;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--black);
-  
+.caption-highlights {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  color: $black;
 }
 
-.texto-destado{
-    font-family: 'Roboto';
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1.33;
-    color: $brownish-grey-two;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
+.contendido-h3 {
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 500;
+  color: $black;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
-.titulo-pagina-oscuro{
- font-family: 'Roboto';
- font-size: 50px;
- font-weight: 500;
- line-height: 0.86;
- letter-spacing: -1.2px;
- color: $white;
- font-style: normal;
- font-stretch: normal;
- line-height: normal;
+.contenido-h2 {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  color: $black;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black);
 }
 
+.texto-destado {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.33;
+  color: $brown-grey-three;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
 
-.float-logo{
+.titulo-pagina-oscuro {
+  font-family: 'Roboto';
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 0.86;
+  letter-spacing: -1.2px;
+  color: $white;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+.float-logo {
+  position: absolute;
+  right: 22px;
+  top: 0;
+
+  .cube-large {
     position: absolute;
-    right:22px;
-    top:0;
+    right: 145px;
+    top: -2px;
+  }
 
-    .cube-large{
-        position: absolute;
-        right: 145px;
-        top: -2px
-    }
+  .cube-large-2 {
+    position: absolute;
+    right: 345px;
+    top: 100px;
+  }
 
-    .cube-large-2{
-        position: absolute;
-        right:345px;
-        top: 100px
-    }
+  .cube {
+    position: absolute;
+    right: 345px;
+    top: -2px;
+  }
 
-    .cube{
-        position: absolute;
-        right:345px;
-        top: -2px
+  .logo-empresa {
+    margin-top: 20px;
+    width: 129px;
+    height: 29px;
+    img {
+      width: 130px;
     }
-
-    .logo-empresa{
-        margin-top: 20px; 
-        width: 129px;
-        height: 29px;
-        img{
-            width: 130px;
-        }
+  }
+  .icon {
+    margin-top: 20px;
+    text-align: right;
+    &:hover {
+      cursor: pointer;
     }
-    .icon{
-        margin-top: 20px;
-        text-align: right;
-        &:hover {
-            cursor: pointer;
-        }
-    }
+  }
 }
-.hidden{
-    visibility: hidden;
+.hidden {
+  visibility: hidden;
 }
-.padding-body{
-    padding: 20px;
-}
-.header{
+
+.header {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9c9e9f;
+  margin-bottom: 35px;
+  padding-top:20px;
+  padding-left:20px;
+  z-index: 1;
+  span {
     font-family: 'Roboto';
     font-size: 13px;
     font-weight: bold;
@@ -173,88 +183,97 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #9c9e9f;
-    margin-bottom: 46px;
-    span{
-        font-family: 'Roboto';
-        font-size: 13px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: $black;
-        &.white{
-            color: $white!important;
-        }
+    color: $black;
+    &.white {
+      color: $white !important;
     }
+  }
 }
-
 
 .button-soco {
-    color:#fff;
-    max-height: 31px;
-    padding: 0;
-    border-radius: 0;
-    min-width: 100px;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    padding: 7px 10px;
-    line-height: 14px;
-    &.personas{
-        background-color: #eb6767;
-       visibility: hidden;
-    }
-    &.futuro{
-        background-color: $soft-blue;
-       visibility: hidden;
-    }
-    &.innovacion{
-        background-color: $greyish-teal;
-       visibility: hidden;
-    }
-    &.rodea{
-        background-color: $light-salmon;
-       visibility: hidden;
-    }
-    &.equipo{
-        background-color: $dark-periwinkle;
-       visibility: hidden;
-    }
-    &:hover {
-        color:#fff;
-    }
+  color: #fff;
+  max-height: 31px;
+  padding: 0;
+  border-radius: 0;
+  min-width: 100px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: $white;
+  padding: 7px 10px;
+  line-height: 14px;
+  svg,
+  i {
+    margin-left: 11px;
+  }
+  &.personas {
+    background-color: #eb6767;
+    visibility: hidden;
+  }
+  &.futuro {
+    background-color: $greenwater-dark;
+    visibility: hidden;
+  }
+  &.innovacion {
+    background-color: $blue-dark;
+    visibility: hidden;
+  }
+  &.rodea {
+    background-color: $peach-dark;
+    visibility: hidden;
+  }
+  &.equipo {
+    background-color: $periwinkle-dark;
+    visibility: hidden;
+  }
+  &:hover {
+    color: #fff;
+  }
 }
 
 .button-soco-outline {
-    max-height: 31px;
-    padding: 0;
-    border-radius: 3px;
-    min-width: 100px;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    padding: 7px 10px;
-    line-height: 14px;
-    color: #333333;
-    border-color: #333333;
-    &:hover{
-        background-color: #333333;
-        border-color: #333333;
-        color:#fff;
-        
-    }
+  max-height: 31px;
+  padding: 0;
+  border-radius: 3px;
+  min-width: 170px;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 7px 10px;
+  line-height: 14px;
+  color: $black;
+  border-color: $black;
+  &:hover {
+    background-color:  $black;
+    border-color:  $black;
+    color: #fff;
+  }
 }
 
+.animationIf.ng-enter,
+.animationIf.ng-leave {
+  -webkit-transition: opacity ease-in-out 1s;
+  -moz-transition: opacity ease-in-out 1s;
+  -ms-transition: opacity ease-in-out 1s;
+  -o-transition: opacity ease-in-out 1s;
+  transition: opacity ease-in-out 1s;
+}
+.animationIf.ng-enter,
+.animationIf.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.animationIf.ng-leave,
+.animationIf.ng-enter.ng-enter-active {
+  opacity: 1;
+}
 
 /**
  *  Do not remove the comments below. It's the markers used by wiredep to inject
@@ -264,7 +283,6 @@
 // endbower
 
 /* Space out content a bit */
-
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

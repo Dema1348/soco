@@ -8,7 +8,8 @@
       "app.pages.highlight",
       "app.pages.financieros",
       "app.pages.accionistas",
-      "app.pages.equipo"
+      "app.pages.equipo",
+      "app.pages.cartas"
     ])
     .config(config);
 

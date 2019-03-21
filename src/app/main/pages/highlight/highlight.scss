@@ -30,7 +30,7 @@
                 cursor: pointer;
 
                 .text-background{
-                    color: $salmon-pink;
+                    color: $salmon-light;
                 }
                 .box-hidden{
                     display: block;
@@ -111,7 +111,7 @@
                 cursor: pointer;
 
                 .text-background{
-                    color: $salmon-pink;
+                    color: $salmon-light;
                 }
                 .box-hidden{
                     display: block;
@@ -197,7 +197,7 @@
                 cursor: pointer;
 
                 .text-background{
-                    color: $salmon-pink;
+                    color: $salmon-light;
                 }
                 .box-hidden{
                     display: block;
@@ -281,7 +281,7 @@
                 cursor: pointer;
 
                 .text-background{
-                    color: $salmon-pink;
+                    color: $salmon-light;
                 }
                 .box-hidden{
                     display: block;
@@ -367,7 +367,7 @@
                 cursor: pointer;
 
                 .text-background{
-                    color: $salmon-pink;
+                    color: $salmon-light;
                 }
                 .box-hidden{
                     display: block;
@@ -466,12 +466,12 @@
             transition: background-color 1s ease;
             left: 232px;
             &:hover{
-                background-color: $dark-periwinkle;
+                background-color: $periwinkle-dark;
                 z-index: 1000;
                 cursor: pointer;
 
                 .text-background{
-                    color: $soft-blue-2;
+                    color: $blue-light;
                 }
                 .hidden{
                     visibility: visible;
@@ -567,12 +567,12 @@
             transition: background-color 1s ease;
             left: 0;
             &:hover{
-                background-color:  $light-salmon;;
+                background-color:  $salmon-light;
                 z-index: 1000;
                 cursor: pointer;
 
                 .text-background{
-                    color: $light-peach;
+                    color: $peach-light;
                 }
                 .hidden{
                     visibility: visible;
@@ -660,12 +660,12 @@
             transition: background-color 1s ease;
             left: 0;
             &:hover{
-                background-color:  $soft-blue;
+                background-color:  $blue-light;
                 z-index: 1000;
                 cursor: pointer;
 
                 .text-background{
-                    color: $lightblue;
+                    color: $blue-light;
                 }
                 .hidden{
                     visibility: visible;
@@ -736,12 +736,12 @@
            
             transition: background-color 1s ease;
             &:hover{
-                background-color:  $soft-blue;
+                background-color:  $blue-light;
                 z-index: 1000;
                 width: 780px;
                 cursor: pointer;
                 .text-background{
-                    color: $lightblue;
+                    color: $blue-light;
                 }
                 .box-hidden{
                     display: block;
@@ -856,24 +856,24 @@
         &.equipo{
             a{
                 &.active{
-                    color: $dark-periwinkle;
-                    border-bottom: 2px solid $dark-periwinkle;
+                    color: $periwinkle-dark;
+                    border-bottom: 2px solid $periwinkle-dark;
                 }
             }
         }
         &.futura{
             a{
                 &.active{
-                    color: $greyish-teal;
-                    border-bottom: 2px solid $greyish-teal;
+                    color: $greenwater-light;
+                    border-bottom: 2px solid $greenwater-light;
                 }
             }
         }
         &.innovacion{
             a{
                 &.active{
-                    color:  $soft-blue;
-                    border-bottom: 2px solid  $soft-blue;
+                    color:  $blue-light;
+                    border-bottom: 2px solid  $blue-light;
                 }
             }
         }

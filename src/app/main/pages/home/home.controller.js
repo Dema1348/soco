@@ -10,27 +10,50 @@
     vm.rodea= rodea;
     vm.futuro= futuro;
     vm.innovacion= innovacion;
-
-    $(".carousel").carousel({interval:5000});
-
-    function personas(){
-      $(".carousel").carousel(0);
+    vm.imgSliderFuturo=true;
+  
+    function personas(){   
+      vm.imgSliderPersonas=true;
+      vm.imgSliderEquipo=false;
+      vm.imgSliderRodea=false;
+      vm.imgSliderFuturo=false;
+      vm.imgSliderInnovacion=false;
     }
+    
 
-    function equipo(){
-      $(".carousel").carousel(4);
+    function equipo(){     
+      vm.imgSliderPersonas=false;
+      vm.imgSliderEquipo=true;
+      vm.imgSliderRodea=false;
+      vm.imgSliderFuturo=false;
+      vm.imgSliderInnovacion=false;
     }
 
     function rodea(){
-      $(".carousel").carousel(3);
+      vm.imgSliderPersonas=false;
+      vm.imgSliderEquipo=false;
+      vm.imgSliderRodea=true;
+      vm.imgSliderFuturo=false;
+      vm.imgSliderInnovacion=false;
+
     }  
 
     function futuro(){
-      $(".carousel").carousel(1);
+      vm.imgSliderPersonas=false;
+      vm.imgSliderEquipo=false;
+      vm.imgSliderRodea=false;
+      vm.imgSliderFuturo=true;
+      vm.imgSliderInnovacion=false;
+
     }
 
     function innovacion(){
-      $(".carousel").carousel(2);
+      vm.imgSliderPersonas=false;
+      vm.imgSliderEquipo=false;
+      vm.imgSliderRodea=false;
+      vm.imgSliderFuturo=false;
+      vm.imgSliderInnovacion=true;
+
     }
   
   
