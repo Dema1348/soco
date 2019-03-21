@@ -3,6 +3,7 @@
 #accionistas,
 #equipo,
 #carta-presidente,
+#tendencias,
 #carta-gerente-general {
   margin-left: 80px;
   margin-right: 0;
@@ -20,6 +21,7 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    position: relative;
     &.vision {
       background-image: url('../assets/hero-vision.jpg');
     }
@@ -37,8 +39,11 @@
     }
     &.carta-gerente-general{
       background-image: url('../assets/hero-gerente-general.jpg');
-
     }
+    &.tendencias{
+        background-image: url('../assets/hero-tendencias.jpg');
+  
+      }
   }
 
   .title {
@@ -54,6 +59,9 @@
     &.black {
       color: #000;
     }
+    &.white{
+        color: $white;
+    }
   }
   .divider-header {
     width: 80px;
@@ -65,7 +73,26 @@
       background-color: #000;
     }
   }
-
+  .wrapp-play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    .title-video{   
+        margin-top: 40px;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $white;
+    }
+  }
   .cube-large {
     width: 20px;
     height: 60px;
@@ -97,6 +124,7 @@
       height: 29px;
       margin: 0 auto;
       margin-bottom: 10px;
+      margin-right: 0;
       img {
         width: 130px;
       }
@@ -132,6 +160,7 @@
     padding: 0 60px;
     &.background-color{
       background-color: #f4f4f4;
+      padding-bottom: 50px;
     }
     .title{
       font-family: 'Roboto';
@@ -145,6 +174,19 @@
       padding: 0;
       margin-top: 50px;
       margin-bottom: 30px;
+     }
+     .title-small{
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 30px;
      }
     .title-big{
       font-family: 'Roboto';
@@ -205,6 +247,9 @@
     .three{
       padding-right: 0!important;
       padding-left: 20px!important;
+    }
+    .img-chart{
+        width: 100%;
     }
     
   }
@@ -296,8 +341,217 @@
     padding: 20px;
    
   }
+
+  .tabs-financiero {
+        padding: 50px 60px;
+        .nav-tabs {
+            margin: 0 4px;
+            border: 0;
+            padding-bottom: 70px;
+            a {
+                border-top: 0;
+                border-right: 0;
+                border-left: 0;
+                font-family: Roboto;
+                font-size: 22px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: $brown-grey-three;
+                text-decoration: none;
+                padding: 0;
+                padding-bottom: 6px;
+                margin: 0 23px;
+                &.active {
+                    font-family: 'Roboto';
+                    font-size: 22px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: $black;
+                    border-bottom: 2px solid $black;
+                }
+            }
+        }
+        .tab-content{
+            .text{
+                font-family: 'Roboto';
+                font-size: 24px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                color: $brown-grey-three;
+            }
+            .charts{
+                padding-left: 55px!important;
+            }
+        }
+       
+    }
+
+    .tabs-tendencias {
+        padding: 50px 60px;
+        .nav-tabs {
+            margin: 0 4px;
+            border: 0;
+            padding-bottom: 70px;
+            li{
+                border-bottom: 1px solid #e0e0e0;
+            }
+            a {
+                border-top: 0;
+                border-right: 0;
+                border-left: 0;
+                font-family: Roboto;
+                font-size: 22px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: $brown-grey-three;
+                text-decoration: none;
+                padding: 0;
+                padding-bottom: 6px;
+                margin: 0 auto;
+                width: 200px;
+                &.active {
+                    font-family: 'Roboto';
+                    font-size: 22px;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: $blue-dark;
+                    border-bottom: 2px solid $blue-dark;
+                }
+            }
+        }
+        .tab-content{
+            .text{
+                font-family: 'Roboto';
+                font-size: 24px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                color: $brown-grey-three;
+            }
+            .info{
+                font-size: 16px;
+                font-style: normal;
+                font-stretch: normal;
+                font-family: 'Roboto';
+                font-style: italic;
+                color: $brown-grey-three;
+                margin-top: 20px;
+            }
+            .charts{
+                padding-left: 55px!important;
+            }
+        }
+       
+    }
+
+    .table{
+        padding: 50px 60px!important;
+        .header{
+            border-bottom: 3px solid  $black;
+            padding-bottom: 10px;
+            padding: 0;
+            &.ligth{
+                border-bottom: 1px solid  $black;
+            }
+            .title{
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $black;
+                &.text-rigth{
+                    text-align: right;
+                }
+            }
+        }
+        .wrapp-data{
+            padding: 12px 0px;
+            border-bottom: 1px solid $very-light;
+            .data{
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: $black;
+               
+                &.text-rigth{
+                    text-align: right;
+                }
+            }
+        }
+       
+    }
 }
 
+.modal-dialog{
+  margin-top: 80px;
+  padding-left: 80px;
+}
+.modal-body {
+  padding: 0px;
+}
+.modal-backdrop.show{
+  opacity: .7;
+}
+
+
+ // .tab-content {
+        //     z-index: -1;
+        //     .tab-img {
+        //     height: 449px;
+        //     min-height: 449px;
+        //     background-image: url('../assets/fondo-pilar-01.png');
+        //     position: relative;
+        //     margin-left: 20px;
+        //     margin-right: 20px;
+        //     .rectangule-img {
+        //         width: 480px;
+        //         height: 160px;
+        //         background-color: #eb6767;
+        //         position: absolute;
+        //         left: 162px;
+        //         top: 235px;
+        //         p {
+        //         padding: 20px 40px 26px 40px;
+        //         font-family: 'Roboto';
+        //         font-size: 48px;
+        //         font-weight: bold;
+        //         font-style: normal;
+        //         font-stretch: normal;
+        //         line-height: normal;
+        //         letter-spacing: normal;
+        //         color: $white;
+        //         }
+        //     }
+        //     }
+        // }
 
   // .parrafos-3{
       //   -webkit-column-gap: 60px;
@@ -665,13 +919,3 @@
 
 // }
 
-// .modal-dialog{
-//   margin-top: 80px;
-//   padding-left: 80px;
-// }
-// .modal-body {
-//   padding: 0px;
-// }
-// .modal-backdrop.show{
-//   opacity: .7;
-// }

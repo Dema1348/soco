@@ -9,7 +9,8 @@
       "app.pages.financieros",
       "app.pages.accionistas",
       "app.pages.equipo",
-      "app.pages.cartas"
+      "app.pages.cartas",
+      "app.pages.tendencias"
     ])
     .config(config);
 

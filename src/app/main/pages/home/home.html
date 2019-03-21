@@ -1,6 +1,6 @@
 <div id="home">
   <div class="row ">
-    <div class="col-md-9 p-0">
+    <div class="col-sm-9 p-0">
       <div class="wrapp">
         <div class="row">
           <div class="col p-0 ">
@@ -15,11 +15,11 @@
           </div>
         </div>
         <div class="row box-wrapp">
-          <div class="col p-0 box">
-            <div class="title-box futuro" ng-mouseover="vm.futuro()">
+          <div class="col p-0 box" ng-mouseover="vm.futuro()" ng-mouseleave="vm.reset()">
+            <div class="title-box futuro" >
               Pensar en el futuro
             </div>
-            <div class="sub-title-box">
+            <div class="sub-title-box" >
               Modernización de la estructura organizacional
             </div>
             <a
@@ -29,8 +29,8 @@
               Ver más <i class="fas fa-arrow-right"></i>
             </a>
           </div>
-          <div class="col p-0 box ">
-            <div class="title-box personas" ng-mouseover="vm.personas()">
+          <div class="col p-0 box " ng-mouseover="vm.personas()" ng-mouseleave="vm.reset()">
+            <div class="title-box personas" >
               Pensar en las personas
             </div>
             <div class="sub-title-box">Diseño y venta de valor</div>
@@ -41,8 +41,8 @@
               Ver más <i class="fas fa-arrow-right"></i>
             </a>
           </div>
-          <div class="col p-0 box">
-            <div class="title-box innovacion" ng-mouseover="vm.innovacion()">
+          <div class="col p-0 box" ng-mouseover="vm.innovacion()" ng-mouseleave="vm.reset()">
+            <div class="title-box innovacion">
               Pensar en Innovación
             </div>
             <div class="sub-title-box">
@@ -55,8 +55,8 @@
               Ver más <i class="fas fa-arrow-right"></i>
             </a>
           </div>
-          <div class="col p-0 box">
-            <div class="title-box rodea" ng-mouseover="vm.rodea()">
+          <div class="col p-0 box" ng-mouseover="vm.rodea()" ng-mouseleave="vm.reset()">
+            <div class="title-box rodea" >
               Pensar en lo que nos rodea
             </div>
             <div class="sub-title-box">
@@ -69,8 +69,8 @@
               Ver más <i class="fas fa-arrow-right"></i>
             </a>
           </div>
-          <div class="col p-0 box">
-            <div class="title-box equipo" ng-mouseover="vm.equipo()">
+          <div class="col p-0 box" ng-mouseover="vm.equipo()" ng-mouseleave="vm.reset()">
+            <div class="title-box equipo" >
               Pensar en equipo
             </div>
             <div class="sub-title-box">Talento y trabajo colaborativo</div>
@@ -82,7 +82,46 @@
             </a>
           </div>
         </div>
+     
+      </div>
+    </div>
+    <div class="col-sm-3 p-0">
+      <div class="row">
+        <div class="col p-0">
+          <div class="cube-large animated rollIn delay-1s"></div>
+        </div>
+        <div class="col  p-0">
+          <div class="static-logo">
+            <div class="logo-empresa ">
+              <img src="./assets/empresas-socovesa-logo.svg" alt="" />
+            </div>
+            <div class="icon">
+              <img src="./assets/icono-buscar.svg" alt="" />
+            </div>
+            <div class="icon">
+              <img src="./assets/icono-compartir.svg" alt="" />
+            </div>
+            <div class="icon">
+              <img src="./assets/icono-download.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-sm-9 p-0">
         <div class="img-slider ">
+            <img
+                ng-if="vm.imgSliderCaras"
+                class="img-fluid animationIf "
+                src="./assets/animacion-caras.jpg"
+                srcset="
+                  ./assets/animacion-caras@2x.jpg 2x,
+                  ./assets/animacion-caras@3x.jpg 3x
+                "
+              />
           <img
             ng-if="vm.imgSliderPersonas"
             class="img-fluid animationIf "
@@ -130,34 +169,12 @@
           />
         </div>
       </div>
-    </div>
-    <div class="col-sm-3 p-0">
-      <div class="row">
-        <div class="col p-0">
-          <div class="cube-large animated rollIn delay-1s"></div>
-        </div>
-        <div class="col  p-0">
-          <div class="static-logo">
-            <div class="logo-empresa ">
-              <img src="./assets/empresas-socovesa-logo.svg" alt="" />
+      <div class="col p-0">
+         <div class="row">
+            <div class="col p-0 croquis">
+                    <img class="img-fluid" src="./assets/croquis-1.jpg" alt="" />
             </div>
-            <div class="icon">
-              <img src="./assets/icono-buscar.svg" alt="" />
-            </div>
-            <div class="icon">
-              <img src="./assets/icono-compartir.svg" alt="" />
-            </div>
-            <div class="icon">
-              <img src="./assets/icono-download.svg" alt="" />
-            </div>
-          </div>
         </div>
       </div>
-      <div class="row">
-          <div class="col p-0 croquis">
-                <img class="img-fluid" src="./assets/croquis-1.jpg" alt="" />
-          </div>
-      </div>
-    </div>
   </div>
 </div>

@@ -2,10 +2,10 @@
 	'use strict';
 
 	angular
-		.module('app.pages.financieros')
-		.controller('FinancierosController', FinancierosController);
+		.module('app.pages.tendencias')
+		.controller('TendenciasController', TendenciasController);
 
-	function FinancierosController($scope, $uibModal) {
+	function TendenciasController($scope, $uibModal) {
 		var vm = this;
 		vm.openModal = openModal;
 

@@ -48,6 +48,7 @@
     z-index: -1;
     img {
       position: absolute;
+      width: 100%;
     }
   }
 
@@ -127,7 +128,10 @@
   }
 
   .croquis{
-    margin-top: 47px;
+    margin-top: -140px;
+     img{
+        width: 100%;
+     }
   }
   .static-logo{
       padding-right: 21px;

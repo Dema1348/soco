@@ -1,171 +1,216 @@
 <div id="financieros" class="financieros">
-  <div class="row image-background financieros">
-    <div class="col-md-12 padding-body">
-      <div class="header">
-        Home /<span class="white">Highlights Estratégicos</span>
-      </div>
-      <div class="title">
-        Visión y agenda <br />
-        estratégica
-      </div>
-      <div class="divider-header "></div>
-
-      <img
-        ng-click="vm.openModal()"
-        src="./assets/boton-play.svg"
-        class="button-play "
-      />
-    </div>
-  </div>
-  <div class="cita ">
-    Durante los últimos cuatro ejercicios, la Compañía ha logrado cifras récord de utilidades que se han superado año tras año. El 2017 fue MM$ 40.056 lo que corresponde a un aumento equivalente a 14% respecto del 2016. Estos resultados se explican por los altos márgenes del negocio y el menor nivel de gastos financieros, producto de un adecuado ajuste entre oferta y demanda inmobiliaria y de menores tasas de interés.
-  </div>
-  <div class="divider"></div>
-  <section class="row">
-    <div class="col-md-6 box-parrafos">
-        <p class="title">Precio acción v/s ipsa 2016 e índice inmobiliario</p>
-
-    </div>
-    <div class="col-md-6"></div>
-    <div class="col-md-6 box-parrafos ">
-      <p class="big">
-        El incremento del precio de la acción refleja que el mercado entiende que la Empresa está en un buen pie para enfrentar el nuevo ciclo económico.
-      </p>
-    </div>
-    <div class="col-md-6 box-image ">
-    
-      
-      <img
-        class="img-chart  "
-        src="./assets/grafico-accion-vs-ipsa.png"
-        srcset="./assets/grafico-accion-vs-ipsa@2x.jpg 2x, ./assets/grafico-accion-vs-ipsa@3x.jpg 3x"
-        
-      />
-    </div>
-  </section>
-
-  <section class="tabs-equipo ">
-    <uib-tabset active="0">
-      <uib-tab class="equipo " index="0" heading="Evolución Ingresos Consolidados">
-        <div class="info-tab row">
-          <div class="col-sm-5 p-0">
-            <div class="text">
-                Los ingresos aumentaron un 15% con respecto al 2016. Su composición ha migrado hacia los mercados y segmentos más rentables
-            </div>
-          </div>
-          <div class="col-sm-7 p-0 charts ">
-              <img src="./assets/grafico-evolucion-ingresos-consolidados.png"
-              srcset="./assets/grafico-evolucion-ingresos-consolidados@2x.png 2x,
-                      ./assets/grafico-evolucion-ingresos-consolidados@3x.png 3x"
-              >
-          </div>
-        </div>
-      </uib-tab>
-      <uib-tab class="equipo " index="1" heading="Evolución Utilidades">
-          <div class="info-tab row">
-              <div class="col-sm-5 p-0">
-                <div class="text">
-                    Los ingresos aumentaron un 15% con respecto al 2016. Su composición ha migrado hacia los mercados y segmentos más rentables
+	<div class="row  image-background financieros">
+		<div class="col  p-0">
+			<div class="header">
+				Home /<span class="white">Highlights financieros</span>
+			</div>
+			<div class="title white">
+				Highlights <br />
+				financieros
+			</div>
+			<div class="divider-header "></div>
+		</div>
+		<div class="col col-sm-1 p-0">
+			<div class="cube animated rollIn delay-1s"></div>
+			<div class="cube-large-2 animated rollIn delay-1s"></div>
+		</div>
+		<div class="col-sm-3 p-0">
+			<div class="row">
+				<div class="col p-0">
+					<div class="cube-large animated rollIn delay-1s"></div>
+				</div>
+				<div class="col  p-0">
+					<div class="static-logo">
+						<div class="logo-empresa ">
+							<img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
+						</div>
+						<div class="icon">
+							<img src="./assets/icono-buscar-blanco.svg" alt="" />
+						</div>
+						<div class="icon">
+							<img src="./assets/icono-compartir-blanco.svg" alt="" />
+						</div>
+						<div class="icon">
+							<img src="./assets/icono-download-blanco.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapp-play">
+			<img
+				ng-click="vm.openModal()"
+				src="./assets/boton-play.svg"
+				class="button-play "
+			/>
+			<div class="title-video">(Video Resultados)</div>
+		</div>
+	</div>
+	<div class="cita ">
+		El 2018 Empresas Socovesa sobrepasó por quinto año consecutivo el umbral del
+		MMUF 1 en utilidades y alcanzó ingresos superiores a lo presupuestado, con
+		un margen bruto que se mantuvo en 28%. La Compañía además se preparó y
+		modernizó internamente para enfrentar el nuevo ciclo de crecimiento
+		económico.
+	</div>
+	<div class="divider"></div>
+	<section class="tabs-financiero ">
+		<uib-tabset active="0" justified="true">
+			<uib-tab class="financiero " index="0" heading="Ingresos y Margen">
+				<div class="info-tab row">
+					<div class="col-sm-5 p-0">
+						<div class="text">
+							Empresas Socovesa registró ingresos un 17% inferior a los del año
+							2017. Sin embargo, el margen bruto total prácticamente se mantiene
+							en relación al 2018, a pesar de la baja en la escrituración.
+						</div>
+					</div>
+					<div class="col-sm-7 p-0 charts ">
+						<img
+							src="./assets/grafico-ingresos-margen.png"
+							srcset="
+								./assets/grafico-ingresos-margen@2x.png 2x,
+								./assets/grafico-ingresos-margen@3x.png 3x
+							"
+							class="img-fluid"
+						/>
+					</div>
+				</div>
+			</uib-tab>
+			<uib-tab class="financiero" index="1" heading="EBITDA">
+				<div class="info-tab row">
+					<div class="col-sm-5 p-0">
+						<div class="text">
+							Margen Ebitda se mantiene en niveles de 19%.
+						</div>
+					</div>
+					<div class="col-sm-7 p-0 charts ">
+						<img
+							src="./assets/grafico-ebitda.png"
+							srcset="
+								./assets/grafico-ebitda@2x.png 2x,
+								./assets/grafico-ebitda@3x.png 3x
+							"
+							class="img-fluid"
+						/>
+					</div>
+				</div>
+			</uib-tab>
+			<uib-tab class="financiero" index="2" heading="UTILIDAD Y ROE">
+				<div class="info-tab row">
+					<div class="col-sm-5 p-0">
+						<div class="text">
+							El ROE mejora XXX puntos porcentuales el 2018.
+						</div>
+					</div>
+					<div class="col-sm-7 p-0 charts ">
+						<img
+							src="./assets/grafico-utilidad-roe.png"
+							srcset="
+								./assets/grafico-utilidad-roe@2x.png 2x,
+								./assets/grafico-utilidad-roe@3x.png 3x
+							"
+							class="img-fluid"
+						/>
+					</div>
+				</div>
+			</uib-tab>
+		</uib-tabset>
+    </section>
+	<section class="row box-parrafos background-color">
+		<div class="col-sm-12 p-0 ">
+			<p class="title-small">Precio de la acción de Socovesa S.A. vs IPSA</p>
+		</div>
+		<div class="col-sm-12 p-0 ">
+			<img
+				src="./assets/grafico-precio-de-la-accion.png"
+				srcset="
+					./assets/grafico-precio-de-la-accion@2x.png 2x,
+					./assets/grafico-precio-de-la-accion@3x.png 3x
+				"
+				class="img-fluid img-chart"
+			/>
+		</div>
+    </section>
+    <section>
+            <div class="row ">
+                <div class="col-sm-8 p-0 table">
+                    <div class="row header">
+                        <div class="col p-0 title">Indicadores de la Acción</div>
+                        <div class="col p-0 title text-rigth">Dic. 18</div>
+                        <div class="col p-0 title text-rigth">Dic. 17</div>
+                    </div>
+                    <div class="row wrapp-data">
+                        <div class="col p-0 data ">Nº acciones (MM)</div>
+                        <div class="col p-0 data text-rigth">1.223,9</div>
+                        <div class="col p-0 data text-rigth">1.223,9</div>
+                    </div>
+                    <div class="row wrapp-data">
+                            <div class="col p-0 data ">Precio acción al cierre ($)</div>
+                            <div class="col p-0 data text-rigth">392</div>
+                            <div class="col p-0 data text-rigth">400</div>
+                    </div>
+                    <div class="row wrapp-data">
+                            <div class="col p-0 data ">Valor libro ($)</div>
+                            <div class="col p-0 data text-rigth">275</div>
+                            <div class="col p-0 data text-rigth">259</div>
+                    </div>
+                    <div class="row wrapp-data">
+                            <div class="col p-0 data ">Patrimonio bursátil (MM$)</div>
+                            <div class="col p-0 data text-rigth">479.783</div>
+                            <div class="col p-0 data text-rigth">489.574</div>
+                    </div>
+                    <div class="row wrapp-data">
+                            <div class="col p-0 data ">Bolsa / Libro (veces)</div>
+                            <div class="col p-0 data text-rigth">1,4 x</div>
+                            <div class="col p-0 data text-rigth">1,5 x</div>
+                    </div>
+                    <div class="row wrapp-data">
+                            <div class="col p-0 data ">Precio / Utilidad (veces)</div>
+                            <div class="col p-0 data text-rigth">13,7</div>
+                            <div class="col p-0 data text-rigth">12,2 xx</div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-7 p-0 charts ">
-                  <img src="./assets/grafico-evolucion-ingresos-consolidados.png"
-                  srcset="./assets/grafico-evolucion-ingresos-consolidados@2x.png 2x,
-                          ./assets/grafico-evolucion-ingresos-consolidados@3x.png 3x"
-                  >
-              </div>
-            </div>
-      </uib-tab>
-      <uib-tab class="equipo " index="2" heading="Margen EBITDA">
-          <div class="info-tab row">
-              <div class="col-sm-5 p-0">
-                <div class="text">
-                    Los ingresos aumentaron un 15% con respecto al 2016. Su composición ha migrado hacia los mercados y segmentos más rentables
+                <div class="col p-0 align-self-end" >
+                        <img src="./assets/croquis-2.jpg"
+                        srcset="./assets/croquis-2@2x.jpg 2x,
+                                ./assets/croquis-2@3x.jpg 3x"
+                        class="img-fluid">
                 </div>
-              </div>
-              <div class="col-sm-7 p-0 charts ">
-                  <img src="./assets/grafico-evolucion-ingresos-consolidados.png"
-                  srcset="./assets/grafico-evolucion-ingresos-consolidados@2x.png 2x,
-                          ./assets/grafico-evolucion-ingresos-consolidados@3x.png 3x"
-                  >
-              </div>
             </div>
-      </uib-tab>
-      <uib-tab class="equipo " index="3" heading="Evolución ROE">
-          <div class="info-tab row">
-              <div class="col-sm-5 p-0">
-                <div class="text">
-                    Los ingresos aumentaron un 15% con respecto al 2016. Su composición ha migrado hacia los mercados y segmentos más rentables
-                </div>
-              </div>
-              <div class="col-sm-7 p-0 charts ">
-                  <img src="./assets/grafico-evolucion-ingresos-consolidados.png"
-                  srcset="./assets/grafico-evolucion-ingresos-consolidados@2x.png 2x,
-                          ./assets/grafico-evolucion-ingresos-consolidados@3x.png 3x"
-                  >
-              </div>
-            </div>
-      </uib-tab>
-    </uib-tabset>
-  </section>
-  <!-- <div class="sub-menu row align-items-center justify-content-between ">
-    <div class="col section ">
-      <i class="fas fa-chevron-left"></i> Carta JGR
+    </section>
+	<div class="sub-menu row align-items-center justify-content-between ">
+		<div class="col section " ui-sref="app.pages.home">
+			<i class="fas fa-chevron-left"></i> Inicio
+		</div>
+		<div class="col section  text-right">
+			Modernización de la estructura organizacional
+			<i class="fas fa-chevron-right"></i>
+		</div>
+	</div>
+	<div class="footer row justify-content-center">
+		<button
+			type="button"
+			class="btn btn-outline-secondary button-soco-outline  "
+		>
+			Descargar Capítulo
+		</button>
     </div>
-    <div class="col section  text-right">
-      Transformaciones del habitar <i class="fas fa-chevron-right"></i>
-    </div>
-  </div>
-  <div class="footer row justify-content-center">
-    <button
-      type="button"
-      class="btn btn-outline-secondary button-soco-outline  "
-    >
-      Descargar Informe Completo
-    </button>
-  </div> -->
-  <div class="float-logo ">
-    <img
-      class="cube-large "
-      src="./assets/cube-large.svg"
-      alt=""
-    />
-    <img
-      class="cube-large-2 "
-      src="./assets/cube-large.svg"
-      alt=""
-    />
-    <img class="cube " src="./assets/cube.svg" alt="" />
-
-    <div class="logo-empresa ">
-      <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
-    </div>
-    <div class="icon">
-      <img class="white" src="./assets/icono-buscar-blanco.svg" alt="" />
-    </div>
-    <div class="icon">
-      <img class="white" src="./assets/icono-compartir-blanco.svg" alt="" />
-    </div>
-    <div class="icon">
-      <img class="white" src="./assets/icono-download.svg" alt="" />
-    </div>
-  </div>
-  <!-- Modal -->
-  <script
-   type="text/ng-template"
+    <!-- Modal -->
+    <script
+    type="text/ng-template"
     id="videoModal.html"
     class="modal-video"
-  >
+    >
     <div class="modal-body" id="modal-body">
-      <!-- 16:9 aspect ratio -->
-      <div class="embed-responsive embed-responsive-16by9" ng-if="vm.src">
+        <div class="embed-responsive embed-responsive-16by9" ng-if="vm.src">
         <video controls autoplay id="demoVideo"
         >
         <source src="./assets/{{vm.src}}" type="video/mp4">
-          Your browser does not support HTML5 video.
+            Your browser does not support HTML5 video.
 
-      </video>
-      </div>
+        </video>
+        </div>
     </div>
-  </script>
+    </script>
 </div>
