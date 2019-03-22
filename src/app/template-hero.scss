@@ -5,7 +5,8 @@
 #carta-presidente,
 #tendencias,
 #carta-gerente-general,
-#mordernizacion {
+#mordernizacion ,
+#sostenibilidad{
   margin-left: 80px;
   margin-right: 0;
 
@@ -46,7 +47,9 @@
     }
     &.mordernizacion{
       background-image: url('../assets/hero-mordernizacion.jpg');
-
+    }
+    &.sostenibilidad{
+      background-image: url('../assets/hero-sostenibilidad.jpg');
     }
   }
 
@@ -160,6 +163,54 @@
     margin-bottom: 50px;
   }
 
+  .parrafo-dark{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    color: $black;
+  }
+   
+  .parrafo {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: $brown-grey-three;  
+  }
+
+  .one{
+    padding-right: 20px!important;
+    padding-left: 0!important;
+  }
+  .one-special{
+    padding-right: 60px!important;
+    padding-left: 0!important;
+  }
+  .two{
+    padding-right: 20px!important;
+    padding-left: 20px!important;
+  }
+  .three{
+    padding-right: 0!important;
+    padding-left: 20px!important;
+  }
+  .three-special{
+    padding-right: 0!important;
+    padding-left: 60px!important;
+  }
+  .three-special-2{
+    padding-right: 160px!important;
+    padding-left: 60px!important;
+    padding-top: 50px!important;
+  }
+
   .box-parrafos {
     padding: 0 60px;
     &.background-color{
@@ -232,27 +283,7 @@
       color:$black;
       margin-bottom: 19px;
      }
-    .parrafo-dark{
-      font-family: 'Roboto';
-      font-size: 18px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.22;
-      letter-spacing: normal;
-      color: $black;
-    }
-     
-    .parrafo {
-      font-family: 'Roboto';
-      font-size: 16px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.38;
-      letter-spacing: normal;
-      color: $brown-grey-three;  
-    }
+   
     .saludos{
       padding-top: 50px;
       margin: 0;
@@ -279,18 +310,7 @@
       line-height: 1.56;
       letter-spacing: normal;
     }
-    .one{
-      padding-right: 20px!important;
-      padding-left: 0!important;
-    }
-    .two{
-      padding-right: 20px!important;
-      padding-left: 20px!important;
-    }
-    .three{
-      padding-right: 0!important;
-      padding-left: 20px!important;
-    }
+    
     .img-chart{
         width: 100%;
     }
@@ -480,6 +500,105 @@
     padding-right: 70px;
   }
    //MODERNIZACION
+   //SOSTENIBILIDAD
+   .title-sostenibilidad{
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    color: $greenwater-dark;
+    margin-bottom: 30px;
+   }
+   .title-sostenibilidad-2{
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    color: $greenwater-dark;
+    margin-bottom: 30px;
+    max-width: 580px;
+    margin-top: 50px;
+   }
+   .text-sostenibilidad{
+    font-family: 'Playfair Display';
+    font-size: 31px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $greenwater-dark;
+    margin-bottom: 30px;
+   }
+   .text-sostenibilidad-2{
+    font-family: 'Playfair Display';
+    font-size: 31px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $greenwater-dark;
+    margin-left: 60px;
+    margin-bottom: 30px;
+
+   }
+   .margin-sostenibilidad{
+    margin-right: 160px;
+   }
+   .margin-sostenibilidad-2{
+    margin-left: 60px;
+   }
+   .margin-sostenibilidad-3{
+     margin-right: 60px;
+   }
+   .croquis-sostenibilidad{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+   }
+   .img-sostenibilidad{
+    padding-right: 50px;
+   }
+   .background-sostenibilidad{
+    background-color: $very-light-two;
+   }
+   .cita-sostenibilidad{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: $brown-grey-three;
+    padding-right: 40px;
+    margin-bottom: 50PX;
+
+   }
+   .croquis-9{
+    position: absolute;
+    right: 0;
+    top: 0;
+   }
+   //SOSTENIBILIDAD
+  //EQUIPO
+  .croquis-5{
+    position: absolute;
+    top: 272px;
+    right: 0;
+    z-index: -1;
+  }
+    //EQUIPO
+
   .tabs-financiero {
         padding: 50px 60px;
         .nav-tabs {
@@ -878,7 +997,262 @@
        
     }
    
-  } 
+  }
+  .tabs-sostenibilidad {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 50px;
+
+    .nav-tabs {
+        margin: 0 4px;
+        border: 0;
+        padding-bottom: 50px;
+        margin-right: 188px;
+        margin-left: 20px;
+
+        li{
+            border-bottom: 1px solid #e0e0e0;
+        }
+        a {
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            font-family: 'Roboto';
+            font-size: 20px;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $black;
+            text-decoration: none;
+            padding: 0;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            background: transparent;
+            &.active {
+                font-family: 'Roboto';
+                font-size: 20px;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: $greenwater-dark;
+                border-bottom: 2px solid $greenwater-dark;
+            }
+        }
+    }
+    .tab-content{
+        .text{
+            font-family: 'Roboto';
+            font-size: 24px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: $brown-grey-three;
+        }
+        .sub-title-tab{
+          font-family: 'Roboto';
+          font-size: 24px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $blue-dark;
+          margin-top: 6px;
+        }
+        .info{
+            font-size: 16px;
+            font-style: normal;
+            font-stretch: normal;
+            font-family: 'Roboto';
+            font-style: italic;
+            color: $brown-grey-three;
+            margin-top: 20px;
+        }
+       
+    }
+   
+  }  
+  .tabs-equipo {
+    padding: 50px 60px;
+    padding-bottom: 0;
+    position: relative;
+    .equipo-divider{
+      margin-top: 140px;
+      margin-bottom: 100px;
+    }
+    .title-equipo{
+      font-family: 'Roboto';
+      font-size: 48px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $black;
+      margin-bottom: 30px;
+    }
+    .nombre{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $black;
+      margin-bottom: 10px;
+
+    }
+    .cargo{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $blue-dark;
+      margin-bottom: 10px;
+      max-width: 187px;
+
+    }
+    .cargo-2{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $blue-dark;
+      
+
+    }
+    .divider-equipo{
+      margin: 30px 0;
+      height: 1px;
+      background-color: #b2b2b2;
+    }
+    .rut{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $black;
+      margin-bottom: 20px;
+
+    }
+    .info-equipo{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $brown-grey-three;
+      padding-top: 20px;
+      border-top: 1px solid $black;
+      margin-bottom: 50px;
+
+    }
+    .info-equipo-2{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $brown-grey-three;
+      margin-bottom: 30px;
+
+    }
+    .img-persona{
+      margin-bottom: 30px;
+    }
+    .equipo-box{
+      margin-left: 30px;
+      
+    }
+    
+    .equipo-maring{
+      margin-left: 30px;     
+    }
+    .nav-tabs {
+        margin: 0 4px;
+        border: 0;
+        padding-bottom: 63px;
+        li{
+            border-bottom: 1px solid #e0e0e0;
+        }
+        a {
+          border-top: 0;
+          border-right: 0;
+          border-left: 0;
+          font-family: 'Roboto';
+          font-size: 20px;
+          font-weight: 300;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: $black;
+          text-decoration: none;
+          padding: 0;
+          padding-bottom: 6px;
+          margin: 0 auto;
+          min-height: 55px;
+          &.active {
+              font-family: 'Roboto';
+              font-size: 20px;
+              font-weight: bold;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: $black;
+              border-bottom: 2px solid $black;
+
+          }
+      }
+    }
+    .tab-content{
+        .text{
+            font-family: 'Roboto';
+            font-size: 24px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: $brown-grey-three;
+        }
+        .info{
+            font-size: 16px;
+            font-style: normal;
+            font-stretch: normal;
+            font-family: 'Roboto';
+            font-style: italic;
+            color: $brown-grey-three;
+            margin-top: 20px;
+        }
+        .charts{
+            padding-left: 55px!important;
+        }
+    }
+    
+}
 
 
 

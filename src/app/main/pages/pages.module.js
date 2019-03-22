@@ -11,7 +11,8 @@
       "app.pages.equipo",
       "app.pages.cartas",
       "app.pages.tendencias",
-      "app.pages.modernizacion"
+      "app.pages.modernizacion",
+      "app.pages.sostenibilidad"
     ])
     .config(config);
 

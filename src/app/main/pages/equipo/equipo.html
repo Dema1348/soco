@@ -1,80 +1,268 @@
 <div id="equipo" class="equipo">
-  <div class="row image-background equipo">
-    <div class="col-md-12 padding-body">
-      <div class="header">
-        Home /<span class="white">Equipo</span>
-      </div>
-      <div class="title ">
-          Equipo
-      </div>
-      <div class="divider-header "></div>
-
+    <div class="row  image-background equipo">
     
-    </div>
-  </div>
-  <div class="cita ">
-      Durante el año 2018, la Compañía trabajó en la definición y formalización no solo de su propósito, el cual responde a la pregunta de por qué hacemos lo que hacemos, sino también de los principios o valores que fundan el quehacer de Empresas Socovesa.  </div>
-  <div class="divider"></div>
- 
-  
-  <div class="sub-menu row align-items-center justify-content-between ">
-    <div class="col section ">
-      <i class="fas fa-chevron-left"></i> Carta JGR
-    </div>
-    <div class="col section  text-right">
-        Transformaciones del habitar <i class="fas fa-chevron-right"></i>
-    </div>
-  </div>
-  <div class="footer row justify-content-center">
-    <button
-      type="button"
-      class="btn btn-outline-secondary button-soco-outline  "
-    >
-    Descargar Capítulo
-    </button>
-  </div>
-  <div class="float-logo ">
-    <img
-      class="cube-large "
-      src="./assets/cube-large.svg"
-      alt=""
-    />
-    <img
-      class="cube-large-2 "
-      src="./assets/cube-large.svg"
-      alt=""
-    />
-    <img class="cube " src="./assets/cube.svg" alt="" />
-
-    <div class="logo-empresa ">
-      <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
-    </div>
-    <div class="icon">
-      <img class="white" src="./assets/icono-buscar-blanco.svg" alt="" />
-    </div>
-    <div class="icon">
-      <img class="white" src="./assets/icono-compartir-blanco.svg" alt="" />
-    </div>
-    <div class="icon">
-      <img class="white" src="./assets/icono-download.svg" alt="" />
-    </div>
-  </div>
-  <!-- Modal -->
-  <script
-   type="text/ng-template"
-    id="videoModal.html"
-    class="modal-video"
-  >
-    <div class="modal-body" id="modal-body">
-      <!-- 16:9 aspect ratio -->
-      <div class="embed-responsive embed-responsive-16by9" ng-if="vm.src">
-        <video controls autoplay id="demoVideo"
-        >
-        <source src="./assets/{{vm.src}}" type="video/mp4">
-          Your browser does not support HTML5 video.
-
-      </video>
+        <div class="col  p-0">
+          <div class="header">
+            Home /<span class="white">Equipo</span>
+          </div>
+          <div class="title white">
+              Equipo
+          </div>
+          <div class="divider-header white"></div>
+        </div>
+        <div class="col col-sm-1 p-0">
+            <div class="cube animated rollIn delay-1s"></div>
+            <div class="cube-large-2 animated rollIn delay-1s"></div>
+        </div>
+        <div class="col-sm-3 p-0">
+            <div class="row">
+              <div class="col p-0">
+                <div class="cube-large animated rollIn delay-1s"></div>
+              </div>
+              <div class="col  p-0">
+                <div class="static-logo">
+                  <div class="logo-empresa ">
+                    <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icono-buscar-blanco.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icono-compartir-blanco.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./assets/icono-download-blanco.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
-    </div>
-  </script>
+      <div class="cita ">
+          Durante el año 2018, la Compañía trabajó en la definición y formalización no solo de su propósito, el cual responde a la pregunta de por qué hacemos lo que hacemos, sino también de los principios o valores que fundan el que hacer de Empresas Socovesa.
+      </div>
+      <div class="divider"></div>
+      <section class="tabs-equipo ">
+          <uib-tabset active="3" justified="true">
+            <uib-tab class="equipo " index="0" heading="DIRECTORIO">
+              <div class="title-equipo"> Directorio</div>
+              <div class="row">
+                <div class="col col-sm-3 p-0 one">
+                    <img src="./assets/javier-gras.jpg"
+                    srcset="./assets/javier-gras@2x.jpg 2x,
+                            ./assets/javier-gras@3x.jpg 3x"
+                    class="img-fluid  img-persona">
+                </div>
+                <div class="col col-sm-6 p-0 ">
+                  <div class="nombre">Javier Gras Rudloff</div>
+                  <div class="cargo">Presidente</div>
+                  <div class="rut">Rut: 7.232.243-6</div>
+                  <div class="info-equipo">Javier Gras es Diplomado en Control y Gestión de Ventas de la Universidad de Chile y ha estado relacionado con el negocio inmobiliario gran parte su vida. Fue testigo del nacimiento, crecimiento y expansión de la compañía que fundó Eduardo Gras Díaz en 1965, y hace más de 25 años está vinculado formalmente a Socovesa.</div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col col-sm-4 p-0 one">
+                      <img src="./assets/justino-negron.jpg"
+                      srcset="./assets/justino-negron@2x.jpg 2x,
+                              ./assets/justino-negron@3x.jpg 3x"
+                      class="img-fluid img-persona ">
+                      <div class="nombre">Justino Negrón Bornard</div>
+                    <div class="cargo">Vicepresidente</div>
+                    <div class="rut">Rut: 4.726.258-5</div>
+                    <div class="info-equipo">Justino Negrón es Contador General y está ligado a la Compañtía desde su fundación en 1965. Es Director de Empresas Socovesa desde su apertura en Bolsa en 2007.</div>
+                  </div>
+                  <div class="col col-sm-4 p-0 two">
+                      <img src="./assets/fernando-barros.jpg"
+                      srcset="./assets/fernando-barros@2x.jpg 2x,
+                              ./assets/fernando-barros@3x.jpg 3x"
+                      class="img-fluid img-persona ">
+                      <div class="nombre">Fernando Barros Tocornal</div>
+                    <div class="cargo">Director</div>
+                    <div class="rut">Rut: 6.379.075-3</div>
+                    <div class="info-equipo">Abogado de la Facultad de Derecho de la Universidad de Chile y socio fundador del estudio jurídico Barros & Errázuriz Abogados. Su área de expertise es el derecho tributario, derecho de la competencia, corporativo, M&A, mercado de valores e inmobiliario.</div>
+                  </div>
+                  <div class="col col-sm-4 p-0 three">
+                      <img src="./assets/vicente-dominguez.jpg"
+                      srcset="./assets/vicente-dominguez@2x.jpg 2x,
+                              ./assets/vicente-dominguez@3x.jpg 3x"
+                      class="img-fluid img-persona ">
+                      <div class="nombre">Vicente Domínguez Vial</div>
+                    <div class="cargo">Director</div>
+                    <div class="rut">Rut: 4.976.147-3</div>
+                    <div class="info-equipo">Abogado de la Pontificia Universidad Católica de Chile con especialización en el área económica de la Westfälische W. Universität (Alemania). Es también Director Ejecutivo de la Asociación de Desarrolladores Inmobiliarios A.G (ADI) y director de empresas de rubros inmobiliario, turismo, educación, farmacéutico y servicios sanitarios.</div>
+                  </div>
+                  
+              </div>
+              <div class="row">
+                  <div class="col col-sm-4 p-0 one">
+                      <img src="./assets/nicolas-gellona.jpg"
+                      srcset="./assets/nicolas-gellona@2x.jpg 2x,
+                              ./assets/nicolas-gellona@3x.jpg 3x"
+                      class="img-fluid img-persona ">
+                      <div class="nombre">Nicolás Gellona Atmunátegui</div>
+                    <div class="cargo">Director</div>
+                    <div class="rut">Rut: 6.372.987-6</div>
+                    <div class="info-equipo">Ingeniero Comercial de la Pontificia Universidad Católica de Chile y MBA de la Universidad de Chicago (Estados Unidos). Es director y asesor en varias empresas pertenecientes a los rubros inmobiliario, financiero, seguros, administración de inversiones y family office. En el ámbito académico, ha sido profesor de la Facultad de Economía y Administración de la Universidad de Chile.</div>
+                  </div>
+                  <div class="col col-sm-4 p-0 two">
+                      <img src="./assets/rodrigo-gras.jpg"
+                      srcset="./assets/rodrigo-gras@2x.jpg 2x,
+                              ./assets/rodrigo-gras@3x.jpg 3x"
+                      class="img-fluid img-persona ">
+                      <div class="nombre">Rodrigo Gras Rudloff</div>
+                    <div class="cargo">Director</div>
+                    <div class="rut">Rut: 10.004.883-7</div>
+                    <div class="info-equipo">Constructor Civil y MBA en Finanzas y Gerencia Internacional. Cuenta con gran experiencia en finanzas, en el rubro inmobiliario y de la construcción. Presidente Ejecutivo de la Viña Montgras y de la Agrícola Mollendo, mayor empresa nacional de exportación de carne premium. </div>
+                  </div>
+                  <div class="col col-sm-4 p-0 three">
+                      <img src="./assets/tomas-izquierdo.jpg"
+                      srcset="./assets/tomas-izquierdo@2x.jpg 2x,
+                              ./assets/tomas-izquierdo@3x.jpg 3x"
+                      class="img-fluid img-persona ">
+                      <div class="nombre">Tomás Izquierdo Silva</div>
+                    <div class="cargo">Director</div>
+                    <div class="rut">Rut: 7.015.896-5</div>
+                    <div class="info-equipo">Ingeniero Comercial de la Universidad de Chile, es consultor de varias empresas del sector público y privado, nacionales y extranjeras. Actualmente es Gerente General de Gemines, empresa dedicada a la asesoría en economía y finanzas, con una alta especialización en el análisis del mercado inmobiliario y la proyección de variables claves de la economía.</div>
+                  </div>
+                  
+              </div>
+            </uib-tab>
+            <uib-tab class="equipo" index="1" heading="COMITE EJECUTIVO">
+                <div class="title-equipo"> Comité Ejecutivo</div>
+                <div class="row">
+                    <div class="col col-sm-4 p-0 one-special">
+                        <img src="./assets/rene-castro.jpg"
+                        srcset="./assets/rene-castro@2x.jpg 2x,
+                                ./assets/rene-castro@3x.jpg 3x"
+                        class="img-fluid w-100 img-persona ">
+                        <div class="nombre">René Castro Delgado</div>
+                      <div class="cargo">Ingeniero Civil Estructural de la 
+                          Universidad de Chile</div>
+                    </div>
+
+                    <div class="col col-sm-4 p-0 three-special">
+                        <img src="./assets/javier-gras.jpg"
+                        srcset="./assets/javier-gras@2x.jpg 2x,
+                                ./assets/javier-gras@3x.jpg 3x"
+                        class="img-fluid w-100 img-persona ">
+                        <div class="nombre">Javier Gras Rudloff</div>
+                      <div class="cargo">Diplomado en Gestión y Ventas de la Universidad de Chile </div>
+                      
+                    </div>
+                    
+                </div>
+                
+                <div class="row equipo-divider">
+                    <div class="col col-sm-4 p-0 one-special">
+                        <img src="./assets/hugo-ovando.jpg"
+                        srcset="./assets/hugo-ovando@2x.jpg 2x,
+                                ./assets/hugo-ovando@3x.jpg 3x"
+                        class="img-fluid w-100 img-persona ">
+                        <div class="nombre">Hugo Ovando Zeballos</div>
+                      <div class="cargo">Ingeniero Comercial de la Pontificia Universidad Católica de Chile y MBA Chicago University</div>
+                    </div>
+                    <div class="col col-sm-4 p-0 three-special">
+                        <img src="./assets/mauricio-varela.jpg"
+                        srcset="./assets/mauricio-varela@2x.jpg 2x,
+                                ./assets/mauricio-varela@3x.jpg 3x"
+                        class="img-fluid w-100 img-persona ">
+                        <div class="nombre">Mauricio Varela Labbé</div>
+                      <div class="cargo">Ingeniero Comercial de la Pontificia Universidad Católica de Chile y MBA New York University </div>
+                      
+                    </div>
+                    
+                </div>
+                <img src="./assets/croquis-5.jpg"
+                    srcset="./assets/croquis-5@2x.jpg 2x,
+                            ./assets/croquis-5@3x.jpg 3x"
+                    class="croquis-5">
+            </uib-tab>
+            <uib-tab class="equipo" index="2" heading="GERENTE GENERAL EMPRESAS SOCOVESA">
+                <div class="title-equipo"> Gerente General <br>
+                    empresas Socovesa</div>
+                   <div class="row">
+                       <div class="col col-sm-4 p-0 one">
+                        <img src="./assets/mauricio-varela.jpg"
+                        srcset="./assets/mauricio-varela@2x.jpg 2x,
+                                ./assets/mauricio-varela@3x.jpg 3x"
+                        class="img-fluid  w-100 img-persona ">
+                    </div>
+                    <div class="col col-sm-6 p-0 three">
+                        <div class="nombre">Mauricio Varela Labbé</div>
+                       <div class="cargo-2">Ingeniero Comercial de la Pontificia Universidad Católica de Chile y MBA New York University </div>
+                       <div class="divider-equipo"></div>
+                       <div class="info-equipo-2">Ingeniero comercial y MBA de la Universidad de Nueva York, Mauricio Varela ha liderado el proceso de modernización cultural y competitiva de Empresas Socovesa, evolucionando desde un desarrollador de viviendas económicas y para segmentos medios, a definirse en la actualidad como una empresa de diseño, multimarca y multisegmento, con especial foco en el consumidor, dedicada en su mayoría, al desarrollo en altura.</div>
+                       <div class="info-equipo-2">Como Gerente General, lideró el incremento en las utilidades de la Compañía, especialmente a partir del año 2017, alcanzando los últimos años cifras históricas que sobre el millón de UF. Desde su cargo, Varela encabezó la redefinición de los equipos ejecutivos y la profesionalización de sus procesos de trabajo.</div>
+                       <div class="info-equipo-2">Su carrera partió en 1996 en la marca Socovesa, recién salido de la universidad, como Jefe de Estudios donde luego fue su Gerente de Planificación y Desarrollo. Tras la adquisición de Almagro y la formación del Grupo Empresas Socovesa, Mauricio Varela asumió como Gerente General de Almagro, cargo que ocupó hasta mayo 2010 cuando pasó a liderar el área inmobiliaria del holding. A partir del 2016, y con la eliminación de la gerencia de Ingeniería y Construcción, Mauricio pasó a liderar íntegramente a la Compañía.</div>
+                   </div>
+                   </div>
+            </uib-tab>
+            <uib-tab class="equipo" index="3" heading="GERENTES INMOBILIARIO">
+                <div class="title-equipo">Gerentes Inmobiliarios</div>
+                <div class="row">
+                    <div class="col col-sm-4 p-0 one-special">
+                        <img src="./assets/rene-castro.jpg"
+                        srcset="./assets/rene-castro@2x.jpg 2x,
+                                ./assets/rene-castro@3x.jpg 3x"
+                        class="img-fluid w-100 img-persona ">
+                        <div class="nombre">René Castro Delgado</div>
+                      <div class="cargo">Ingeniero Civil Estructural de la 
+                          Universidad de Chile</div>
+                    </div>
+
+                    <div class="col col-sm-4 p-0 three-special">
+                        <img src="./assets/javier-gras.jpg"
+                        srcset="./assets/javier-gras@2x.jpg 2x,
+                                ./assets/javier-gras@3x.jpg 3x"
+                        class="img-fluid w-100 img-persona ">
+                        <div class="nombre">Javier Gras Rudloff</div>
+                      <div class="cargo">Diplomado en Gestión y Ventas de la Universidad de Chile </div>
+                      
+                    </div>
+                    
+                </div>
+                
+                <div class="row equipo-divider">
+                    <div class="col col-sm-4 p-0 one-special">
+                        <img src="./assets/hugo-ovando.jpg"
+                        srcset="./assets/hugo-ovando@2x.jpg 2x,
+                                ./assets/hugo-ovando@3x.jpg 3x"
+                        class="img-fluid w-100 img-persona ">
+                        <div class="nombre">Hugo Ovando Zeballos</div>
+                      <div class="cargo">Ingeniero Comercial de la Pontificia Universidad Católica de Chile y MBA Chicago University</div>
+                    </div>
+                    <div class="col col-sm-4 p-0 three-special">
+                        <img src="./assets/mauricio-varela.jpg"
+                        srcset="./assets/mauricio-varela@2x.jpg 2x,
+                                ./assets/mauricio-varela@3x.jpg 3x"
+                        class="img-fluid w-100 img-persona ">
+                        <div class="nombre">Mauricio Varela Labbé</div>
+                      <div class="cargo">Ingeniero Comercial de la Pontificia Universidad Católica de Chile y MBA New York University </div>
+                      
+                    </div>
+                    
+                </div>
+            </uib-tab>
+            <uib-tab class="equipo" index="3" heading="GERENTES CORPORATIVOS">
+              
+              </uib-tab>
+          </uib-tabset>
+        </section>
+      <div class="sub-menu row align-items-center justify-content-between ">
+          <div class="col section ">
+            <i class="fas fa-chevron-left"></i> Proyecciones y plan de inversiones
+          </div>
+          <div class="col section  text-right">
+              Resultados por marca - Almagro <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="footer row justify-content-center">
+          <button
+            type="button"
+            class="btn btn-outline-secondary button-soco-outline  "
+          >
+          Descargar Capítulo
+          </button>
+        </div>
+ 
 </div>
