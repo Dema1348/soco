@@ -1,75 +1,68 @@
 <div id="highlight" >
         <div class="row ">
-            <div class="col-md-12 p-0">
-              <div class="header animated fadeIn  slower">Home /<span>Highlights Estratégicos</span></div>
-              <div class="title innovacion animated fadeInDown ">Pensar en innovación</div>
-              <div class="sub-title animated fadeInUp">Diseño digital y transformación de la constructora</div> 
-              <div class="boxes-innovacion">
-                <div class="box-1 animated fadeInDown" ng-mouseover="vm.box1Innovacion()" ng-mouseleave="vm.resetInnovacion()">
-                    <div class="box-show">
-                        <div class="title-box">XXX</div>
-                        <div class="sub-title-box">método para todos</div>
-                        <div class="text-background">XXX</div>
-                        <div class="rectangule hidden"></div>
-                        <div class="text hidden">Invertimos xxx horas en formar y capacitar a la organización en la metodología Building Intelligence Modelling.</div>
+                <div class="col  p-0">
+                    <div class="header">
+                        Home /<span class="black">Highlights Estratégicos</span>
+                    </div>
+                    <div class="title innovacion">
+                            Pensar en <br>
+                            innovación
+                    </div>
+                    <div class="sub-title">
+                            Diseño digital y transformación de la constructora
+                    </div>
+                   
+                   
+                </div>
+               
+                <div class="col-sm-3 p-0">
+                    <div class="row">
+                        <div class="col  p-0">
+                            <div class="static-logo">
+                                <div class="logo-empresa ">
+                                    <img src="./assets/empresas-socovesa-logo.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/icono-buscar.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/icono-compartir.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/icono-download.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="box-2 animated fadeInDown row"  ng-mouseover="vm.box2Innovacion()" ng-mouseleave="vm.resetInnovacion()">
-                    <div class="box-show col-md-6">
-                        <div class="title-box">63%</div>
-                        <div class="sub-title-box">Lean Construction</div>
-                        <div class="text-background">63%</div>
-                    </div>
-                    <div class="box-hidden col-md-6">
-                        <div class="rectangule"></div>
-                        <div class="text ">El 63% de los ejecutivos con posición de liderazgo en las gerencias de Construcción (Socovesa Santiago), BIM y Clientes, participó en el programa de estudio “Lean Construction” de la Pontificia Universidad Católica de Chile, auspiciados por la Compañía.</div>
-                    </div>
-                </div>
-                <div class="box-img-0 animated fadeInLeft">
-                  <img src="assets/mg-{{vm.innovacionPhotos.normal}}.jpg" 
-                  srcset="assets/mg-{{vm.innovacionPhotos.normal}}@2x.jpg 2x,
-                   assets/mg-{{vm.innovacionPhotos.normal}}@3x.jpg 3x"
-                  alt="" >
-              </div>
-              <div class="box-img-1 animated fadeInUP">
-                  <img src="assets/mg-{{vm.innovacionPhotos.normal2}}.jpg" 
-                  srcset="assets/mg-{{vm.innovacionPhotos.normal2}}@2x.jpg 2x,
-                   assets/mg-{{vm.innovacionPhotos.normal2}}@3x.jpg 3x"
-                  alt="" >
-              </div>
-              <div class="box-img-2 animated fadeInRight">
-                  <img src="assets/mg-{{vm.innovacionPhotos.normal3}}.jpg" 
-                  srcset="assets/mg-{{vm.innovacionPhotos.normal3}}@2x.jpg 2x,
-                   assets/mg-{{vm.innovacionPhotos.normal3}}@3x.jpg 3x"
-                  alt="" >
-              </div>
-
             </div>
-                
+            <div class="row">
+                    <div class="col p-0">
+                            <div class="text">
+                                    Prepararse para el futuro exige repensar la construcción y hacerla más eficiente y productiva. El 2018 se consolidaron las bases del modelo BIM y se capacitaron decenas de  ejecutivos en Lean Construction, acciones que permitirán a la Compañía avanzar en esta dirección.
+                            </div>
+                    </div>
+                    <div class="col-sm-3 p-0">
+                            <div class="text">
+                                 <div class="pagination innovacion">
+                                    <a ui-sref="app.pages.highlight-futura" >1</a>
+                                    <a ui-sref="app.pages.highlight-personas" >2</a>
+                                    <a ui-sref="app.pages.highlight-innovacion" class="active" >3</a>
+                                    <a ui-sref="app.pages.highlight-rodea" >4</a>
+                                    <a ui-sref="app.pages.highlight-equipo">5</a>
+                                </div>
+                            </div>
+                    </div>
             </div>
            
-          
-            
-        </div>
-        <div class="pagination innovacion justify-content-end">
-            <a ui-sref="app.pages.highlight-personas" >1</a>
-            <a ui-sref="app.pages.highlight-innovacion" class="active">2</a>
-            <a ui-sref="app.pages.highlight-futura" >3</a>
-            <a ui-sref="app.pages.highlight-rodea">4</a>
-            <a ui-sref="app.pages.highlight-equipo">5</a>
-          </div>
-        <div class="float-logo animated fadeInRight">
-            <div class="logo-empresa ">
-                <img src="assets/empresas-socovesa-logo.svg" alt="">
+            <div class="sub-menu row align-items-center justify-content-between ">
+                <div class="col section " ui-sref="app.pages.financieros">
+                    <i class="fas fa-chevron-left"></i> Diseño y venta de valor
+                </div>
+                <div class="col section  text-right">
+                        Desarrollo sostenible y vinculación con el entorno
+                    <i class="fas fa-chevron-right"></i>
+                </div>
             </div>
-              <div class="icon">
-                <img src="assets/icono-buscar.svg" alt="">
-              </div>
-              <div class="icon">
-                  <img src="assets/icono-compartir.svg" alt="">
-              </div>
-              <div class="icon">
-                  <img src="assets/icono-download.svg" alt="">
-              </div>
-        </div>
-    </div>
+      
+</div>

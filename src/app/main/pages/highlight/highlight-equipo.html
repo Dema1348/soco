@@ -1,61 +1,68 @@
-
-    <div id="highlight">
-            <div class="row ">
-                <div class="col-md-12 p-0">
-                  <div class="header animated fadeIn  slower">Home /<span>Highlights Estratégicos</span></div>
-                  <div class="title equipo animated fadeInDown ">Pensar en equipo</div>
-                  <div class="sub-title animated fadeInUp">Talento y trabajo colaborativo</div> 
-                  <div class="boxes-equipo">
-                      <div class="box-1 animated fadeInDown" ng-mouseover="vm.box1Equipo()" ng-mouseleave="vm.resetEquipo()">
-                          <div class="box-show">
-                              <div class="title-box">XXX</div>
-                              <div class="sub-title-box">Various versions have</div>
-                              <div class="text-background">XXX</div>
-                              <div class="rectangule hidden"></div>
-                              <div class="text hidden">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.</div>
-                          </div>
-                        </div>
-                        <div class="box-img-0 animated fadeInLeft">
-                            <img src="assets/mg-{{vm.equipoPhotos.normal}}.jpg" 
-                            srcset="assets/mg-{{vm.equipoPhotos.normal}}@2x.jpg 2x,
-                             assets/mg-{{vm.equipoPhotos.normal}}@3x.jpg 3x"
-                            alt="" id="box-img">
-                        </div>
-    
-                        <div class="box-img-1 animated fadeInRight">
-                            <img src="assets/mg-{{vm.equipoPhotos.normal2}}.jpg" 
-                            srcset="assets/mg-{{vm.equipoPhotos.normal2}}@2x.jpg 2x,
-                             assets/mg-{{vm.equipoPhotos.normal2}}@3x.jpg 3x"
-                            alt="" id="box-img-1">
-                        </div>
-                       
-                  </div>
-                  
-                    
+<div id="highlight" >
+        <div class="row ">
+                <div class="col  p-0">
+                    <div class="header">
+                        Home /<span class="black">Highlights Estratégicos</span>
+                    </div>
+                    <div class="title equipo">
+                            Pensar en <br>
+                            equipos
+                    </div>
+                    <div class="sub-title">
+                            Talento y trabajo colaborativo 
+                    </div>
+                   
+                   
                 </div>
                
-              
-                
-            </div>
-            <div class="pagination equipo justify-content-end">
-                    <a ui-sref="app.pages.highlight-personas" >1</a>
-                    <a ui-sref="app.pages.highlight-innovacion">2</a>
-                    <a ui-sref="app.pages.highlight-futura">3</a>
-                    <a ui-sref="app.pages.highlight-rodea" >4</a>
-                    <a ui-sref="app.pages.highlight-equipo" class="active">5</a>
-              </div>
-            <div class="float-logo animated fadeInRight">
-                <div class="logo-empresa ">
-                    <img src="assets/empresas-socovesa-logo.svg" alt="">
+                <div class="col-sm-3 p-0">
+                    <div class="row">
+                        <div class="col  p-0">
+                            <div class="static-logo">
+                                <div class="logo-empresa ">
+                                    <img src="./assets/empresas-socovesa-logo.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/icono-buscar.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/icono-compartir.svg" alt="" />
+                                </div>
+                                <div class="icon">
+                                    <img src="./assets/icono-download.svg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                  <div class="icon">
-                    <img src="assets/icono-buscar.svg" alt="">
-                  </div>
-                  <div class="icon">
-                      <img src="assets/icono-compartir.svg" alt="">
-                  </div>
-                  <div class="icon">
-                      <img src="assets/icono-download.svg" alt="">
-                  </div>
             </div>
+            <div class="row">
+                    <div class="col p-0">
+                            <div class="text">
+                                    Las personas son la fuerza movilizadora de Empresas Socovesa. Desarrollar, retener y atraer al mejor talento de la industria ha sido un acento fundamental de la gestión de Recursos Humanos durante los últimos años.
+                            </div>
+                    </div>
+                    <div class="col-sm-3 p-0">
+                            <div class="text">
+                                 <div class="pagination equipo">
+                                    <a ui-sref="app.pages.highlight-futura" >1</a>
+                                    <a ui-sref="app.pages.highlight-personas" >2</a>
+                                    <a ui-sref="app.pages.highlight-innovacion"  >3</a>
+                                    <a ui-sref="app.pages.highlight-rodea" >4</a>
+                                    <a ui-sref="app.pages.highlight-equipo" class="active">5</a>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+           
+            <div class="sub-menu row align-items-center justify-content-between ">
+                <div class="col section " ui-sref="app.pages.financieros">
+                    <i class="fas fa-chevron-left"></i> Desarrollo sostenible y vinculación con el entorno
+                </div>
+                <div class="col section  text-right" ui-sref="app.pages.carta-presidente">
+                        Carta del presidente
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+      
 </div>
