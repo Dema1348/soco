@@ -4,7 +4,8 @@
 #equipo,
 #carta-presidente,
 #tendencias,
-#carta-gerente-general {
+#carta-gerente-general,
+#mordernizacion {
   margin-left: 80px;
   margin-right: 0;
 
@@ -41,9 +42,12 @@
       background-image: url('../assets/hero-gerente-general.jpg');
     }
     &.tendencias{
-        background-image: url('../assets/hero-tendencias.jpg');
-  
-      }
+      background-image: url('../assets/hero-tendencias.jpg');
+    }
+    &.mordernizacion{
+      background-image: url('../assets/hero-mordernizacion.jpg');
+
+    }
   }
 
   .title {
@@ -187,6 +191,9 @@
         padding: 0;
         margin-top: 50px;
         margin-bottom: 30px;
+        &.has-subtitle{
+          margin-bottom: 20px;
+        }
      }
     .title-big{
       font-family: 'Roboto';
@@ -199,14 +206,50 @@
       color: $black;
       margin-top: 50px;
       margin-bottom: 30px;
+      &.has-subtitle{
+        margin-bottom: 20px;
+      }
     }
+    .sub-title{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+      color:$black;
+      margin-bottom: 46px;
+     }
+     .sub-title{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+      color:$black;
+      margin-bottom: 19px;
+     }
+    .parrafo-dark{
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.22;
+      letter-spacing: normal;
+      color: $black;
+    }
+     
     .parrafo {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.56;
+      line-height: 1.38;
       letter-spacing: normal;
       color: $brown-grey-three;  
     }
@@ -341,7 +384,102 @@
     padding: 20px;
    
   }
+  .fuente{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: $brown-grey-two;
+    margin-top: 50px;
+  }
+  .fuente-2{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: $brown-grey-two;
+    margin-top: 4px;
 
+  }
+  .divider-big{
+    height: 1px;
+    background-color: #b2b2b2;
+    margin: 0 60px;
+  }
+
+  // TENDENCIAS
+  .chart-tendencia{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .detalle-fondo-tendencia{
+    position: absolute;
+    right: 0;
+    margin-top: 600px;
+  }
+  .title-tablas-tendencia{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
+    margin-top: 50px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid $black;
+    margin-bottom: 0;
+  }
+    // TENDENCIAS
+
+  //MODERNIZACION
+  .title-modernizacion{ 
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    color: #eb6767;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .title-modernizacion-2{ 
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    color: #eb6767;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .text-modernizacion{
+    font-family: 'Playfair Display';
+    font-size: 31px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #eb6767;
+    margin-bottom: 30px;
+  }
+  .edificio-corporativo{
+    padding-right: 70px;
+  }
+   //MODERNIZACION
   .tabs-financiero {
         padding: 50px 60px;
         .nav-tabs {
@@ -360,7 +498,7 @@
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
-                color: $brown-grey-three;
+                color: $black;
                 text-decoration: none;
                 padding: 0;
                 padding-bottom: 6px;
@@ -368,7 +506,6 @@
                 &.active {
                     font-family: 'Roboto';
                     font-size: 22px;
-                    font-weight: bold;
                     font-style: normal;
                     font-stretch: normal;
                     line-height: normal;
@@ -395,78 +532,378 @@
             }
         }
        
+  }
+  .tabs-tendencias {
+      padding: 50px 60px;
+      .nav-tabs {
+          margin: 0 4px;
+          border: 0;
+          padding-bottom: 70px;
+          li{
+              border-bottom: 1px solid #e0e0e0;
+          }
+          a {
+              border-top: 0;
+              border-right: 0;
+              border-left: 0;
+              font-family: 'Roboto';
+              font-size: 22px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: $black;
+              text-decoration: none;
+              padding: 0;
+              padding-bottom: 6px;
+              margin: 0 auto;
+              width: 200px;
+              &.active {
+                  font-family: 'Roboto';
+                  font-size: 22px;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: normal;
+                  letter-spacing: normal;
+                  text-align: center;
+                  color: $blue-dark;
+                  border-bottom: 2px solid $blue-dark;
+              }
+          }
+      }
+      .tab-content{
+          .text{
+              font-family: 'Roboto';
+              font-size: 24px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.33;
+              letter-spacing: normal;
+              color: $brown-grey-three;
+          }
+          .info{
+              font-size: 16px;
+              font-style: normal;
+              font-stretch: normal;
+              font-family: 'Roboto';
+              font-style: italic;
+              color: $brown-grey-three;
+              margin-top: 20px;
+          }
+          .charts{
+              padding-left: 55px!important;
+          }
+      }
+      
+  }
+  .tabs-tendencias-2 {
+      .sub-title-tab{
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+      }
+      .nav-tabs {
+          margin: 0 4px;
+          border: 0;
+          padding-bottom: 70px;
+          li{
+              border-bottom: 1px solid #e0e0e0;
+          }
+          a {
+              border-top: 0;
+              border-right: 0;
+              border-left: 0;
+              font-family: 'Roboto';
+              font-size: 22px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: $black;
+              text-decoration: none;
+              padding: 0;
+              padding-bottom: 6px;
+              margin: 0 auto;
+              width: 320px;
+              background: transparent;
+              &.active {
+                  font-family: 'Roboto';
+                  font-size: 22px;
+                  font-style: normal;
+                  font-stretch: normal;
+                  line-height: normal;
+                  letter-spacing: normal;
+                  text-align: center;
+                  color: $blue-dark;
+                  border-bottom: 2px solid $blue-dark;
+              }
+          }
+      }
+      .tab-content{
+          .text{
+              font-family: 'Roboto';
+              font-size: 24px;
+              font-weight: 300;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.33;
+              letter-spacing: normal;
+              color: $brown-grey-three;
+          }
+          .info{
+              font-size: 16px;
+              font-style: normal;
+              font-stretch: normal;
+              font-family: 'Roboto';
+              font-style: italic;
+              color: $brown-grey-three;
+              margin-top: 20px;
+          }
+         
+      }
+     
+  } 
+  .tabs-modernizacion {
+    margin-top: 50px;
+    .sub-title-tab{
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
     }
-
-    .tabs-tendencias {
-        padding: 50px 60px;
-        .nav-tabs {
-            margin: 0 4px;
-            border: 0;
-            padding-bottom: 70px;
-            li{
-                border-bottom: 1px solid #e0e0e0;
-            }
-            a {
-                border-top: 0;
-                border-right: 0;
-                border-left: 0;
-                font-family: Roboto;
+    .title-vision-tab{
+      font-family: 'Playfair Display';
+      font-size: 31px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #eb6767;
+      margin-bottom: 50px;
+      max-width: 500px;
+    }
+    .nav-tabs {
+        margin: 0 4px;
+        border: 0;
+        padding-bottom: 50px;
+        li{
+            border-bottom: 1px solid #e0e0e0;
+        }
+        a {
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            font-family: 'Roboto';
+            font-size: 22px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $black;
+            text-decoration: none;
+            padding: 0;
+            padding-bottom: 34px;
+            margin: 0 auto;
+            width: 240px;
+            background: transparent;
+            &.active {
+                font-family: 'Roboto';
                 font-size: 22px;
-                font-weight: 300;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: normal;
                 letter-spacing: normal;
                 text-align: center;
-                color: $brown-grey-three;
-                text-decoration: none;
-                padding: 0;
-                padding-bottom: 6px;
-                margin: 0 auto;
-                width: 200px;
-                &.active {
-                    font-family: 'Roboto';
-                    font-size: 22px;
-                    font-weight: bold;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: $blue-dark;
-                    border-bottom: 2px solid $blue-dark;
-                }
+                color: #eb6767;
+                border-bottom: 2px solid #eb6767;
             }
         }
-        .tab-content{
-            .text{
-                font-family: 'Roboto';
-                font-size: 24px;
-                font-weight: 300;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.33;
-                letter-spacing: normal;
-                color: $brown-grey-three;
-            }
-            .info{
-                font-size: 16px;
-                font-style: normal;
-                font-stretch: normal;
-                font-family: 'Roboto';
-                font-style: italic;
-                color: $brown-grey-three;
-                margin-top: 20px;
-            }
-            .charts{
-                padding-left: 55px!important;
-            }
+    }
+    .tab-content{
+        .text{
+            font-family: 'Roboto';
+            font-size: 24px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: $brown-grey-three;
+        }
+        .sub-title-tab{
+          font-family: 'Roboto';
+          font-size: 24px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $blue-dark;
+          margin-top: 6px;
+        }
+        .info{
+            font-size: 16px;
+            font-style: normal;
+            font-stretch: normal;
+            font-family: 'Roboto';
+            font-style: italic;
+            color: $brown-grey-three;
+            margin-top: 20px;
         }
        
     }
+   
+  } 
+  .tabs-modernizacion-2 {
+    .title-tab-paginacion{
+      font-family: 'Roboto';
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $black;
+      margin-bottom: 10px;
+      padding-left: 60px;
+    }
+    .text-tab-paginacion{
+      font-family: 'Roboto';
+      font-size: 24px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: $brown-grey-three;
+      padding-left: 60px;
+      max-width: 525px;
+
+
+    }
+    .nav-tabs {
+        border: 0;
+        padding-bottom: 50px;
+        margin-top: 20px;
+        margin-left: 30%;
+        li{
+          border-bottom: 0;
+        }
+        a {
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            font-family: 'Roboto';
+            font-size: 22px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: center;
+            color: $brown-grey-two;
+            text-decoration: none;
+            padding: 0;
+            margin: 0 auto;
+            width: 20px;
+            background: transparent;
+            font-size: 16px;
+            line-height: 1.38;
+            letter-spacing: normal;
+            border-bottom: 0px;
+            margin: 0 6px;
+            &.active {
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                line-height: 1.38;
+                color: $black;
+
+                border-bottom: 2px solid $blue-dark;
+            }
+        }
+    }
+    .tab-content{
+        .text{
+            font-family: 'Roboto';
+            font-size: 24px;
+            font-weight: 300;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            color: $brown-grey-three;
+        }
+        .sub-title-tab{
+          font-family: 'Roboto';
+          font-size: 24px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: $blue-dark;
+          margin-top: 6px;
+        }
+        .info{
+            font-size: 16px;
+            font-style: normal;
+            font-stretch: normal;
+            font-family: 'Roboto';
+            font-style: italic;
+            color: $brown-grey-three;
+            margin-top: 20px;
+        }
+       
+    }
+   
+  } 
+
+
 
     .table{
         padding: 50px 60px!important;
+        margin-bottom: 0rem;
+        &.no-padding{
+          padding: 0!important;
+          padding-bottom: 50px!important;
+        }
+        .big-title-table{
+          font-family: 'Roboto';
+          font-size: 16px;
+          font-weight: bold;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: $black;
+          border-bottom: 3px solid $black;
+          padding-bottom: 12px!important;
+          padding-top: 20px!important;
+
+        }
         .header{
             border-bottom: 3px solid  $black;
             padding-bottom: 10px;
@@ -483,6 +920,8 @@
                 line-height: normal;
                 letter-spacing: normal;
                 color: $black;
+                margin-bottom: 10px;
+                margin-top: 10px;
                 &.text-rigth{
                     text-align: right;
                 }
@@ -504,11 +943,17 @@
                 &.text-rigth{
                     text-align: right;
                 }
+                &.light{
+                  color: $brown-grey-two;                
+                }
             }
         }
+        
        
     }
+    
 }
+
 
 .modal-dialog{
   margin-top: 80px;
