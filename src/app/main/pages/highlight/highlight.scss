@@ -215,14 +215,16 @@
         padding: 0 30px;
       }
       .box-wrapp-futura{
-          padding-left: 20px;
-          min-height: 430px;
+          margin-left: 20px;
+          margin-right: 20px;
+          min-height: 450px;
+          margin-bottom: 20px;
           position: relative;
           .box-1{
             width: 380px;
             height: 270px;
             background-color: $brown-grey;
-            z-index: 99;
+            z-index: 100;
             position: absolute;
             overflow: hidden;
             background-color: $brown-grey;
@@ -287,17 +289,15 @@
 
           }
           .box-2{
-            width: 250px;
-            height: 270px;         
+            width: 340px;
+            height: 360px;                   
             background-color: #d8d8d8;
             z-index: 99;
             position: absolute;
-            left: 360px;
+            left: 270px;
             overflow: hidden;
             transition: background-color 1s ease;
             &:hover{
-                width: 340px;
-                height: 360px;
                 background-color: #60bbb8;
                 z-index: 1000;
 
@@ -336,6 +336,7 @@
             .text-background{
                 font-family: 'Roboto';
                 font-size: 208px;
+                font-size: 208px;
                 font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
@@ -344,8 +345,8 @@
                 color: #e7e5e6;
                 z-index: -1;
                 white-space: nowrap;
-                top: 0;
-                left: -21px;
+                top: 160px;
+                left: 80px;
                 position: absolute;
                 text-align: right;
 
@@ -376,8 +377,7 @@
           }
           .box-3{
             width: 550px;
-            height: 160px;
-       
+            height: 180px;     
             z-index: 99;
             position: absolute;
             top: 270px;
@@ -427,7 +427,6 @@
                 margin-left: 30px;
                 margin-top: 20px;
                 margin-bottom: 20px;
-                    margin-left: 266px;
             }
             .content{
                 visibility: hidden;
@@ -441,6 +440,13 @@
                 color: $white;
             }
 
+          }
+          .box-4{
+            width: 550px;
+            height: 330px;
+            position: absolute;
+            top: 56px;
+            left: 610px;
           }
       }
 
