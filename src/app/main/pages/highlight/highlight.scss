@@ -215,7 +215,7 @@
         padding: 0 30px;
       }
       .box-wrapp-futura{
-          padding-right: 20px;
+          padding-left: 20px;
           min-height: 430px;
           position: relative;
           .box-1{
@@ -275,25 +275,31 @@
             }
             .content{
                 visibility: hidden;
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.31;
+                letter-spacing: normal;
+                color: $white;
             }
 
           }
           .box-2{
             width: 250px;
             height: 270px;         
-            background-color: $brown-grey;
+            background-color: #d8d8d8;
             z-index: 99;
             position: absolute;
-            left: 400px;
+            left: 360px;
             overflow: hidden;
-            background-color: $brown-grey;
             transition: background-color 1s ease;
             &:hover{
                 width: 340px;
                 height: 360px;
                 background-color: #60bbb8;
                 z-index: 1000;
-                left: 285px;
 
                 cursor: pointer;
                 .text-background{
@@ -305,28 +311,37 @@
                 .content{
                     visibility: visible;
                 }
+                .title-box{
+                    color: #fff;
+                }
+                .sub-title-box{
+                    color: #fff;
+                }
             }
             .title-box{
-                padding-left: 30px;
+                padding-right: 30px;
                 padding-top: 10px;
                 z-index: 99;
                 text-align: right;
+                color: $brown-grey;
+
             }
             .sub-title-box{
-                padding-left: 30px;
+                padding-right: 30px;
                 z-index: 99;
                 text-align: right;
+                color: $brown-grey;
 
             }
             .text-background{
                 font-family: 'Roboto';
-                font-size: 360px;
+                font-size: 208px;
                 font-weight: bold;
                 font-style: normal;
                 font-stretch: normal;
                 line-height: normal;
-                letter-spacing: -8.3px;
-                color: #a1a1a1;
+                letter-spacing: -4.8px;
+                color: #e7e5e6;
                 z-index: -1;
                 white-space: nowrap;
                 top: 0;
@@ -340,9 +355,22 @@
                 margin-left: 30px;
                 margin-top: 20px;
                 margin-bottom: 20px;
+                text-align: right;
+                margin-left: 266px;
+
             }
             .content{
                 visibility: hidden;
+                text-align: right;
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.31;
+                letter-spacing: normal;
+                text-align: right;
+                color: $white;
             }
 
           }
@@ -399,9 +427,18 @@
                 margin-left: 30px;
                 margin-top: 20px;
                 margin-bottom: 20px;
+                    margin-left: 266px;
             }
             .content{
                 visibility: hidden;
+                font-family: 'Roboto';
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.31;
+                letter-spacing: normal;
+                color: $white;
             }
 
           }

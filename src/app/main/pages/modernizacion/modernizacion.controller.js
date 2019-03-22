@@ -23,7 +23,7 @@
 
 		function ModalController() {
 			var vm = this;
-			vm.src = 'video1.mp4';
+			vm.src = 'video2.mp4';
 		}
 	}
 })();
