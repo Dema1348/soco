@@ -13,7 +13,10 @@
       "app.pages.modernizacion",
       "app.pages.sostenibilidad",
       "app.pages.descargables",
-      "app.pages.proyecciones"
+      "app.pages.proyecciones",
+      "app.pages.marcas",
+      "app.pages.compromisos"
+      
     ])
     .config(config);
 

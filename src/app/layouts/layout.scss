@@ -8,3 +8,155 @@ html {
 body {
 min-height: 100%;
 }
+
+
+/* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: $very-light-two;
+    overflow-x: hidden; 
+    transition: 0.5s; 
+    margin-left: 80px;
+
+    .row {
+        margin: 0;
+        width: 100%;
+        padding-right: 60px;
+      }
+
+    .title-menu{
+        font-family: 'Roboto';
+        font-size: 50px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        color: $black;
+        margin-left: 40px;
+    }
+
+    .close-menu{
+        float: right;
+        margin-right: 100px;
+        color: $brown-grey;
+
+    }
+   
+    &.w-100{
+        padding: 30px 0; 
+    }
+    .one{
+        padding-right: 40px!important;
+        padding-left: 40px!important;
+        border-right: 1px solid  #bcbcbc;
+    }
+    .two{
+        padding-right: 40px!important;
+        padding-left: 40px!important;
+    }
+    .three{
+        padding-left: 40px!important;
+        padding-right: 40px!important;
+        border-left: 1px solid  #bcbcbc;
+    }
+    .wrapp-menu{
+        margin-top: 10px;
+        .banner{
+            margin-top: 15px;
+            width: 100%;
+        }
+        .title-sub-menu{
+            font-family: 'Roboto';
+            font-size: 23px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 0.2px;
+            color: $black;
+            margin-bottom: 10px;
+            margin-top: 30px;
+          }
+          &:hover{
+              cursor: pointer;
+          }
+          .divider-sub-menu{
+            width: 45px;
+            height: 3px;
+            &.black {
+                background-color: #000;
+              }
+          }
+          .sub-item{
+            font-family: 'Roboto';
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            color: $brown-grey-three;
+            margin: 15px 0;
+          }
+    }
+    .divider-header {
+        width: 80px;
+        height: 10px;
+        background-color: $white;
+        margin-top: 25px;
+        margin-left: 40px;
+       
+        &.black {
+          background-color: #000;
+        }
+      }
+    
+      
+    
+  }
+  
+ 
+
+  @media  (max-width: 580px) {
+    .overlay {
+        top: 70px;
+        margin-left: 0;
+        height: 0;
+        width: 100%;
+        .row{
+            padding: 0!important;
+        }
+        .close-menu{
+            display: none;
+        }
+        &.w-100 {
+            padding: 20px;
+            height: 100%;
+        }
+        .title-menu{
+            margin-left: 0;
+        }
+        .divider-header{
+            margin-left: 0;
+        }
+        .one{
+            border:0px;
+            padding:0!important;
+        }
+        .two{
+            border:0px;
+            padding:0!important;
+        }
+        .three{
+            border:0px;
+            padding:0!important;
+        }
+
+    }
+  }

@@ -9,6 +9,14 @@
     /** @ngInject */
     function MainController($scope,$rootScope,$timeout)
     {
+        var vm = this;
+        vm.close= close;
+
+        function close(){
+            console.log("close");
+            $rootScope.isOpen = false;
+
+        }
         // Remove the splash screen
         $scope.$on('$viewContentAnimationEnded', function (event)
         {

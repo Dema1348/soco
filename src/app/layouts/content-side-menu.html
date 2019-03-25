@@ -1,4 +1,74 @@
-<div id="layout-side-menu" >
-    <div id="side-menu" ui-view="navigation" ></div>
-    <div id="content" ui-view="content"  class="anim-in-out anim-slide-below-fade" data-anim-speed="250" ></div>
+<div id="layout-side-menu">
+	<div id="side-menu" ui-view="navigation"></div>
+	
+	<div
+		id="content"
+		ui-view="content"
+		class="anim-in-out anim-slide-below-fade"
+		data-anim-speed="250"
+	></div>
+</div>
+<div id="myNav" class="overlay" ng-class="{'w-100': isOpen}">
+        <div class="title-menu">Memoria anual 2018
+            <span class="close-menu" ng-click="vm.close()">X</span>
+        </div>
+        <div class="divider-header black"></div>
+        <div class="row">
+            <div class="col col-sm-4 p-0 wrapp-menu one">
+                <div class="title-sub-menu" ng-click="vm.close()" ui-sref="app.pages.financieros">Highlights financieros</div>
+                <div class="divider-sub-menu black"></div>
+                <img src="./assets/banner.png"
+                srcset="./assets/banner@2x.png 2x,
+                        ./assets/banner@3x.png 3x"
+                class="img-fluid banner">
+                <div class="title-sub-menu">Highlights estratégicos</div>
+                <div class="divider-sub-menu black"></div>
+                <div class="sub-item">_Modernización de la  estructura organizacional</div>
+                <div class="sub-item">_Diseño y venta de valor</div>
+                <div class="sub-item">_Diseño digital y transformación de la constructora</div>
+                <div class="sub-item">_Desarrollo sostenible y? vinculación con el entorno</div>
+                <div class="sub-item">_Talento y trabajo colaborativo</div>
+                <div class="title-sub-menu"  ng-click="vm.close()" ui-sref="app.pages.carta-presidente">Carta del Presidente</div>
+                <div class="divider-sub-menu black"></div>
+                <div class="title-sub-menu" ng-click="vm.close()" ui-sref="app.pages.carta-gerente-general">Carta del Gerente General</div>
+                <div class="divider-sub-menu black"></div>
+            </div>
+            <div class="col col-sm-4 p-0 wrapp-menu two">
+                    <div class="title-sub-menu" ng-click="vm.close()" ui-sref="app.pages.tendencias">Tendencias 2018 de la industria</div>
+                    <div class="divider-sub-menu black"></div>
+                    <div class="title-sub-menu"  ng-click="vm.close()" ui-sref="app.pages.modernizacion">Desafío de modernización</div>
+                    <div class="divider-sub-menu black"></div>
+                    <img src="./assets/banner.png"
+                    srcset="./assets/banner@2x.png 2x,
+                            ./assets/banner@3x.png 3x"
+                    class="img-fluid banner">
+                    <div class="title-sub-menu" ng-click="vm.close()" ui-sref="app.pages.proyecciones">Proyecciones y plan de inversiones</div>
+                    <div class="divider-sub-menu black"></div>
+                    <div class="title-sub-menu"  ng-click="vm.close()"  ui-sref="app.pages.equipo">Equipo</div>
+                    <div class="divider-sub-menu black"></div>
+                    <img src="./assets/banner.png"
+                    srcset="./assets/banner@2x.png 2x,
+                            ./assets/banner@3x.png 3x"
+                    class="img-fluid banner">
+            </div>
+            <div class="col col-sm-4 p-0 wrapp-menu three">
+                    <div class="title-sub-menu"   ng-click="vm.close()" ui-sref="app.pages.marcas">Resultados por marcas</div>
+                    <div class="divider-sub-menu black"></div>
+                    <div class="sub-item">_Almagro</div>
+                    <div class="sub-item">_Pilares</div>
+                    <div class="sub-item">_Socovesa</div>
+                    <div class="title-sub-menu"   ng-click="vm.close()" ui-sref="app.pages.sostenibilidad">Sostenibilidad</div>
+                    <div class="divider-sub-menu black"></div>
+                    <img src="./assets/banner.png"
+                    srcset="./assets/banner@2x.png 2x,
+                            ./assets/banner@3x.png 3x"
+                    class="img-fluid banner">
+                    <div class="title-sub-menu"  ng-click="vm.close()" ui-sref="app.pages.compromiso">Compromiso con la educación</div>
+                    <div class="divider-sub-menu black"></div>
+                    <div class="title-sub-menu" ng-click="vm.close()" ui-sref="app.pages.descargables">Descargables</div>
+                    <div class="divider-sub-menu black"></div>
+                    
+            </div>
+        </div>
+    
 </div>
