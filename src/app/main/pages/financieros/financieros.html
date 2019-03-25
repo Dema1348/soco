@@ -1,6 +1,12 @@
 <div id="financieros" class="financieros">
+		<img src="./assets/hero-financieros.jpg"
+		srcset="./assets/hero-financieros@2x.jpg 2x,
+				./assets/hero-financieros@3x.jpg 3x"
+		class="img-fluid hero-img"> 
+		
 	<div class="row  image-background financieros">
 		<div class="col  p-0">
+				
 			<div class="header">
 				Home /<span class="white">Highlights financieros</span>
 			</div>
@@ -9,7 +15,16 @@
 				financieros
 			</div>
 			<div class="divider-header "></div>
+			
 		</div>
+		<div class="wrapp-play ">
+						<img
+							ng-click="vm.openModal()"
+							src="./assets/boton-play.svg"
+							class="button-play "
+						/>
+						<div class="title-video">(Video Resultados)</div>
+					</div>
 		<div class="col col-sm-1 p-0">
 			<div class="cube animated rollIn delay-1s"></div>
 			<div class="cube-large-2 animated rollIn delay-1s"></div>
@@ -37,14 +52,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="wrapp-play">
-			<img
-				ng-click="vm.openModal()"
-				src="./assets/boton-play.svg"
-				class="button-play "
-			/>
-			<div class="title-video">(Video Resultados)</div>
-		</div>
+		
 	</div>
 	<div class="cita ">
 		El 2018 Empresas Socovesa sobrepasó por quinto año consecutivo el umbral del

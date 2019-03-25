@@ -1,10 +1,8 @@
 #home {
+  margin-left: 80px;
+  margin-right: 0;   
   .row {
     margin: 0;
-  }
-  .wrapp {
-    margin-left: 80px;
-    margin-right: 0;
   }
   .title {
     padding-top: 7px;
@@ -120,35 +118,56 @@
     }
   }
 
-  .cube-large{
+  .cube-large {
     width: 20px;
     height: 60px;
     background-color: #f9eb02;
     margin-left: 90px;
   }
 
-  .croquis{
+  .croquis {
     margin-top: -140px;
-     img{
-        width: 100%;
-     }
+    img {
+      width: 100%;
+    }
   }
-  .static-logo{
-      padding-right: 21px;
-      padding-top: 20px;
-      
-      .logo-empresa{
-          width: 129px;
-          height: 29px;
-          margin: 0 auto;
-          margin-bottom: 10px;
-          img{
-              width: 130px;
-          }
+  .static-logo {
+    padding-right: 21px;
+    padding-top: 20px;
+
+    .logo-empresa {
+      width: 129px;
+      height: 29px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      img {
+        width: 130px;
       }
-      .icon{
-          margin-top: 20px;
-          text-align: right;
-      }
+    }
+    .icon {
+      margin-top: 20px;
+      text-align: right;
+    }
+  }
+}
+@media  (max-width: 580px) {
+  #home {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 70px;
+   .title{
+    font-size: 80px;
+   }
+   .sub-title {
+     font-size: 44px;
+   }
+   .cube,.cube-large,.cube-large-2{
+     display: none;
+   }
+   .static-logo{
+     display: none;
+   }
+   
+  
   }
 }

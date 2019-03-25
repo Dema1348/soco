@@ -5,16 +5,19 @@
 #carta-presidente,
 #tendencias,
 #carta-gerente-general,
-#mordernizacion ,
-#sostenibilidad{
+#mordernizacion,
+#sostenibilidad,
+#descargables ,
+#proyecciones{
   margin-left: 80px;
   margin-right: 0;
-
   .row {
     margin: 0;
     width: 100%;
   }
-
+  .hero-img {
+    display: none;
+  }
   .image-background {
     height: 660px;
     background-position: center;
@@ -39,20 +42,28 @@
     &.carta-presidente {
       background-image: url('../assets/hero-presidente.jpg');
     }
-    &.carta-gerente-general{
+    &.carta-gerente-general {
       background-image: url('../assets/hero-gerente-general.jpg');
     }
-    &.tendencias{
+    &.tendencias {
       background-image: url('../assets/hero-tendencias.jpg');
     }
-    &.mordernizacion{
+    &.mordernizacion {
       background-image: url('../assets/hero-mordernizacion.jpg');
     }
-    &.sostenibilidad{
+    &.sostenibilidad {
       background-image: url('../assets/hero-sostenibilidad.jpg');
     }
+    &.descargables {
+      background-image: url('../assets/hero-descargables.jpg');
+    }
+    &.proyecciones {
+      background-image: url('../assets/hero-proyecciones.jpg');
+    }
   }
-
+  .header {
+    padding-left: 20px;
+  }
   .title {
     font-family: 'Roboto';
     font-size: 50px;
@@ -66,9 +77,24 @@
     &.black {
       color: #000;
     }
-    &.white{
-        color: $white;
+    &.white {
+      color: $white;
     }
+  }
+  .title-descargable {
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    color: $periwinkle-dark;
+    padding-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $black;
   }
   .divider-header {
     width: 80px;
@@ -80,24 +106,24 @@
       background-color: #000;
     }
   }
-  .wrapp-play{
+  .wrapp-play {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    .title-video{   
-        margin-top: 40px;
-        font-family: 'Roboto';
-        font-size: 22px;
-        font-weight: 300;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: $white;
+    .title-video {
+      margin-top: 40px;
+      font-family: 'Roboto';
+      font-size: 22px;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $white;
     }
   }
   .cube-large {
@@ -155,7 +181,7 @@
     padding: 50px 60px;
   }
 
-  .divider{
+  .divider {
     max-width: 500px;
     height: 2px;
     background-color: $brown-grey;
@@ -163,7 +189,7 @@
     margin-bottom: 50px;
   }
 
-  .parrafo-dark{
+  .parrafo-dark {
     font-family: 'Roboto';
     font-size: 18px;
     font-weight: bold;
@@ -173,7 +199,7 @@
     letter-spacing: normal;
     color: $black;
   }
-   
+
   .parrafo {
     font-family: 'Roboto';
     font-size: 16px;
@@ -182,42 +208,84 @@
     font-stretch: normal;
     line-height: 1.38;
     letter-spacing: normal;
-    color: $brown-grey-three;  
+    color: $brown-grey-three;
   }
 
-  .one{
-    padding-right: 20px!important;
-    padding-left: 0!important;
+  .one {
+    padding-right: 20px !important;
+    padding-left: 0 !important;
   }
-  .one-special{
-    padding-right: 60px!important;
-    padding-left: 0!important;
+  .one-special {
+    padding-right: 60px !important;
+    padding-left: 0 !important;
   }
-  .two{
-    padding-right: 20px!important;
-    padding-left: 20px!important;
+  .two {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
   }
-  .three{
-    padding-right: 0!important;
-    padding-left: 20px!important;
+  .three {
+    padding-right: 0 !important;
+    padding-left: 20px !important;
   }
-  .three-special{
-    padding-right: 0!important;
-    padding-left: 60px!important;
+  .three-special {
+    padding-right: 0 !important;
+    padding-left: 60px !important;
   }
-  .three-special-2{
-    padding-right: 160px!important;
-    padding-left: 60px!important;
-    padding-top: 50px!important;
+  .three-special-2 {
+    padding-right: 160px !important;
+    padding-left: 60px !important;
+    padding-top: 50px !important;
+  }
+  .wrapp-download{
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    .link-download{
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: $brown-grey-three;
+      border-bottom: 1px solid $very-light;
+      padding: 10px 0;
+      &:hover{
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        color: $black;
+        cursor: pointer;
+
+      }
+    }
+    .title-link-download{
+      font-family: 'Roboto';
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $black;
+      margin-top: 40px;
+      margin-bottom: 30px;
+    }
   }
 
   .box-parrafos {
     padding: 0 60px;
-    &.background-color{
+    position: relative;
+    &.background-color {
       background-color: #f4f4f4;
       padding-bottom: 50px;
     }
-    .title{
+    .title {
       font-family: 'Roboto';
       font-size: 30px;
       font-weight: bold;
@@ -229,24 +297,24 @@
       padding: 0;
       margin-top: 50px;
       margin-bottom: 30px;
-     }
-     .title-small{
-        font-family: 'Roboto';
-        font-size: 24px;
-        font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: $black;
-        padding: 0;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        &.has-subtitle{
-          margin-bottom: 20px;
-        }
-     }
-    .title-big{
+    }
+    .title-small {
+      font-family: 'Roboto';
+      font-size: 24px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $black;
+      padding: 0;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      &.has-subtitle {
+        margin-bottom: 20px;
+      }
+    }
+    .title-big {
       font-family: 'Roboto';
       font-size: 48px;
       font-weight: bold;
@@ -257,11 +325,11 @@
       color: $black;
       margin-top: 50px;
       margin-bottom: 30px;
-      &.has-subtitle{
+      &.has-subtitle {
         margin-bottom: 20px;
       }
     }
-    .sub-title{
+    .sub-title {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: normal;
@@ -269,10 +337,10 @@
       font-stretch: normal;
       line-height: 1.38;
       letter-spacing: normal;
-      color:$black;
+      color: $black;
       margin-bottom: 46px;
-     }
-     .sub-title{
+    }
+    .sub-title {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: normal;
@@ -280,15 +348,15 @@
       font-stretch: normal;
       line-height: 1.38;
       letter-spacing: normal;
-      color:$black;
+      color: $black;
       margin-bottom: 19px;
-     }
-   
-    .saludos{
+    }
+
+    .saludos {
       padding-top: 50px;
       margin: 0;
     }
-    .name{
+    .name {
       padding-top: 30px;
       font-family: 'Roboto';
       font-size: 16px;
@@ -300,7 +368,7 @@
       color: $black;
       margin: 0;
     }
-    .end{
+    .end {
       margin: 0;
       font-family: 'Roboto';
       font-size: 16px;
@@ -310,18 +378,16 @@
       line-height: 1.56;
       letter-spacing: normal;
     }
-    
-    .img-chart{
-        width: 100%;
+
+    .img-chart {
+      width: 100%;
     }
-    
   }
-  .img-croquis-3{
+  .img-croquis-3 {
     margin-top: -40px;
   }
 
-  .quote-alone{
-   
+  .quote-alone {
     .title-quote {
       font-family: 'Playfair Display';
       font-size: 31px;
@@ -331,18 +397,17 @@
       line-height: normal;
       letter-spacing: normal;
       z-index: 10;
-      &.carta-presidente{
+      &.carta-presidente {
         margin-top: -30px;
         color: $blue-dark;
         margin-bottom: 50px;
       }
-      &.carta-presidente-2{
+      &.carta-presidente-2 {
         margin-top: 50px;
         color: $blue-dark;
-        margin-bottom: 125px;
       }
-      &.carta-gerente-general{
-        margin-top: 150px;
+      &.carta-gerente-general {
+        margin-top: 50px;
         color: $blue-dark;
         margin-bottom: 50px;
         position: relative;
@@ -352,12 +417,11 @@
           width: 94px;
           height: 90px;
           z-index: -1;
-          top:-55px;
+          top: -55px;
           left: -60px;
-          
         }
       }
-      &.carta-gerente-general-2{
+      &.carta-gerente-general-2 {
         color: $blue-dark;
         margin-top: 95px;
         margin-bottom: 40px;
@@ -367,44 +431,19 @@
           width: 94px;
           height: 90px;
           left: -60px;
-          top:-55px;
+          top: -55px;
           z-index: -1;
-          
         }
       }
-
     }
   }
 
-  .sub-menu {
-    height: 65px;
-    width: 100%;
-    border-top:1px solid #dddddd;
-    .section {
-      font-family: 'Roboto';
-      font-size: 16px;
-      font-weight: 300;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 1.56;
-      letter-spacing: normal;
-      color: $brown-grey-three;
-      svg,i{
-        margin: 0 6px;
-      }
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-  
   .footer {
     min-height: 70px;
     background-color: #dedede;
     padding: 20px;
-   
   }
-  .fuente{
+  .fuente {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: normal;
@@ -415,7 +454,7 @@
     color: $brown-grey-two;
     margin-top: 50px;
   }
-  .fuente-2{
+  .fuente-2 {
     font-family: 'Roboto';
     font-size: 16px;
     font-weight: normal;
@@ -425,25 +464,24 @@
     letter-spacing: normal;
     color: $brown-grey-two;
     margin-top: 4px;
-
   }
-  .divider-big{
+  .divider-big {
     height: 1px;
     background-color: #b2b2b2;
     margin: 0 60px;
   }
 
   // TENDENCIAS
-  .chart-tendencia{
+  .chart-tendencia {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .detalle-fondo-tendencia{
+  .detalle-fondo-tendencia {
     position: absolute;
     right: 0;
     margin-top: 600px;
   }
-  .title-tablas-tendencia{
+  .title-tablas-tendencia {
     font-family: 'Roboto';
     font-size: 18px;
     font-weight: normal;
@@ -458,10 +496,10 @@
     border-bottom: 3px solid $black;
     margin-bottom: 0;
   }
-    // TENDENCIAS
+  // TENDENCIAS
 
   //MODERNIZACION
-  .title-modernizacion{ 
+  .title-modernizacion {
     font-family: 'Roboto';
     font-size: 48px;
     font-weight: bold;
@@ -473,7 +511,7 @@
     margin-top: 100px;
     margin-bottom: 30px;
   }
-  .title-modernizacion-2{ 
+  .title-modernizacion-2 {
     font-family: 'Roboto';
     font-size: 48px;
     font-weight: bold;
@@ -485,7 +523,7 @@
     margin-top: 50px;
     margin-bottom: 30px;
   }
-  .text-modernizacion{
+  .text-modernizacion {
     font-family: 'Playfair Display';
     font-size: 31px;
     font-weight: normal;
@@ -496,12 +534,17 @@
     color: #eb6767;
     margin-bottom: 30px;
   }
-  .edificio-corporativo{
+  .edificio-corporativo {
     padding-right: 70px;
   }
-   //MODERNIZACION
-   //SOSTENIBILIDAD
-   .title-sostenibilidad{
+  .croquis-11 {
+    position: absolute;
+    left: 60px;
+    bottom: 0;
+  }
+  //MODERNIZACION
+  //SOSTENIBILIDAD
+  .title-sostenibilidad {
     font-family: 'Roboto';
     font-size: 48px;
     font-weight: bold;
@@ -511,8 +554,8 @@
     letter-spacing: normal;
     color: $greenwater-dark;
     margin-bottom: 30px;
-   }
-   .title-sostenibilidad-2{
+  }
+  .title-sostenibilidad-2 {
     font-family: 'Roboto';
     font-size: 48px;
     font-weight: bold;
@@ -524,8 +567,8 @@
     margin-bottom: 30px;
     max-width: 580px;
     margin-top: 50px;
-   }
-   .text-sostenibilidad{
+  }
+  .text-sostenibilidad {
     font-family: 'Playfair Display';
     font-size: 31px;
     font-weight: normal;
@@ -535,8 +578,8 @@
     letter-spacing: normal;
     color: $greenwater-dark;
     margin-bottom: 30px;
-   }
-   .text-sostenibilidad-2{
+  }
+  .text-sostenibilidad-2 {
     font-family: 'Playfair Display';
     font-size: 31px;
     font-weight: normal;
@@ -547,30 +590,29 @@
     color: $greenwater-dark;
     margin-left: 60px;
     margin-bottom: 30px;
-
-   }
-   .margin-sostenibilidad{
+  }
+  .margin-sostenibilidad {
     margin-right: 160px;
-   }
-   .margin-sostenibilidad-2{
+  }
+  .margin-sostenibilidad-2 {
     margin-left: 60px;
-   }
-   .margin-sostenibilidad-3{
-     margin-right: 60px;
-   }
-   .croquis-sostenibilidad{
+  }
+  .margin-sostenibilidad-3 {
+    margin-right: 60px;
+  }
+  .croquis-sostenibilidad {
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
-   }
-   .img-sostenibilidad{
+  }
+  .img-sostenibilidad {
     padding-right: 50px;
-   }
-   .background-sostenibilidad{
+  }
+  .background-sostenibilidad {
     background-color: $very-light-two;
-   }
-   .cita-sostenibilidad{
+  }
+  .cita-sostenibilidad {
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: normal;
@@ -581,226 +623,148 @@
     text-align: center;
     color: $brown-grey-three;
     padding-right: 40px;
-    margin-bottom: 50PX;
-
-   }
-   .croquis-9{
+    margin-bottom: 50px;
+  }
+  .croquis-9 {
     position: absolute;
     right: 0;
     top: 0;
-   }
-   //SOSTENIBILIDAD
+  }
+  //SOSTENIBILIDAD
   //EQUIPO
-  .croquis-5{
+  .croquis-5 {
     position: absolute;
     top: 272px;
     right: 0;
     z-index: -1;
   }
-  .croquis-7{
+  .croquis-7 {
     position: absolute;
     top: 272px;
     right: 0;
     z-index: -1;
   }
-    //EQUIPO
+  //EQUIPO
 
   .tabs-financiero {
-        padding: 50px 60px;
-        .nav-tabs {
-            margin: 0 4px;
-            border: 0;
-            padding-bottom: 70px;
-            a {
-                border-top: 0;
-                border-right: 0;
-                border-left: 0;
-                font-family: Roboto;
-                font-size: 22px;
-                font-weight: 300;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                color: $black;
-                text-decoration: none;
-                padding: 0;
-                padding-bottom: 6px;
-                margin: 0 23px;
-                &.active {
-                    font-family: 'Roboto';
-                    font-size: 22px;
-                    font-style: normal;
-                    font-stretch: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    text-align: center;
-                    color: $black;
-                    border-bottom: 2px solid $black;
-                }
-            }
-        }
-        .tab-content{
-            .text{
-                font-family: 'Roboto';
-                font-size: 24px;
-                font-weight: 300;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.33;
-                letter-spacing: normal;
-                color: $brown-grey-three;
-            }
-            .charts{
-                padding-left: 55px!important;
-            }
-        }
-       
-  }
-  .tabs-tendencias {
-      padding: 50px 60px;
-      .nav-tabs {
-          margin: 0 4px;
-          border: 0;
-          padding-bottom: 70px;
-          li{
-              border-bottom: 1px solid #e0e0e0;
-          }
-          a {
-              border-top: 0;
-              border-right: 0;
-              border-left: 0;
-              font-family: 'Roboto';
-              font-size: 22px;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: normal;
-              letter-spacing: normal;
-              text-align: center;
-              color: $black;
-              text-decoration: none;
-              padding: 0;
-              padding-bottom: 6px;
-              margin: 0 auto;
-              width: 200px;
-              &.active {
-                  font-family: 'Roboto';
-                  font-size: 22px;
-                  font-style: normal;
-                  font-stretch: normal;
-                  line-height: normal;
-                  letter-spacing: normal;
-                  text-align: center;
-                  color: $blue-dark;
-                  border-bottom: 2px solid $blue-dark;
-              }
-          }
-      }
-      .tab-content{
-          .text{
-              font-family: 'Roboto';
-              font-size: 24px;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.33;
-              letter-spacing: normal;
-              color: $brown-grey-three;
-          }
-          .info{
-              font-size: 16px;
-              font-style: normal;
-              font-stretch: normal;
-              font-family: 'Roboto';
-              font-style: italic;
-              color: $brown-grey-three;
-              margin-top: 20px;
-          }
-          .charts{
-              padding-left: 55px!important;
-          }
-      }
-      
-  }
-  .tabs-tendencias-2 {
-      .sub-title-tab{
-        font-family: 'Roboto';
-        font-size: 18px;
-        font-weight: normal;
+    padding: 50px 60px;
+    .nav-tabs {
+      margin: 0 4px;
+      border: 0;
+      padding-bottom: 70px;
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 300;
         font-style: normal;
         font-stretch: normal;
         line-height: normal;
         letter-spacing: normal;
         text-align: center;
+        color: $black;
+        text-decoration: none;
+        padding: 0;
+        padding-bottom: 6px;
+        margin: 0 23px;
+        &.active {
+          font-family: 'Roboto';
+          font-size: 22px;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: $black;
+          border-bottom: 2px solid $black;
+        }
       }
-      .nav-tabs {
-          margin: 0 4px;
-          border: 0;
-          padding-bottom: 70px;
-          li{
-              border-bottom: 1px solid #e0e0e0;
-          }
-          a {
-              border-top: 0;
-              border-right: 0;
-              border-left: 0;
-              font-family: 'Roboto';
-              font-size: 22px;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: normal;
-              letter-spacing: normal;
-              text-align: center;
-              color: $black;
-              text-decoration: none;
-              padding: 0;
-              padding-bottom: 6px;
-              margin: 0 auto;
-              width: 320px;
-              background: transparent;
-              &.active {
-                  font-family: 'Roboto';
-                  font-size: 22px;
-                  font-style: normal;
-                  font-stretch: normal;
-                  line-height: normal;
-                  letter-spacing: normal;
-                  text-align: center;
-                  color: $blue-dark;
-                  border-bottom: 2px solid $blue-dark;
-              }
-          }
+    }
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
       }
-      .tab-content{
-          .text{
-              font-family: 'Roboto';
-              font-size: 24px;
-              font-weight: 300;
-              font-style: normal;
-              font-stretch: normal;
-              line-height: 1.33;
-              letter-spacing: normal;
-              color: $brown-grey-three;
-          }
-          .info{
-              font-size: 16px;
-              font-style: normal;
-              font-stretch: normal;
-              font-family: 'Roboto';
-              font-style: italic;
-              color: $brown-grey-three;
-              margin-top: 20px;
-          }
-         
+      .charts {
+        padding-left: 55px;
       }
-     
-  } 
-  .tabs-modernizacion {
-    margin-top: 50px;
-    .sub-title-tab{
+    }
+  }
+  .tabs-tendencias {
+    padding: 50px 60px;
+    .nav-tabs {
+      margin: 0 4px;
+      border: 0;
+      padding-bottom: 70px;
+      li {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        text-decoration: none;
+        padding: 0;
+        padding-bottom: 6px;
+        margin: 0 auto;
+        width: 200px;
+        &.active {
+          font-family: 'Roboto';
+          font-size: 22px;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: $blue-dark;
+          border-bottom: 2px solid $blue-dark;
+        }
+      }
+    }
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
+      }
+      .info {
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $brown-grey-three;
+        margin-top: 20px;
+      }
+      .charts {
+        padding-left: 55px;
+      }
+    }
+  }
+  .tabs-tendencias-2 {
+    .sub-title-tab {
       font-family: 'Roboto';
       font-size: 18px;
       font-weight: normal;
@@ -810,7 +774,79 @@
       letter-spacing: normal;
       text-align: center;
     }
-    .title-vision-tab{
+    .nav-tabs {
+      margin: 0 4px;
+      border: 0;
+      padding-bottom: 70px;
+      li {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        text-decoration: none;
+        padding: 0;
+        padding-bottom: 6px;
+        margin: 0 auto;
+        background: transparent;
+        &.active {
+          font-family: 'Roboto';
+          font-size: 22px;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: $blue-dark;
+          border-bottom: 2px solid $blue-dark;
+        }
+      }
+    }
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
+      }
+      .info {
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $brown-grey-three;
+        margin-top: 20px;
+      }
+    }
+  }
+  .tabs-modernizacion {
+    margin-top: 50px;
+    .sub-title-tab {
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    .title-vision-tab {
       font-family: 'Playfair Display';
       font-size: 31px;
       font-weight: normal;
@@ -823,81 +859,79 @@
       max-width: 500px;
     }
     .nav-tabs {
-        margin: 0 4px;
-        border: 0;
-        padding-bottom: 50px;
-        li{
-            border-bottom: 1px solid #e0e0e0;
-        }
-        a {
-            border-top: 0;
-            border-right: 0;
-            border-left: 0;
-            font-family: 'Roboto';
-            font-size: 22px;
-            font-weight: 300;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: $black;
-            text-decoration: none;
-            padding: 0;
-            padding-bottom: 34px;
-            margin: 0 auto;
-            width: 240px;
-            background: transparent;
-            &.active {
-                font-family: 'Roboto';
-                font-size: 22px;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                color: #eb6767;
-                border-bottom: 2px solid #eb6767;
-            }
-        }
-    }
-    .tab-content{
-        .text{
-            font-family: 'Roboto';
-            font-size: 24px;
-            font-weight: 300;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            color: $brown-grey-three;
-        }
-        .sub-title-tab{
+      margin: 0 4px;
+      border: 0;
+      padding-bottom: 50px;
+      li {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        text-decoration: none;
+        padding: 0;
+        padding-bottom: 34px;
+        margin: 0 auto;
+        width: 240px;
+        background: transparent;
+        &.active {
           font-family: 'Roboto';
-          font-size: 24px;
-          font-weight: bold;
+          font-size: 22px;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
           letter-spacing: normal;
-          color: $blue-dark;
-          margin-top: 6px;
+          text-align: center;
+          color: #eb6767;
+          border-bottom: 2px solid #eb6767;
         }
-        .info{
-            font-size: 16px;
-            font-style: normal;
-            font-stretch: normal;
-            font-family: 'Roboto';
-            font-style: italic;
-            color: $brown-grey-three;
-            margin-top: 20px;
-        }
-       
+      }
     }
-   
-  } 
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
+      }
+      .sub-title-tab {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $blue-dark;
+        margin-top: 6px;
+      }
+      .info {
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $brown-grey-three;
+        margin-top: 20px;
+      }
+    }
+  }
   .tabs-modernizacion-2 {
-    .title-tab-paginacion{
+    .title-tab-paginacion {
       font-family: 'Roboto';
       font-size: 24px;
       font-weight: bold;
@@ -909,7 +943,7 @@
       margin-bottom: 10px;
       padding-left: 60px;
     }
-    .text-tab-paginacion{
+    .text-tab-paginacion {
       font-family: 'Roboto';
       font-size: 24px;
       font-weight: 300;
@@ -920,89 +954,85 @@
       color: $brown-grey-three;
       padding-left: 60px;
       max-width: 525px;
-
-
     }
     .nav-tabs {
-        border: 0;
-        padding-bottom: 50px;
-        margin-top: 20px;
-        margin-left: 30%;
-        li{
-          border-bottom: 0;
-        }
-        a {
-            border-top: 0;
-            border-right: 0;
-            border-left: 0;
-            font-family: 'Roboto';
-            font-size: 22px;
-            font-weight: 300;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: $brown-grey-two;
-            text-decoration: none;
-            padding: 0;
-            margin: 0 auto;
-            width: 20px;
-            background: transparent;
-            font-size: 16px;
-            line-height: 1.38;
-            letter-spacing: normal;
-            border-bottom: 0px;
-            margin: 0 6px;
-            &.active {
-                font-family: 'Roboto';
-                font-size: 16px;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                line-height: 1.38;
-                color: $black;
-
-                border-bottom: 2px solid $blue-dark;
-            }
-        }
-    }
-    .tab-content{
-        .text{
-            font-family: 'Roboto';
-            font-size: 24px;
-            font-weight: 300;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            color: $brown-grey-three;
-        }
-        .sub-title-tab{
+      border: 0;
+      padding-bottom: 50px;
+      margin-top: 20px;
+      margin-left: 30%;
+      li {
+        border-bottom: 0;
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 22px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $brown-grey-two;
+        text-decoration: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 20px;
+        background: transparent;
+        font-size: 16px;
+        line-height: 1.38;
+        letter-spacing: normal;
+        border-bottom: 0px;
+        margin: 0 6px;
+        &.active {
           font-family: 'Roboto';
-          font-size: 24px;
-          font-weight: bold;
+          font-size: 16px;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
           letter-spacing: normal;
-          color: $blue-dark;
-          margin-top: 6px;
+          text-align: center;
+          line-height: 1.38;
+          color: $black;
+
+          border-bottom: 2px solid $blue-dark;
         }
-        .info{
-            font-size: 16px;
-            font-style: normal;
-            font-stretch: normal;
-            font-family: 'Roboto';
-            font-style: italic;
-            color: $brown-grey-three;
-            margin-top: 20px;
-        }
-       
+      }
     }
-   
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
+      }
+      .sub-title-tab {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $blue-dark;
+        margin-top: 6px;
+      }
+      .info {
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $brown-grey-three;
+        margin-top: 20px;
+      }
+    }
   }
   .tabs-sostenibilidad {
     margin-top: 50px;
@@ -1010,89 +1040,87 @@
     margin-bottom: 50px;
 
     .nav-tabs {
-        margin: 0 4px;
-        border: 0;
-        padding-bottom: 50px;
-        margin-right: 188px;
-        margin-left: 20px;
+      margin: 0 4px;
+      border: 0;
+      padding-bottom: 50px;
+      margin-right: 188px;
+      margin-left: 20px;
 
-        li{
-            border-bottom: 1px solid #e0e0e0;
-        }
-        a {
-            border-top: 0;
-            border-right: 0;
-            border-left: 0;
-            font-family: 'Roboto';
-            font-size: 20px;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: normal;
-            text-align: center;
-            color: $black;
-            text-decoration: none;
-            padding: 0;
-            padding-bottom: 20px;
-            margin: 0 auto;
-            background: transparent;
-            &.active {
-                font-family: 'Roboto';
-                font-size: 20px;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                text-align: center;
-                color: $greenwater-dark;
-                border-bottom: 2px solid $greenwater-dark;
-            }
-        }
-    }
-    .tab-content{
-        .text{
-            font-family: 'Roboto';
-            font-size: 24px;
-            font-weight: 300;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            color: $brown-grey-three;
-        }
-        .sub-title-tab{
+      li {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        text-decoration: none;
+        padding: 0;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        background: transparent;
+        &.active {
           font-family: 'Roboto';
-          font-size: 24px;
-          font-weight: bold;
+          font-size: 20px;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
           letter-spacing: normal;
-          color: $blue-dark;
-          margin-top: 6px;
+          text-align: center;
+          color: $greenwater-dark;
+          border-bottom: 2px solid $greenwater-dark;
         }
-        .info{
-            font-size: 16px;
-            font-style: normal;
-            font-stretch: normal;
-            font-family: 'Roboto';
-            font-style: italic;
-            color: $brown-grey-three;
-            margin-top: 20px;
-        }
-       
+      }
     }
-   
-  }  
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
+      }
+      .sub-title-tab {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $blue-dark;
+        margin-top: 6px;
+      }
+      .info {
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $brown-grey-three;
+        margin-top: 20px;
+      }
+    }
+  }
   .tabs-equipo {
     padding: 50px 60px;
     padding-bottom: 0;
     position: relative;
-    .equipo-divider{
+    .equipo-divider {
       margin-top: 140px;
       margin-bottom: 100px;
     }
-    .title-equipo{
+    .title-equipo {
       font-family: 'Roboto';
       font-size: 48px;
       font-weight: bold;
@@ -1103,7 +1131,7 @@
       color: $black;
       margin-bottom: 30px;
     }
-    .nombre{
+    .nombre {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: bold;
@@ -1113,9 +1141,8 @@
       letter-spacing: normal;
       color: $black;
       margin-bottom: 10px;
-
     }
-    .cargo{
+    .cargo {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: normal;
@@ -1126,9 +1153,8 @@
       color: $blue-dark;
       margin-bottom: 10px;
       max-width: 187px;
-
     }
-    .cargo-2{
+    .cargo-2 {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: normal;
@@ -1137,15 +1163,13 @@
       line-height: normal;
       letter-spacing: normal;
       color: $blue-dark;
-      
-
     }
-    .divider-equipo{
+    .divider-equipo {
       margin: 30px 0;
       height: 1px;
       background-color: #b2b2b2;
     }
-    .rut{
+    .rut {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: normal;
@@ -1155,9 +1179,8 @@
       letter-spacing: normal;
       color: $black;
       margin-bottom: 20px;
-
     }
-    .info-equipo{
+    .info-equipo {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: normal;
@@ -1169,9 +1192,8 @@
       padding-top: 20px;
       border-top: 1px solid $black;
       margin-bottom: 50px;
-
     }
-    .info-equipo-2{
+    .info-equipo-2 {
       font-family: 'Roboto';
       font-size: 16px;
       font-weight: normal;
@@ -1181,566 +1203,290 @@
       letter-spacing: normal;
       color: $brown-grey-three;
       margin-bottom: 30px;
-
     }
-    .img-persona{
+    .img-persona {
       margin-bottom: 30px;
     }
-    .equipo-box{
+    .equipo-box {
       margin-left: 30px;
-      
     }
-    
-    .equipo-maring{
-      margin-left: 30px;     
+
+    .equipo-maring {
+      margin-left: 30px;
     }
     .nav-tabs {
-        margin: 0 4px;
-        border: 0;
-        padding-bottom: 63px;
-        li{
-            border-bottom: 1px solid #e0e0e0;
-        }
-        a {
-          border-top: 0;
-          border-right: 0;
-          border-left: 0;
+      margin: 0 4px;
+      border: 0;
+      padding-bottom: 63px;
+      li {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        text-decoration: none;
+        padding: 0;
+        padding-bottom: 6px;
+        margin: 0 auto;
+        min-height: 55px;
+        &.active {
           font-family: 'Roboto';
           font-size: 20px;
-          font-weight: 300;
-          font-style: normal;
+          font-weight: bold;
           font-stretch: normal;
           line-height: normal;
           letter-spacing: normal;
           text-align: center;
           color: $black;
-          text-decoration: none;
-          padding: 0;
-          padding-bottom: 6px;
-          margin: 0 auto;
-          min-height: 55px;
-          &.active {
-              font-family: 'Roboto';
-              font-size: 20px;
-              font-weight: bold;
-              font-stretch: normal;
-              line-height: normal;
-              letter-spacing: normal;
-              text-align: center;
-              color: $black;
-              border-bottom: 2px solid $black;
-
-          }
+          border-bottom: 2px solid $black;
+        }
       }
     }
-    .tab-content{
-        .text{
-            font-family: 'Roboto';
-            font-size: 24px;
-            font-weight: 300;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.33;
-            letter-spacing: normal;
-            color: $brown-grey-three;
-        }
-        .info{
-            font-size: 16px;
-            font-style: normal;
-            font-stretch: normal;
-            font-family: 'Roboto';
-            font-style: italic;
-            color: $brown-grey-three;
-            margin-top: 20px;
-        }
-        .charts{
-            padding-left: 55px!important;
-        }
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
+      }
+      .info {
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $brown-grey-three;
+        margin-top: 20px;
+      }
+      .charts {
+        padding-left: 55px;
+      }
     }
-    
+  }
+
+  .table {
+    padding: 50px 60px !important;
+    margin-bottom: 0rem;
+    &.no-padding {
+      padding: 0 !important;
+      padding-bottom: 50px !important;
+    }
+    .big-title-table {
+      font-family: 'Roboto';
+      font-size: 16px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: $black;
+      border-bottom: 3px solid $black;
+      padding-bottom: 12px !important;
+      padding-top: 20px !important;
+    }
+    .header {
+      border-bottom: 3px solid $black;
+      padding-bottom: 10px;
+      padding: 0;
+      &.ligth {
+        border-bottom: 1px solid $black;
+      }
+      .title {
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        &.text-rigth {
+          text-align: right;
+        }
+      }
+    }
+    .wrapp-data {
+      padding: 12px 0px;
+      border-bottom: 1px solid $very-light;
+      .data {
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+
+        &.text-rigth {
+          text-align: right;
+        }
+        &.light {
+          color: $brown-grey-two;
+        }
+      }
+    }
+  }
 }
 
-
-
-    .table{
-        padding: 50px 60px!important;
-        margin-bottom: 0rem;
-        &.no-padding{
-          padding: 0!important;
-          padding-bottom: 50px!important;
-        }
-        .big-title-table{
-          font-family: 'Roboto';
-          font-size: 16px;
-          font-weight: bold;
-          font-style: normal;
-          font-stretch: normal;
-          line-height: normal;
-          letter-spacing: normal;
-          text-align: center;
-          color: $black;
-          border-bottom: 3px solid $black;
-          padding-bottom: 12px!important;
-          padding-top: 20px!important;
-
-        }
-        .header{
-            border-bottom: 3px solid  $black;
-            padding-bottom: 10px;
-            padding: 0;
-            &.ligth{
-                border-bottom: 1px solid  $black;
-            }
-            .title{
-                font-family: 'Roboto';
-                font-size: 16px;
-                font-weight: bold;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: $black;
-                margin-bottom: 10px;
-                margin-top: 10px;
-                &.text-rigth{
-                    text-align: right;
-                }
-            }
-        }
-        .wrapp-data{
-            padding: 12px 0px;
-            border-bottom: 1px solid $very-light;
-            .data{
-                font-family: 'Roboto';
-                font-size: 16px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: normal;
-                letter-spacing: normal;
-                color: $black;
-               
-                &.text-rigth{
-                    text-align: right;
-                }
-                &.light{
-                  color: $brown-grey-two;                
-                }
-            }
-        }
-        
-       
-    }
-    
-}
-
-
-.modal-dialog{
+.modal-dialog {
   margin-top: 80px;
   padding-left: 80px;
 }
 .modal-body {
   padding: 0px;
 }
-.modal-backdrop.show{
-  opacity: .7;
+.modal-backdrop.show {
+  opacity: 0.7;
 }
 
-
- // .tab-content {
-        //     z-index: -1;
-        //     .tab-img {
-        //     height: 449px;
-        //     min-height: 449px;
-        //     background-image: url('../assets/fondo-pilar-01.png');
-        //     position: relative;
-        //     margin-left: 20px;
-        //     margin-right: 20px;
-        //     .rectangule-img {
-        //         width: 480px;
-        //         height: 160px;
-        //         background-color: #eb6767;
-        //         position: absolute;
-        //         left: 162px;
-        //         top: 235px;
-        //         p {
-        //         padding: 20px 40px 26px 40px;
-        //         font-family: 'Roboto';
-        //         font-size: 48px;
-        //         font-weight: bold;
-        //         font-style: normal;
-        //         font-stretch: normal;
-        //         line-height: normal;
-        //         letter-spacing: normal;
-        //         color: $white;
-        //         }
-        //     }
-        //     }
-        // }
-
-  // .parrafos-3{
-      //   -webkit-column-gap: 60px;
-      //   -moz-column-gap: 60px;
-      //   column-gap: 60px;
-      //   -webkit-column-count: 3;
-      //   -moz-column-count: 3;
-      //   column-count: 3;
-      //   padding-right: 20px!important;
-      // }
-    
-    // .title-big{
-    //   font-family: 'Roboto';
-    //   font-size: 48px;
-    //   font-weight: bold;
-    //   font-style: normal;
-    //   font-stretch: normal;
-    //   line-height: 1.04;
-    //   letter-spacing: normal;
-    //   color: $black;
-    //  }
-
-//   
-//   .background{
-//     background-color: #f4f4f4;
-//     padding:40px 20px;
-//   }
-//   .box-parrafos {
-//     padding: 0 20px;
-//     padding-right: 70px;
-//     margin: 0;
-
-//     p {
-//       font-family: 'Roboto';
-//       font-size: 16px;
-//       font-weight: normal;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: 1.56;
-//       letter-spacing: normal;
-//       color: $brown-grey-three;
-//       margin-bottom: 20px;
-//       &.big{
-//         font-size: 24px;
-//         font-weight: 300;
-//         line-height: 1.33;
-//       }
-//     }
-//     .title{
-//      @extend .contenido-h2;
-//     }
-//     .title-big{
-//       font-family: 'Roboto';
-//       font-size: 48px;
-//       font-weight: bold;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: 1.04;
-//       letter-spacing: normal;
-//       color: $black;
-//      }
-//   }
-
-//   .box-image {
-//     padding: 0;
-//     .img-chart {
-//       height: 475px;
-//       width: 100%;
-//       padding-right: 60px;
-//     }
-//     .img-quoute {
-//       height: 864px;
-//       width: 100%;
-//     }
-//     .quote {
-//       position: absolute;
-//       width: 94px;
-//       height: 90px;
-//       top: -50px;
-//       z-index: -1;
-//     }
-//     .title-img {
-//       padding: 0 95px 0 0;
-//       padding-bottom: 35px;
-//       font-family: 'Playfair Display';
-//       font-size: 34px;
-//       font-weight: normal;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: normal;
-//       letter-spacing: normal;
-//       text-align: right;
-//       color: #eb6767;
-//     }
-//   }
-
-//   .quote-alone{
-//     position: relative;
-//     margin-top: 108px;
-//     float: left;
-//     width: 100%;
-//     margin-bottom: 64px;
-//     .quote {
-//       position: absolute;
-//       width: 94px;
-//       height: 90px;
-//       top: -50px;
-//       right: 641px;
-//       z-index: -1;
-//     }
-//     .title-img {
-//       font-family: 'Playfair Display';
-//       font-size: 34px;
-//       font-weight: normal;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: normal;
-//       letter-spacing: normal;
-//       text-align: right;
-//       color: #eb6767;
-//       float: right;
-//       margin-right: 40px;
-//       width: 725px;
-
-//     }
-//   }
-
-//   .tabs-vision {
-//     .title-tab {
-//       padding: 0 20px;
-//       font-family: 'Roboto';
-//       font-size: 48px;
-//       font-weight: bold;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: 0.52;
-//       letter-spacing: normal;
-//       color: #eb6767;
-//       margin-bottom: 50px;
-//     }
-//     .nav-tabs {
-//       margin-left: 26%;
-//       margin-bottom: 53px;
-//       border: 0;
-//       a {
-//         &.active {
-//           color: #eb6767;
-//           border-bottom: 2px solid #eb6767;
-//         }
-//       }
-
-//       a {
-//         border-top: 0;
-//         border-right: 0;
-//         border-left: 0;
-//         font-family: 'Roboto';
-//         font-size: 22px;
-//         font-weight: 300;
-//         font-style: normal;
-//         font-stretch: normal;
-//         line-height: normal;
-//         letter-spacing: normal;
-//         text-align: center;
-//         color: #999999;
-//         text-decoration: none;
-//         padding-bottom: 10px;
-//         &.active {
-//           font-family: 'Roboto';
-//           font-size: 22px;
-//           font-weight: bold;
-//           font-style: normal;
-//           font-stretch: normal;
-//           line-height: normal;
-//           letter-spacing: normal;
-//           text-align: center;
-//         }
-//       }
-//     }
-//     .tab-content {
-//       z-index: -1;
-//       .tab-img {
-//         height: 449px;
-//         min-height: 449px;
-//         background-image: url('../assets/fondo-pilar-01.png');
-//         position: relative;
-//         margin-left: 20px;
-//         margin-right: 20px;
-//         .rectangule-img {
-//           width: 480px;
-//           height: 160px;
-//           background-color: #eb6767;
-//           position: absolute;
-//           left: 162px;
-//           top: 235px;
-//           p {
-//             padding: 20px 40px 26px 40px;
-//             font-family: 'Roboto';
-//             font-size: 48px;
-//             font-weight: bold;
-//             font-style: normal;
-//             font-stretch: normal;
-//             line-height: normal;
-//             letter-spacing: normal;
-//             color: $white;
-//           }
-//         }
-//       }
-
-//       .info-tab {
-//         background-color: $very-light-two;
-//         min-height: 722px;
-//         padding-bottom: 20px;
-//         margin-top: -235px;
-//         .number {
-//           margin-top: 297px;
-//           font-family: 'Roboto';
-//           font-size: 135px;
-//           font-weight: bold;
-//           font-style: normal;
-//           font-stretch: normal;
-//           line-height: 0.74;
-//           letter-spacing: normal;
-//           text-align: right;
-//           color: #eb6767;
-//           margin-right: 30px;
-//         }
-//         .parrafos {
-//           margin-top: 297px;
-//           -webkit-column-gap: 20px;
-//           -moz-column-gap: 20px;
-//           column-gap: 20px;
-//           -webkit-column-count: 2;
-//           -moz-column-count: 2;
-//           column-count: 2;
-//           p {
-//             font-family: 'Roboto';
-//             font-size: 16px;
-//             font-weight: normal;
-//             font-style: normal;
-//             font-stretch: normal;
-//             line-height: 1.56;
-//             letter-spacing: normal;
-//             color: $brown-grey-three;
-//             padding: 0 20px;
-//           }
-//         }
-//       }
-//     }
-//   }
-//   .tabs-equipo {
-//     padding-bottom: 40px;
-
-//     .nav-tabs {
-//       margin: 0 6px;
-//       padding-top: 40px;
-
-//       border: 0;
-//       a {
-//         &.active {
-//           color: $periwinkle-dark;
-//           border-bottom: 2px solid $periwinkle-dark;
-//         }
-//       }
-//       a {
-//         border-top: 0;
-//         border-right: 0;
-//         border-left: 0;
-//         font-family: 'Roboto';
-//         font-size: 22px;
-//         font-weight: 300;
-//         font-style: normal;
-//         font-stretch: normal;
-//         line-height: normal;
-//         letter-spacing: normal;
-//         text-align: center;
-//         color: #999999;
-//         text-decoration: none;
-//         padding-bottom: 10px;
-//         &.active {
-//           font-family: 'Roboto';
-//           font-size: 22px;
-//           font-weight: bold;
-//           font-style: normal;
-//           font-stretch: normal;
-//           line-height: normal;
-//           letter-spacing: normal;
-//           text-align: center;
-//         }
-//       }
-//     }
-//     .tab-content {
-//       z-index: -1;
-//       .tab-img {
-//         height: 449px;
-//         min-height: 449px;
-//         background-image: url('../assets/fondo-pilar-01.png');
-//         position: relative;
-//         margin-left: 20px;
-//         margin-right: 20px;
-//         .rectangule-img {
-//           width: 480px;
-//           height: 160px;
-//           background-color: #eb6767;
-//           position: absolute;
-//           left: 162px;
-//           top: 235px;
-//           p {
-//             padding: 20px 40px 26px 40px;
-//             font-family: 'Roboto';
-//             font-size: 48px;
-//             font-weight: bold;
-//             font-style: normal;
-//             font-stretch: normal;
-//             line-height: normal;
-//             letter-spacing: normal;
-//             color: $white;
-//           }
-//         }
-//       }
-
-//       .info-tab {
-//         padding-bottom: 40px;
-//         margin-top: 56px;
-//         margin-left: 8px;
-//         margin-right: 60px;
-//         .text {
-//           font-family: 'Roboto';
-//           font-size: 24px;
-//           color: $brown-grey-three;
-//           font-weight: 300;
-//           font-style: normal;
-//           font-stretch: normal;
-//           line-height: 1.33;
-//           letter-spacing: normal;
-//         }
-//         .charts {
-//           height: 475px;
-//         }
-//       }
-//     }
-//   }
-
-//   .footer {
-//     min-height: 70px;
-//     background-color: #dedede;
-//     padding: 20px;
-//   }
-//   .sub-menu {
-//     height: 65px;
-//     width: 100%;
-//     .section {
-//       font-family: 'Roboto';
-//       font-size: 16px;
-//       font-weight: 300;
-//       font-style: normal;
-//       font-stretch: normal;
-//       line-height: 1.56;
-//       letter-spacing: normal;
-//       color: $brown-grey-three;
-//       &:hover {
-//         cursor: pointer;
-//       }
-//     }
-//   }
-
-// }
-
+@media (max-width: 580px) {
+  .modal-dialog {
+    margin-top: 50%;
+    padding-left: 0;
+  }
+  #vision,
+  #financieros,
+  #accionistas,
+  #equipo,
+  #carta-presidente,
+  #tendencias,
+  #carta-gerente-general,
+  #mordernizacion,
+  #sostenibilidad,
+  #descargables ,
+  #proyecciones {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 70px;
+    .p-r-60 {
+      padding-right: 0;
+    }
+    .title {
+      margin: 40px 0;
+      color: #333333 !important;
+      word-wrap: break-word;
+    }
+    .cita {
+      padding: 30px 20px;
+    }
+    .divider-header {
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: #333333 !important;
+    }
+    .title-modernizacion {
+      margin-top: 40px;
+    }
+    .title-modernizacion-2 {
+      margin-top: 0;
+    }
+    .divider {
+      display: none;
+    }
+    .background-sostenibilidad {
+      padding-top: 20px !important;
+    }
+    .img-sostenibilidad,
+    .croquis-sostenibilidad,
+    .croquis-9,
+    .croquis-5,
+    .croquis-7,
+    .croquis-11,
+    .cube,
+    .cube-large-2,
+    .cube-large,
+    .img-croquis-3,
+    .quote-alone,
+    .header,
+    .static-logo {
+      display: none;
+    }
+    .box-parrafos {
+      padding: 0 20px;
+      padding-bottom: 20px;
+    }
+    .charts {
+      padding: 0 !important;
+      margin-top: 20px;
+    }
+    .edificio-corporativo {
+      padding: 0 !important;
+      margin-bottom: 20px;
+    }
+    .cita-sostenibilidad,
+    .one,
+    .two,
+    .three,
+    .three-special,
+    .three-special-2 {
+      padding: 0 !important;
+    }
+    .nav-tabs {
+      padding-bottom: 20px !important;
+    }
+    .hero-img {
+      display: inherit;
+      width: 100%;
+    }
+    .nav-justified .nav-item {
+      border-bottom: 0px !important;
+      margin-top: 10px;
+    }
+    .image-background {
+      height: inherit;
+      background-image: none !important;
+    }
+    .wrapp-download,.title-descargable {
+      margin: 20px;
+    }
+    .tabs-tendencias,
+    .tabs-equipo,
+    .tabs-financiero,
+    .tabs-sostenibilidad,
+    .table {
+      padding: 20px !important;
+    }
+    .tabs-modernizacion-2 .nav-tabs {
+      margin-left: 0;
+    }
+    .tabs-sostenibilidad .nav-tabs {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .margin-sostenibilidad,
+    .margin-sostenibilidad,
+    .margin-sostenibilidad-2,
+    .margin-sostenibilidad-3 {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .title-tab-paginacion,
+    .text-tab-paginacion {
+      padding-left: 0 !important;
+    }
+    .wrapp-play {
+      top: -100px;
+      .title-video {
+        display: none;
+      }
+    }
+  }
+}

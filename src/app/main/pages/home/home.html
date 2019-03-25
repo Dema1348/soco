@@ -1,88 +1,102 @@
 <div id="home">
   <div class="row ">
     <div class="col-sm-9 p-0">
-      <div class="wrapp">
-        <div class="row">
-          <div class="col p-0 ">
-            <div class="title  animated fadeInDown  ">Diseño</div>
-            <div class="sub-title title animated fadeInUp ">
-              centrado en el habitar
-            </div>
-          </div>
-          <div class="col p-0  col-sm-1">
-            <div class="cube animated rollIn delay-1s"></div>
-            <div class="cube-large-2 animated rollIn delay-1s"></div>
+      <div class="row">
+        <div class="col p-0 ">
+          <div class="title  animated fadeInDown  ">Diseño</div>
+          <div class="sub-title title animated fadeInUp ">
+            centrado en el habitar
           </div>
         </div>
-        <div class="row box-wrapp">
-          <div class="col p-0 box" ng-mouseover="vm.futuro()" ng-mouseleave="vm.reset()">
-            <div class="title-box futuro" >
-              Pensar en el futuro
-            </div>
-            <div class="sub-title-box" >
-              Modernización de la estructura organizacional
-            </div>
-            <a
-              ui-sref="app.pages.highlight-futura"
-              class="btn button-soco futuro"
-            >
-              Ver más <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="col p-0 box " ng-mouseover="vm.personas()" ng-mouseleave="vm.reset()">
-            <div class="title-box personas" >
-              Pensar en las personas
-            </div>
-            <div class="sub-title-box">Diseño y venta de valor</div>
-            <a
-              ui-sref="app.pages.highlight-personas"
-              class="btn button-soco personas"
-            >
-              Ver más <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="col p-0 box" ng-mouseover="vm.innovacion()" ng-mouseleave="vm.reset()">
-            <div class="title-box innovacion">
-              Pensar en Innovación
-            </div>
-            <div class="sub-title-box">
-              Diseño digital y transformación de la constructora
-            </div>
-            <a
-              ui-sref="app.pages.highlight-innovacion"
-              class="btn button-soco innovacion"
-            >
-              Ver más <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="col p-0 box" ng-mouseover="vm.rodea()" ng-mouseleave="vm.reset()">
-            <div class="title-box rodea" >
-              Pensar en lo que nos rodea
-            </div>
-            <div class="sub-title-box">
-              Diseño sostenible y vinculación con el entorno
-            </div>
-            <a
-              ui-sref="app.pages.highlight-rodea"
-              class="btn button-soco rodea"
-            >
-              Ver más <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="col p-0 box" ng-mouseover="vm.equipo()" ng-mouseleave="vm.reset()">
-            <div class="title-box equipo" >
-              Pensar en equipo
-            </div>
-            <div class="sub-title-box">Talento y trabajo colaborativo</div>
-            <a
-              ui-sref="app.pages.highlight-equipo"
-              class="btn button-soco equipo"
-            >
-              Ver más <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
+        <div class="col p-0  col-sm-1">
+          <div class="cube animated rollIn delay-1s"></div>
+          <div class="cube-large-2 animated rollIn delay-1s"></div>
         </div>
-     
+      </div>
+      <div class="row box-wrapp">
+        <div
+          class="col p-0 box"
+          ng-mouseover="vm.futuro()"
+          ng-mouseleave="vm.reset()"
+        >
+          <div class="title-box futuro">
+            Pensar en el futuro
+          </div>
+          <div class="sub-title-box">
+            Modernización de la estructura organizacional
+          </div>
+          <a
+            ui-sref="app.pages.highlight-futura"
+            class="btn button-soco futuro"
+          >
+            Ver más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div
+          class="col p-0 box "
+          ng-mouseover="vm.personas()"
+          ng-mouseleave="vm.reset()"
+        >
+          <div class="title-box personas">
+            Pensar en las personas
+          </div>
+          <div class="sub-title-box">Diseño y venta de valor</div>
+          <a
+            ui-sref="app.pages.highlight-personas"
+            class="btn button-soco personas"
+          >
+            Ver más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div
+          class="col p-0 box"
+          ng-mouseover="vm.innovacion()"
+          ng-mouseleave="vm.reset()"
+        >
+          <div class="title-box innovacion">
+            Pensar en Innovación
+          </div>
+          <div class="sub-title-box">
+            Diseño digital y transformación de la constructora
+          </div>
+          <a
+            ui-sref="app.pages.highlight-innovacion"
+            class="btn button-soco innovacion"
+          >
+            Ver más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div
+          class="col p-0 box"
+          ng-mouseover="vm.rodea()"
+          ng-mouseleave="vm.reset()"
+        >
+          <div class="title-box rodea">
+            Pensar en lo que nos rodea
+          </div>
+          <div class="sub-title-box">
+            Diseño sostenible y vinculación con el entorno
+          </div>
+          <a ui-sref="app.pages.highlight-rodea" class="btn button-soco rodea">
+            Ver más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div
+          class="col p-0 box"
+          ng-mouseover="vm.equipo()"
+          ng-mouseleave="vm.reset()"
+        >
+          <div class="title-box equipo">
+            Pensar en equipo
+          </div>
+          <div class="sub-title-box">Talento y trabajo colaborativo</div>
+          <a
+            ui-sref="app.pages.highlight-equipo"
+            class="btn button-soco equipo"
+          >
+            Ver más <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
     <div class="col-sm-3 p-0">
@@ -107,71 +121,69 @@
           </div>
         </div>
       </div>
-     
     </div>
   </div>
   <div class="row">
-      <div class="col-sm-9 p-0">
-        <div class="img-slider ">
-            <img
-                ng-if="vm.imgSliderCaras"
-                class="img-fluid animationIf "
-                src="./assets/animaciones-caras.gif"
-                
-              />
-          <img
-            ng-if="vm.imgSliderPersonas"
-            class="img-fluid animationIf "
-            src="./assets/pensar-en-las-personas.jpg"
-            srcset="
-              ./assets/pensar-en-las-personas@2x.jpg 2x,
-              ./assets/pensar-en-las-personas@3x.jpg 3x
-            "
-          />
-          <img
-            ng-if="vm.imgSliderEquipo"
-            class="img-fluid animationIf"
-            src="./assets/equipo-revisando-planos.jpg"
-            srcset="
-              ./assets/equipo-revisando-planos@2x.jpg 2x,
-              ./assets/equipo-revisando-planos@3x.jpg 3x
-            "
-          />
-          <img
-            ng-if="vm.imgSliderRodea"
-            class="img-fluid animationIf"
-            src="./assets/myles-tan-84040-unsplash.jpg"
-            srcset="
-              ./assets/myles-tan-84040-unsplash@2x.jpg 2x,
-              ./assets/myles-tan-84040-unsplash@3x.jpg 3x
-            "
-          />
-          <img
-            ng-if="vm.imgSliderFuturo"
-            class="img-fluid animationIf"
-            src="./assets/ventanales-frontis-edificio.jpg"
-            srcset="
-              ./assets/ventanales-frontis-edificio@2x.jpg 2x,
-              ./assets/ventanales-frontis-edificio@3x.jpg 3x
-            "
-          />
-          <img
-            ng-if="vm.imgSliderInnovacion"
-            class="img-fluid animationIf"
-            src="./assets/celular-foto-ventanal.jpg"
-            srcset="
-              ./assets/celular-foto-ventanal@2x.jpg 2x,
-              ./assets/celular-foto-ventanal@3x.jpg 3x
-            "
-          />
+    <div class="col-sm-9 p-0">
+      <div class="img-slider ">
+        <img
+          ng-if="vm.imgSliderCaras"
+          class="img-fluid animationIf "
+          src="./assets/animaciones-caras.gif"
+        />
+        <img
+          ng-if="vm.imgSliderPersonas"
+          class="img-fluid animationIf "
+          src="./assets/pensar-en-las-personas.jpg"
+          srcset="
+            ./assets/pensar-en-las-personas@2x.jpg 2x,
+            ./assets/pensar-en-las-personas@3x.jpg 3x
+          "
+        />
+        <img
+          ng-if="vm.imgSliderEquipo"
+          class="img-fluid animationIf"
+          src="./assets/equipo-revisando-planos.jpg"
+          srcset="
+            ./assets/equipo-revisando-planos@2x.jpg 2x,
+            ./assets/equipo-revisando-planos@3x.jpg 3x
+          "
+        />
+        <img
+          ng-if="vm.imgSliderRodea"
+          class="img-fluid animationIf"
+          src="./assets/myles-tan-84040-unsplash.jpg"
+          srcset="
+            ./assets/myles-tan-84040-unsplash@2x.jpg 2x,
+            ./assets/myles-tan-84040-unsplash@3x.jpg 3x
+          "
+        />
+        <img
+          ng-if="vm.imgSliderFuturo"
+          class="img-fluid animationIf"
+          src="./assets/ventanales-frontis-edificio.jpg"
+          srcset="
+            ./assets/ventanales-frontis-edificio@2x.jpg 2x,
+            ./assets/ventanales-frontis-edificio@3x.jpg 3x
+          "
+        />
+        <img
+          ng-if="vm.imgSliderInnovacion"
+          class="img-fluid animationIf"
+          src="./assets/celular-foto-ventanal.jpg"
+          srcset="
+            ./assets/celular-foto-ventanal@2x.jpg 2x,
+            ./assets/celular-foto-ventanal@3x.jpg 3x
+          "
+        />
+      </div>
+    </div>
+    <div class="col p-0">
+      <div class="row">
+        <div class="col p-0 croquis">
+          <img class="img-fluid" src="./assets/croquis-1.jpg" alt="" />
         </div>
       </div>
-      <div class="col p-0">
-         <div class="row">
-            <div class="col p-0 croquis">
-                    <img class="img-fluid" src="./assets/croquis-1.jpg" alt="" />
-            </div>
-        </div>
-      </div>
+    </div>
   </div>
 </div>

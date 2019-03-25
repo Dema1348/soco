@@ -1,56 +1,97 @@
 /* The side navigation menu */
-.sidenav {
+#side-menu {
   height: 100%; /* 100% Full-height */
-  width: 80px; 
+  width: 80px;
   position: fixed; /* Stay in place */
   z-index: 99999999; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #FFFFFF; /* Black*/
+  background-color: #ffffff; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   padding: 30px 26px;
-  .year{
-      white-space: inherit;
-      margin: 0;
-      word-break: break-all;
-      width: 26px;
-      margin: 0 auto;
-      font-family: 'Roboto';
-      font-size: 16px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: 0.88;
-      letter-spacing: normal;
-      text-align: center;
-      color: $black;
-
-      
+  .year {
+    white-space: inherit;
+    margin: 0;
+    word-break: break-all;
+    width: 26px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
   }
-  .menu{
+  .menu {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .title{
-
-      transform: rotate(-90deg);
-      font-family: 'Roboto';
-      font-size: 17px;
-      font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: -0.2px;
-      color: $black;
-      margin-top: 114px;
-    span{
-      color: #9A9A9A;
+  .title {
+    transform: rotate(-90deg);
+    font-family: 'Roboto';
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    color: $black;
+    margin-top: 114px;
+    span {
+      color: #9a9a9a;
     }
   }
+  .find {
+    display: none;
+    transition: 0.5s;
+  }
+  .logo-empresa {
+    display: none;
+    transition: 0.5s;
 
+  }
 }
 
+@media  (max-width: 580px) {
+  #side-menu {
+    width: 100%;
+    height: 70px;
+    padding: 10px 20px;
+    .logo-empresa {
+      display: initial;
+    }
+    .menu{
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      margin: 0;
+    }
+    .find{
+      position: absolute;
+      top: 25px;
+      right: 60px;
+      margin: 0;
+      display: inherit;
 
+    }
+    .year {
+      word-break: inherit;
+      width: initial;
+      position: absolute;
+      margin-top: 4px;
+    }
 
+    .title {
+      position: absolute;
+      transform: inherit;
+      -webkit-transform: inherit;
+      margin-top: 0;
+      left: 58px;
+    }
+  }
+}

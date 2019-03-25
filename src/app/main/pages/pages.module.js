@@ -7,12 +7,13 @@
       "app.pages.vision",
       "app.pages.highlight",
       "app.pages.financieros",
-      "app.pages.accionistas",
       "app.pages.equipo",
       "app.pages.cartas",
       "app.pages.tendencias",
       "app.pages.modernizacion",
-      "app.pages.sostenibilidad"
+      "app.pages.sostenibilidad",
+      "app.pages.descargables",
+      "app.pages.proyecciones"
     ])
     .config(config);
 

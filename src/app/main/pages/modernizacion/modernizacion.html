@@ -1,4 +1,8 @@
 <div id="mordernizacion" class="mordernizacion">
+    <img src="./assets/hero-mordernizacion.jpg"
+		srcset="./assets/hero-mordernizacion@2x.jpg 2x,
+				./assets/hero-mordernizacion@3x.jpg 3x"
+		class="img-fluid hero-img">
   <div class="row  image-background mordernizacion">
     
     <div class="col  p-0">
@@ -42,19 +46,19 @@
   <div class="cita ">
       El 2018 Empresas Socovesa inició un proceso interno de modernización el cual viene a sostener una nueva forma de diseñar, construir, vender y relacionarse con el entorno, buscando de esta manera, fortalecer sus fundamentos de crecimiento para los próximos años. Este proceso llevó a la Compañía a formalizar su propósito, pilares estratégicos, y principios culturales y a trazar el camino que le permitirá consolidarse como una empresa de diseño centrada en el habitar.  </div>
   <div class="divider"></div>
-  <section class="row box-parrafos n-p-r">
+  <section class="row box-parrafos">
     <div class="col-md-12 p-0 ">
       <div class="row">
           <div class="col-sm-6 parrafo one p-0">
             <p>Aprovechando su sólida posición financiera y teniendo claros los desafíos futuros que enfrenta la industria inmobiliaria, Empresas Socovesa inició el 2018 el proceso de modernización organizacional más importante de su historia reciente a través del cual busca consolidarse como una sola gran empresa de diseño, centrada en el habitar de las personas. </p>
             <p>Esta decisión de cambio responde a varias razones, siendo la más significativa, fortalecer la generación de rentabilidades atractivas para la Compañía, adaptándose mejor al nuevo entorno  urbano y de negocios. </p>
             <p>En concreto, transitar hacia una empresa de diseño significa  fortalecer aún más el foco en el cliente, potenciar el desarrollo de productos más conectados con sus necesidades, contar con equipos de trabajo más especializados, métodos de trabajo colaborativos, transferir mejores prácticas y atraer y retener al mejor talento. </p>
+          
           </div>
       
           <div class="col-sm-6 parrafo  three p-0 ">
-              <p class="p-r-60">Los cambios organizacionales se materializaron con el apoyo de una consultora externa, experta en procesos adaptativos, la que además de entregar apoyo a cada una de las áreas intervenidas, facilitó la definición de un nuevo relato corporativo para Empresas Socovesa y sus marcas.</p>
-              <br>
-              <img class="img-fluid w-100" src="./assets/croquis-11.jpg"
+              <p>Los cambios organizacionales se materializaron con el apoyo de una consultora externa, experta en procesos adaptativos, la que además de entregar apoyo a cada una de las áreas intervenidas, facilitó la definición de un nuevo relato corporativo para Empresas Socovesa y sus marcas.</p>
+              <img class="img-fluid croquis-11" src="./assets/croquis-11.jpg"
               srcset="./assets/croquis-11@2x.jpg 2x,
                       ./assets/croquis-11@3x.jpg 3x"
               >
@@ -77,14 +81,15 @@
                   srcset="./assets/video-fallback@2x.jpg 2x,
                           ./assets/video-fallback@3x.jpg 3x"
                   class="img-fluid w-100">
+                  <div class="wrapp-play">
+                      <img
+                        ng-click="vm.openModal()"
+                        src="./assets/boton-play.svg"
+                        class="button-play "
+                      />
+                    </div>
                  </div>
-                 <div class="wrapp-play">
-                    <img
-                      ng-click="vm.openModal()"
-                      src="./assets/boton-play.svg"
-                      class="button-play "
-                    />
-                  </div>
+                
               
               </div>
             </uib-tab>
@@ -127,7 +132,7 @@
                                             ./assets/cultura-trabajo-colaborativo@3x.png 3x"
                                     class="img-fluid ">
                                  </div>
-                                 <div class="col p-0">
+                                 <div class="col-sm-8 p-0">
                                     <div class="title-tab-paginacion">Trabajo colaborativo</div>
                                    <div class="text-tab-paginacion">La Compañía y sus personas son llamadas a mirar los resultados globales más allá de los objetivos individuales y a integrar distintas visiones para mejores resultados. </div>
                                  </div>
@@ -144,7 +149,7 @@
                                              ./assets/cultura-trabajo-colaborativo@3x.png 3x"
                                      class="img-fluid ">
                                   </div>
-                                  <div class="col p-0">
+                                  <div class="col-sm-8 p-0">
                                      <div class="title-tab-paginacion">Poner al cliente en la conversación</div>
                                     <div class="text-tab-paginacion">Nuestro negocio comienza y termina en el cliente. Es por eso que la Compañía decide fortalecerse en su capacidad de poner al cliente y sus necesidades al centro de todas las decisiones organizacionales.</div>
                                   </div>
@@ -161,7 +166,7 @@
                                                ./assets/cultura-trabajo-colaborativo@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
-                                    <div class="col p-0">
+                                    <div class="col-sm-8 p-0">
                                        <div class="title-tab-paginacion">Observar el entorno</div>
                                       <div class="text-tab-paginacion">Sostener el liderazgo en la industria inmobiliaria requiere de una mirada amplia y una perspectiva sistémica de los distintos factores que influyen en el negocio inmobiliario.</div>
                                     </div>
@@ -178,7 +183,7 @@
                                                ./assets/cultura-trabajo-colaborativo@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
-                                    <div class="col p-0">
+                                    <div class="col-sm-8 p-0">
                                        <div class="title-tab-paginacion">Buscar y aceptar nuevas miradas</div>
                                       <div class="text-tab-paginacion">Hacer las cosas mejor, implica salirse de la zona de comodidad y experimentar nuevas formas de enfrentar los desafíos. Es incorporar distintos puntos de vista y valorar la diversidad de opiniones, poniéndolas al servicio de un mejor resultado.</div>
                                     </div>
@@ -195,7 +200,7 @@
                                                ./assets/cultura-trabajo-colaborativo@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
-                                    <div class="col p-0">
+                                    <div class="col-sm-8 p-0">
                                        <div class="title-tab-paginacion">Preocupación por las personas</div>
                                       <div class="text-tab-paginacion">Somos una compañía que reconoce la contribución y el esfuerzo adicional del equipo en su trabajo. Buscamos que nuestras personas perciban el valor que cada uno le aporta al negocio.</div>
                                     </div>
@@ -212,7 +217,7 @@
                                                ./assets/cultura-trabajo-colaborativo@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
-                                    <div class="col p-0">
+                                    <div class="col-sm-8 p-0">
                                        <div class="title-tab-paginacion">Comunicación oportuna</div>
                                       <div class="text-tab-paginacion">Un equipo alineado a la visión -"Convertirnos en una empresa de diseño"-, a la estrategia y a los objetivos de la compañía, genera un efecto multiplicativo sobre los resultados.</div>
                                     </div>
@@ -229,7 +234,7 @@
                                                ./assets/cultura-trabajo-colaborativo@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
-                                    <div class="col p-0">
+                                    <div class="col-sm-8 p-0">
                                        <div class="title-tab-paginacion">Jugar limpio</div>
                                       <div class="text-tab-paginacion">Con más de 50 años liderando la industria inmobiliaria, Empresas Socovesa siempre ha puesto la ética en el centro de su gestión, tanto en los negocios, en las relaciones entre las áreas y con todos los grupos de interés con los que se relaciona.</div>
                                     </div>
@@ -246,7 +251,7 @@
                                                ./assets/cultura-trabajo-colaborativo@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
-                                    <div class="col p-0">
+                                    <div class="col-sm-8 p-0">
                                        <div class="title-tab-paginacion">Si hay talento, se potencia</div>
                                       <div class="text-tab-paginacion">Valoramos a las personas que se fijan metas ambiciosas y que son apasionadas por alcanzarlas.</div>
                                     </div>
