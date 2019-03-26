@@ -135,15 +135,16 @@
       color: $white;
     }
   }
-  .wrapp-play-2 {
+  .wrapp-play-3 {
     position: absolute; 
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
     width: 80px;
+    height: 80px;
     top:0;
-    margin-top: 16%;
+    margin-top: 25%;
   }
 
   .cube-large {
@@ -666,6 +667,61 @@
     z-index: -1;
   }
   //EQUIPO
+
+  //MARCA
+  .cita-tab{
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    padding: 0 60px;
+    padding-bottom:  50px;
+    color: $brown-grey-three;
+    font-weight: 300;
+  }
+
+  .text-marcas{
+    font-family: 'Playfair Display';
+    font-size: 31px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #eb6767;
+    margin-bottom: 30px;
+    margin-top: -60px;
+  }
+
+  .text-marcas-2{
+    font-family: 'Playfair Display';
+    font-size: 31px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $peach-dark;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  .text-marcas-3{
+    font-family: 'Playfair Display';
+    font-size: 31px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $periwinkle-dark;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  //MARCA
+
   //PROYECCIONES
   .text-proyecciones{
     font-family: 'Playfair Display';
@@ -1448,6 +1504,237 @@
       }
     }
   }
+  .tabs-marcas {
+    margin-top: 50px;
+    .sub-title-tab {
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    .title-vision-tab {
+      font-family: 'Playfair Display';
+      font-size: 31px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #eb6767;
+      margin-bottom: 50px;
+      max-width: 500px;
+    }
+    .nav-tabs {
+      margin: 0 4px;
+      border: 0;
+      padding-bottom: 50px;
+      li {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 300;      
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        text-decoration: none;
+        padding: 0;
+        padding-bottom: 34px;
+        margin: 0 auto;
+        width: 240px;
+        background: transparent;
+        &.active {
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+          text-align: center;
+          color: #eb6767;
+          border-bottom: 2px solid #eb6767;
+         
+
+        }
+       
+      }
+      .pilares-active .active{
+        color:  $peach-dark;
+        border-bottom: 2px solid  $peach-dark;
+      }
+      .socovesa-active .active{
+        color:  $periwinkle-dark;
+        border-bottom: 2px solid  $periwinkle-dark;
+      }
+    }
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
+      }
+      .sub-title-tab {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $blue-dark;
+        margin-top: 6px;
+      }
+      .info {
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $brown-grey-three;
+        margin-top: 20px;
+      }
+    }
+  }
+  .tabs-marcas-2 {
+    margin-top: 50px;
+    .parrafo-marcas{
+        font-family: 'Roboto';
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.38;
+        letter-spacing: normal;
+        color: $black;
+    }
+    .title-tab-marca{
+        font-family: 'Roboto';
+        font-size: 30px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #333333;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .sub-title-tab {
+      font-family: 'Roboto';
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+    }
+    .title-vision-tab {
+      font-family: 'Playfair Display';
+      font-size: 31px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #eb6767;
+      margin-bottom: 50px;
+      max-width: 500px;
+    }
+    .nav-tabs {
+      margin: 0 4px;
+      border: 0;
+      padding-bottom: 50px;
+      li {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      a {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 300;      
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: $black;
+        text-decoration: none;
+        padding: 0;
+        padding-bottom: 34px;
+        margin: 0 auto;
+        width: 240px;
+        background: transparent;
+        &.active {
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+          text-align: center;
+          color: $black;
+          border-bottom: 2px solid $black;
+         
+
+        }
+       
+      }
+     
+    }
+    .tab-content {
+      .text {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: $brown-grey-three;
+      }
+      .sub-title-tab {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $blue-dark;
+        margin-top: 6px;
+      }
+      .info {
+        font-size: 16px;
+        font-style: normal;
+        font-stretch: normal;
+        font-family: 'Roboto';
+        font-style: italic;
+        color: $brown-grey-three;
+        margin-top: 20px;
+      }
+    }
+  }
 
   .table {
     padding: 50px 60px !important;
@@ -1616,6 +1903,13 @@
     .croquis-margin-compromisos{
         padding: 0 20px;
     }
+    .cita-tab{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .text-marcas{
+        margin-top: 30px;
+    }
     .cita-sostenibilidad,
     .one,
     .two,
@@ -1642,6 +1936,9 @@
     .wrapp-download,.title-descargable {
       margin: 20px;
     }
+    .wrapp-play-3 {
+        margin-top: 16%;
+      }
     .tabs-tendencias,
     .tabs-equipo,
     .tabs-financiero,
