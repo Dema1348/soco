@@ -694,8 +694,113 @@
   .croquis-3-2 {
     position: absolute;
     top: 0;
-    right: -297px;
+    right: -430px;
     z-index: -1;
+   }
+   .img-educacion{
+     padding-right: 60px;
+   }
+   .title-compromisos{
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.69;
+    letter-spacing: normal;
+    color: $greenwater-dark;
+    margin-top: 50px;
+    margin-bottom: 20px;
+   }
+   .contenido-compromisos{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: $brown-grey-three;
+    margin-bottom: 50px;
+   }
+   .title-compromisos-2{
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.69;
+    letter-spacing: normal;
+    color: $greenwater-dark;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0 40px 0 60px;
+   }
+   .contenido-compromisos-2{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: $brown-grey-three;
+    margin-bottom: 50px;
+    padding: 0 40px 0 60px;
+
+   }
+   .title-compromisos-3{
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.69;
+    letter-spacing: normal;
+    color: $greenwater-dark;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0 60px 0 40px;
+   }
+   .contenido-compromisos-3{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: $brown-grey-three;
+    margin-bottom: 50px;
+    padding: 0 60px 0 40px;
+
+   }
+   .background-offset{
+    margin-top: 250px;
+
+   }
+   .background-coaching{
+    background-color: #f4f4f4;
+
+   }
+   .contenido-compromisos{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: $brown-grey-three;
+    margin-bottom: 50px;
+   }
+   .background-compromisos{
+     background-color: #f4f4f4;
+     margin-top: -200px;
+   }
+   .foto-emprendimiento{
+    width: 430px;
+    height: 263px;
    }
   //COMPROMISOS
   .tabs-financiero {
@@ -1469,6 +1574,8 @@
     .croquis-7,
     .croquis-4,
     .croquis-3,
+    .croquis-3-2,
+    .img-educacion,
     .croquis-11,
     .cube,
     .cube-large-2,
@@ -1476,6 +1583,7 @@
     .img-croquis-3,
     .quote-alone,
     .header,
+    .img-education-parrafos,
     .static-logo {
       display: none;
     }
@@ -1547,6 +1655,16 @@
       .title-video {
         display: none;
       }
+    }
+    .title-compromisos,.contenido-compromisos,.title-compromisos-2,.contenido-compromisos-2,.title-compromisos-3,.contenido-compromisos-3{
+      padding: 0 20px;
+    }
+    .background-compromisos{
+      margin-top:0;
+    }
+     .background-offset{
+      margin-top:30px;
+
     }
   }
 }
