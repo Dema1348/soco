@@ -2,14 +2,14 @@
 	'use strict';
 
 	angular
-		.module('app.pages.modernizacion')
-		.controller('ModernizacionController', ModernizacionController);
+		.module('app.pages.compromisos')
+		.controller('CompromisosController', CompromisosController);
 
-	function ModernizacionController($scope, $uibModal) {
+	function CompromisosController($scope, $uibModal) {
 		var vm = this;
 		vm.openModal = openModal;
 
-		function openModal() {
+        function openModal() {
 			console.log('open');
 			var modalInstance = $uibModal.open({
 				animation: true,
@@ -23,7 +23,7 @@
 
 		function ModalController() {
 			var vm = this;
-			vm.src = 'socovesa-estrategia.mp4';
+			vm.src = 'socovesa-alumnos.mp4';
 		}
 	}
 })();

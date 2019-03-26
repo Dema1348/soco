@@ -135,6 +135,17 @@
       color: $white;
     }
   }
+  .wrapp-play-2 {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 80px;
+    top:0;
+    margin-top: 16%;
+  }
+
   .cube-large {
     width: 20px;
     height: 60px;
@@ -691,10 +702,13 @@
     letter-spacing: normal;
     color: $greenwater-dark;
   }
+  .croquis-margin-compromisos{
+      padding-right: 342px;
+  }
   .croquis-3-2 {
     position: absolute;
     top: 0;
-    right: -430px;
+    right: 0;
     z-index: -1;
    }
    .img-educacion{
@@ -1587,7 +1601,7 @@
     .static-logo {
       display: none;
     }
-    .box-parrafos {
+    .box-parrafos ,.p-l-60{
       padding: 0 20px;
       padding-bottom: 20px;
     }
@@ -1598,6 +1612,9 @@
     .edificio-corporativo {
       padding: 0 !important;
       margin-bottom: 20px;
+    }
+    .croquis-margin-compromisos{
+        padding: 0 20px;
     }
     .cita-sostenibilidad,
     .one,

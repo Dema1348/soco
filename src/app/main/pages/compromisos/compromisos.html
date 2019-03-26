@@ -48,26 +48,23 @@
             Facilitar y fortalecer la entrega de una educación de calidad, es el foco estratégico de la política de responsabilidad social de Empresas Socovesa y se materializa, fundamentalmente, a través del apoyo a la Corporación Educacional Emprender.
         </div>
         <div class="divider"></div>
-        <section class="row box-parrafos">
+        <section class="row ">
            
-            <div class="col-md-12 p-0 ">
-              <div class="row">
                   <div class="col-sm-4 parrafo one p-0">
-                    <p>La relación de cooperación entre Empresas Socovesa y Emprender se remonta al menos al 2013 cuando entre ambas organizaciones lanzan un Fondo de Becas el cual permitió que decenas de alumnos, a pesar de sus problemas económicos, pudiesen continuar con su plan de estudios, evitando la deserción escolar. </p>
-                    <p>Junto con este sistema de financiamiento, se realizaron también actividades grupales de voluntariado, orientadas al mejoramiento de la infraestructura de los colegios, las que a pesar del esfuerzo, carecían de continuidad y se llevaban a cabo esporádicamente, como respuesta a necesidades puntuales de la Corporación. 
+                    <p class="p-l-60">La relación de cooperación entre Empresas Socovesa y Emprender se remonta al menos al 2013 cuando entre ambas organizaciones lanzan un Fondo de Becas el cual permitió que decenas de alumnos, a pesar de sus problemas económicos, pudiesen continuar con su plan de estudios, evitando la deserción escolar. </p>
+                    <p class="p-l-60">Junto con este sistema de financiamiento, se realizaron también actividades grupales de voluntariado, orientadas al mejoramiento de la infraestructura de los colegios, las que a pesar del esfuerzo, carecían de continuidad y se llevaban a cabo esporádicamente, como respuesta a necesidades puntuales de la Corporación. 
                         Estas iniciativas fueron el puntapié inicial para definir una política de Responsabilidad Social de Empresas Socovesa que apalancara los objetivos de la Corporación y que fortaleciera el rol social de la Compañía.</p>
                     </div>
               
-                  <div class="col-sm-4 parrafo  three p-0 ">
-                      <div class="text-compromisos">Esto se tradujo el 2017 en la firma de un Acuerdo Marco entre ambas instituciones, y el lanzamiento del primer programa oficial de Voluntariado Corporativo.</div>
+                  <div class="col-sm-8 parrafo  three p-0 ">
+                      <div class="text-compromisos croquis-margin-compromisos">Esto se tradujo el 2017 en la firma de un Acuerdo Marco entre ambas instituciones, y el lanzamiento del primer programa oficial de Voluntariado Corporativo.</div>
                       <br>
-                      <p>Este programa que contempla 6 formas distintas de apoyo a la Corporación terminó de ejecutarse totalmente durante el 2018 cerrando exitosamente su primer año de operación con la participación de XXX voluntarios y beneficiando en total a XXX alumnos y sus familias.</p>
+                      <p class="croquis-margin-compromisos">Este programa que contempla 6 formas distintas de apoyo a la Corporación terminó de ejecutarse totalmente durante el 2018 cerrando exitosamente su primer año de operación con la participación de XXX voluntarios y beneficiando en total a XXX alumnos y sus familias.</p>
                       <img class="img-fluid croquis-3-2" src="./assets/croquis-3-2.jpg"
                       srcset="./assets/croquis-3-2@2x.jpg 2x,
                               ./assets/croquis-3-2@3x.jpg 3x"
                       >
-                  </div>
-              </div>
+                
             </div>  
           </section>
           <div class="col col-sm-12  p-0">
@@ -126,6 +123,13 @@
                   srcset="./assets/alumnos@2x.jpg 2x,
                           ./assets/alumnos@3x.jpg 3x"
                   >
+                  <div class="wrapp-play-2">
+                        <img
+                          ng-click="vm.openModal()"
+                          src="./assets/boton-play.svg"
+                          class="button-play "
+                        />
+                      </div>
               </div>
 
            </section>
@@ -145,5 +149,22 @@
           Descargar Capítulo
           </button>
         </div>
- 
+        
+ <!-- Modal -->
+ <script
+ type="text/ng-template"
+ id="videoModal.html"
+ class="modal-video"
+ >
+ <div class="modal-body" id="modal-body">
+     <div class="embed-responsive embed-responsive-16by9" ng-if="vm.src">
+     <video controls autoplay id="demoVideo"
+     >
+     <source src="./assets/{{vm.src}}" type="video/mp4">
+         Your browser does not support HTML5 video.
+
+     </video>
+     </div>
+ </div>
+ </script>
 </div>

@@ -13,7 +13,8 @@
                 url: '/compromisos',
                 views: {
                     'content@app': {
-                        templateUrl: 'app/main/pages/compromisos/compromisos.html'
+                        templateUrl: 'app/main/pages/compromisos/compromisos.html',
+                        controller: 'CompromisosController as vm'
                     }
                 },
         });
