@@ -246,12 +246,18 @@ $periwinkle-light: #8592d1;
   padding-bottom: 50px;
 }
 
-.bounce {
-	-moz-animation: bounce 3s infinite;
-	-webkit-animation: bounce 3s infinite;
-	animation: bounce 3s infinite;
+.scrolldown {
+position: absolute;
+bottom: 2%;
+text-align: center;
+left: 0;
+right: 0;
+margin: auto;
+-moz-animation: bounce 3s infinite;
+-webkit-animation: bounce 3s infinite;
+animation: bounce 3s infinite;
 }
-@-moz-keyframes bounce {
+@-moz-keyframes scrolldown {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
     transform: translateY(0);
@@ -265,7 +271,7 @@ $periwinkle-light: #8592d1;
     transform: translateY(-15px);
   }
 }
-@-webkit-keyframes bounce {
+@-webkit-keyframes scrolldown {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -279,7 +285,7 @@ $periwinkle-light: #8592d1;
     transform: translateY(-15px);
   }
 }
-@keyframes bounce {
+@keyframes scrolldown {
   0%, 20%, 50%, 80%, 100% {
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
