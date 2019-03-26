@@ -680,6 +680,24 @@
     margin-bottom: 50px;
   }
   //PROYECCIONES
+  //COMPROMISOS
+  .text-compromisos{
+    font-family: 'Playfair Display';
+    font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $greenwater-dark;
+  }
+  .croquis-3-2 {
+    position: absolute;
+    top: 0;
+    right: -297px;
+    z-index: -1;
+   }
+  //COMPROMISOS
   .tabs-financiero {
     padding: 50px 60px;
     .nav-tabs {
@@ -1450,6 +1468,7 @@
     .croquis-5,
     .croquis-7,
     .croquis-4,
+    .croquis-3,
     .croquis-11,
     .cube,
     .cube-large-2,

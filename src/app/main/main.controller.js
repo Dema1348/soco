@@ -22,9 +22,8 @@
         {
             if ( event.targetScope.$id === $scope.$id )
             {
-                $timeout(function(){
-                    $rootScope.$broadcast('splashScreen::remove');
-                },1000)
+                $rootScope.$broadcast('splashScreen::remove');
+
             }
         });   
     }
