@@ -8,7 +8,7 @@
 		data-anim-speed="250"
 	></div>
 </div>
-<div id="myNav" class="overlay" ng-class="{'w-100': isOpen}">
+<div class="overlay" ng-class="{'w-100': isOpen}">
         <div class="title-menu">Memoria anual 2018
             <span class="close-menu" ng-click="vm.close()">X</span>
         </div>
@@ -72,3 +72,14 @@
         </div>
     
 </div>
+<div  class="overlay-search">
+        
+        <div class="title-search">
+                        <span class="close-search" ng-click="vm.close()">X</span>
+                    </div>
+        <div class="overlay-content">
+        <input type="text"  placeholder="Buscar" ng-model="vm.keywokd"class="input-find" aria-label="Large" >
+
+        </div>
+ </div>
+      
