@@ -543,6 +543,7 @@
     color: #eb6767;
     margin-bottom: 30px;
   }
+ 
   .edificio-corporativo {
     padding-right: 70px;
   }
@@ -654,7 +655,31 @@
     z-index: -1;
   }
   //EQUIPO
-
+  //PROYECCIONES
+  .text-proyecciones{
+    font-family: 'Playfair Display';
+    font-size: 34px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $blue-dark;
+  }
+  .background-color.proyecciones{
+    padding-bottom: 0;
+  }
+  .croquis-4 {
+   position: absolute;
+   bottom: 0;
+   right: -62px;
+   z-index: -1;
+  }
+  .chart-proyecciones{
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+  //PROYECCIONES
   .tabs-financiero {
     padding: 50px 60px;
     .nav-tabs {
@@ -1334,6 +1359,10 @@
     .wrapp-data {
       padding: 12px 0px;
       border-bottom: 1px solid $very-light;
+      &.dark{
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+      }
       .data {
         font-family: 'Roboto';
         font-size: 16px;
@@ -1420,6 +1449,7 @@
     .croquis-9,
     .croquis-5,
     .croquis-7,
+    .croquis-4,
     .croquis-11,
     .cube,
     .cube-large-2,
