@@ -42,6 +42,15 @@ $periwinkle-light: #8592d1;
   }
 }
 
+a{
+  color: currentColor;
+  text-decoration: none;
+  background-color: transparent;
+  &:hover{
+    color: currentColor;
+    text-decoration: none;
+  }
+}
 .titulo-slider {
   font-family: 'Playfair Display';
   font-size: 22px;

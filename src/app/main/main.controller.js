@@ -418,6 +418,7 @@
 
     $rootScope.share = share;
     $rootScope.openSearch = openSearch;
+    $rootScope.download= download;
 
     function openSearch(){
         console.log("open search")
@@ -426,7 +427,10 @@
 
     function closeFind(){
         $rootScope.isOpenSearch = false;
+    }
 
+    function download(url){
+        window.open('./assets/pdf/'+url,'_blank');
     }
     function share($event) {
       $event.stopPropagation();
