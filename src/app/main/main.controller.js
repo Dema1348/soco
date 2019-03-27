@@ -417,6 +417,7 @@
     
 
     $rootScope.share = share;
+    $rootScope.setShareLinks=setShareLinks;
     $rootScope.openSearch = openSearch;
     $rootScope.download= download;
 
@@ -443,6 +444,34 @@
         facebookWindow.focus();
       }
       return false;
+    }
+
+    function socialWindow(url,$event) {
+        if($event){
+            $event.stopPropagation();
+        }
+        var left = (screen.width - 570) / 2;
+        var top = (screen.height - 570) / 2;
+        var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+        window.open(url,"NewWindow",params);
+      }
+
+      function setShareLinks(type) {
+        var pageUrl = encodeURIComponent(document.URL);        
+        if(type=="facebook"){
+            var url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
+            socialWindow(url);
+        }
+
+        if(type=="twitter"){
+            var  url = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + tweet;
+            socialWindow(url);
+        }
+       
+        if (type == "linkedin") {
+            var url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+            socialWindow(url);
+        }
     }
 
     function changeValue(){
