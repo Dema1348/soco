@@ -52,7 +52,8 @@
 </div>
       </div>
       <section class="row box-parrafos">
-            <section class="col-sm-12 p-0 tabs-marcas">
+            <section class="col-sm-12 p-0 tabs-marcas" data-aos="fade-up"
+     data-aos-duration="3000">
                 <uib-tabset active="0" justified="true">
                   <uib-tab class="marcas " index="0" select="vm.clickTabs('A')" >
                     <uib-tab-heading>
@@ -164,7 +165,8 @@
               </section>  
         </section>
         <section class="row box-parrafos background-color">
-                <section class="col-sm-12 p-0 tabs-marcas-2">
+                <section class="col-sm-12 p-0 tabs-marcas-2" data-aos="fade-up"
+     data-aos-duration="3000">
                     <uib-tabset active="0" justified="true">
                       <uib-tab class="modernizacion " index="0" >
                         <uib-tab-heading>
@@ -231,7 +233,7 @@
                   </section>  
             </section>
           
-        <section class="row box-parrafos">
+        <section class="row box-parrafos" >
             <div class="title">Proyectos Destacados</div>     
         </section>
         <!-- <div class="w-100">
@@ -241,7 +243,8 @@
               </div>
             </div>
           </div> -->
-            <slick ng-if="vm.reload"  class="w-100" autoplay=true infinite=true speed=200 slides-to-show=3 touch-move=false slides-to-scroll=1>
+            <slick ng-if="vm.reload"  class="w-100" autoplay=true infinite=true speed=200 slides-to-show=3 touch-move=false slides-to-scroll=1 data-aos="fade-up"
+     data-aos-duration="3000">
                 <div ng-repeat="slide in vm.slides">
                     <div class="row">
                         <div class="col">

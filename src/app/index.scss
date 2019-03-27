@@ -510,6 +510,41 @@ animation: bounce 3s infinite;
 	-webkit-filter: grayscale(0%);
 }
 
+//Gino
+
+#highlight .box-wrapp-futura .box-1,
+#highlight .box-wrapp-futura .box-2,
+#highlight .box-wrapp-futura .box-3,
+#highlight .box-wrapp-personas .box-1,
+#highlight .box-wrapp-personas .box-2,
+#highlight .box-wrapp-personas .box-4,
+#highlight .box-wrapp-personas .box-5,
+#highlight .box-wrapp-innovacion .box-1,
+#highlight .box-wrapp-innovacion .box-2,
+#highlight .box-wrapp-innovacion .box-3,
+#highlight .box-wrapp-rodea .box-1,
+#highlight .box-wrapp-rodea .box-2,
+#highlight .box-wrapp-rodea .box-3,
+#highlight .box-wrapp-equipo .box-2,
+#highlight .box-wrapp-equipo .box-3,
+#highlight .box-wrapp-equipo .box-5,
+#highlight .box-wrapp-equipo .box-6{
+	transition: all .5s ease-in-out!important;
+}
+
+.cita {
+    width: 80%;
+    margin: 0 auto;
+	padding: 50px 0px !important;
+}
+
+@media (max-width:480px) {
+	.cita {
+		width: 100%;
+		text-align: left!important;
+	}
+}
+
 @media  (max-width: 580px) {
 
 .row.contendor-menu {
