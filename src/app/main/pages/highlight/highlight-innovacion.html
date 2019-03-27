@@ -2,7 +2,7 @@
   <div class="row ">
     <div class="col  p-0">
       <div class="header">
-        Home /<span class="black">Highlights Estratégicos</span>
+        <span class="home-breadcrumb dark" ui-sref="app.pages.home">Home</span> / <span class="black">Highlights Estratégicos</span>
       </div>
       <div class="title innovacion">
         Pensar en <br />
@@ -16,18 +16,23 @@
     <div class="col-sm-3 p-0">
       <div class="row">
         <div class="col  p-0">
-          <div class="static-logo">
+          <div class="static-logo menu-aux">
             <div class="logo-empresa"  ui-sref="app.pages.home">
               <img src="./assets/empresas-socovesa-logo.svg" alt="" />
             </div>
             <div class="icon" ng-click="openSearch()">
               <img src="./assets/icono-buscar.svg" alt="" />
             </div>
-            <div class="icon" ng-click="share($event)">
+            <div class="icon share-rrss">
               <img src="./assets/icono-compartir.svg" alt="" />
+              <div class="box-rrss">
+	          	<img src="./assets/facebook-dark.svg" alt="" ng-click="setShareLinks('facebook',$event)" />
+	          	<img src="./assets/twitter-dark.svg" alt="" ng-click="setShareLinks('twitter',$event)" />
+	          	<img src="./assets/linkedin-dark.svg" alt="" ng-click="setShareLinks('linkedin',$event)" />    
+              </div>
             </div>
-            <div class="icon">
-              <img src="./assets/icono-download.svg" alt="" />
+            <div class="icon download-chapter">
+              <img src="./assets/icono-download.svg" alt="" ng-click="download('capitulo-highlight-innovacion.pdf')" />
             </div>
           </div>
         </div>
@@ -102,12 +107,20 @@
 </section>
   <div class="sub-menu row align-items-center justify-content-between ">
       <div class="col section " ui-sref="app.pages.highlight-personas">
-        <i class="fas fa-chevron-left"></i> Pensar en las personas
+        <i class="fas fa-chevron-left"></i> Diseño y venta de valor
       </div>
       <div class="col section  text-right"  ui-sref="app.pages.highlight-rodea">
-          Pensar en lo que nos rodea       
+          Desarrollo sostenible y vinculación con el entorno       
            <i class="fas fa-chevron-right"></i>
       </div>
+    </div>
+	<div class="footer row justify-content-center">
+		<button
+			type="button"
+			class="btn btn-outline-secondary button-soco-outline  " ng-click="download('capitulo-highlight-innovacion.pdf')"
+		>
+			Descargar Capítulo
+		</button>
     </div>
 </div>
 

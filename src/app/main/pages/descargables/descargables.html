@@ -8,7 +8,7 @@
     
         <div class="col  p-0">
           <div class="header">
-            Home /<span class="white">Descargables</span>
+        <span class="home-breadcrumb dark" ui-sref="app.pages.home">Home</span> / <span class="white">Descargables</span>
           </div>
           <div class="title white">
               Descargables
@@ -25,19 +25,21 @@
                 <div class="cube-large animated rollIn delay-1s"></div>
               </div>
               <div class="col  p-0">
-                <div class="static-logo">
-                  <div class="logo-empresa"  ui-sref="app.pages.home">
-                    <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
-                  </div>
-                  <div class="icon" ng-click="openSearch()">
-                    <img src="./assets/icono-buscar-blanco.svg" alt="" />
-                  </div>
-                  <div class="icon" ng-click="share($event)">
-                    <img src="./assets/icono-compartir-blanco.svg" alt="" />
-                  </div>
-                  <div class="icon"  ng-click="download('capitulo-financieros.pdf')">
-                    <img src="./assets/icono-download-blanco.svg" alt="" />
-                  </div>
+            <div class="static-logo menu-aux">
+              <div class="logo-empresa"  ui-sref="app.pages.home">
+                <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
+              </div>
+              <div class="icon" ng-click="openSearch()">
+                <img src="./assets/icono-buscar-blanco.svg" alt="" />
+              </div>
+            <div class="icon share-rrss">
+              <img src="./assets/icono-compartir-blanco.svg" alt="" />
+              <div class="box-rrss">
+	          	<img src="./assets/facebook-light.svg" alt="" ng-click="setShareLinks('facebook',$event)" />
+	          	<img src="./assets/twitter-light.svg" alt="" ng-click="setShareLinks('twitter',$event)" />
+	          	<img src="./assets/linkedin-light.svg" alt="" ng-click="setShareLinks('linkedin',$event)" />    
+              </div>
+            </div>
                 </div>
               </div>
             </div>
@@ -51,35 +53,29 @@
       </div>
       <section class="wrapp-download">
         <div class="title-link-download">Descarga por Capítulo</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">1.	Ejercicio 2018 y perspectovas 2019</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">2.	Identificación de la Compañía</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">3.	Descripción del ámbito de negocios</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">4.	Propiedad y acciones</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">5.	Administración y personal</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">6.	Responsabilidad social, desarrollo sostenible y Gobierno Corporativo</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">7.	Información sobre subsidiarias y asociadas e inversiones en otras sociedades</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">8.	Hechas esenciales</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">9.	Síntesis de comentarios y proposiciones de accionistas y del Comité de Directores</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">10.	Antecedentes financieros</div>
-        <div class="link-download"  ng-click="download('capitulo-financieros.pdf')">11.	Declaración de responsabilidad</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-1.pdf')">1.	Ejercicio 2018 y perspectovas 2019</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-2.pdf')">2.	Identificación de la Compañía</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-3.pdf')">3.	Descripción del ámbito de negocios</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-4.pdf')">4.	Propiedad y acciones</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-5.pdf')">5.	Administración y personal</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-6.pdf')">6.	Responsabilidad social, desarrollo sostenible y Gobierno Corporativo</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-7.pdf')">7.	Información sobre subsidiarias y asociadas e inversiones en otras sociedades</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-8.pdf')">8.	Hechas esenciales</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-9.pdf')">9.	Síntesis de comentarios y proposiciones de accionistas y del Comité de Directores</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-10.pdf')">10.	Antecedentes financieros</div>
+        <div class="link-download"  ng-click="download('capitulo-completo-11.pdf')">11.	Declaración de responsabilidad</div>
       </section>
      
       <div class="sub-menu row align-items-center justify-content-between ">
-          <div class="col section " ui-sref="app.pages.sostenibilidad">
-            <i class="fas fa-chevron-left"></i> Sostenibilidad
+          <div class="col section " ui-sref="app.pages.compromisos">
+            <i class="fas fa-chevron-left"></i> Compromiso con la Educación
           </div>
           <div class="col section  text-right"  ui-sref="app.pages.home">
               Inicio <i class="fas fa-chevron-right"></i>
           </div>
         </div>
         <div class="footer row justify-content-center">
-          <button
-           ng-click="download('capitulo-financieros.pdf')"
-            type="button"
-            class="btn btn-outline-secondary button-soco-outline  "
-          >
-          Descargar Capítulo
-          </button>
+
         </div>
  
 </div>

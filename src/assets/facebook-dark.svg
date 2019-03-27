@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>facebook-dark</title>
+    <desc>Created with Sketch.</desc>
+    <g id="UI---Escritorio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Inicio" transform="translate(-1118.000000, -119.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="facebook-dark" transform="translate(1118.000000, 119.000000)">
+                <path d="M12.413,0 C5.5685,0 0,5.5685 0,12.413 C0,19.257 5.5685,24.826 12.413,24.826 C19.257,24.826 24.826,19.257 24.826,12.413 C24.826,5.5685 19.258,0 12.413,0 Z M15.5,12.85 L13.4805,12.85 C13.4805,16.0765 13.4805,20.048 13.4805,20.048 L10.488,20.048 C10.488,20.048 10.488,16.115 10.488,12.85 L9.0655,12.85 L9.0655,10.306 L10.488,10.306 L10.488,8.6605 C10.488,7.482 11.048,5.6405 13.508,5.6405 L15.7255,5.649 L15.7255,8.1185 C15.7255,8.1185 14.378,8.1185 14.116,8.1185 C13.854,8.1185 13.4815,8.2495 13.4815,8.8115 L13.4815,10.3065 L15.7615,10.3065 L15.5,12.85 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

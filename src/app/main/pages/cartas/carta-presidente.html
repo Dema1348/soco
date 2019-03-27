@@ -7,7 +7,7 @@
     
     <div class="col  p-0">
       <div class="header">
-        Home /<span class="black">Carta del presidente</span>
+        <span class="home-breadcrumb dark" ui-sref="app.pages.home">Home</span> / <span class="black">Carta del presidente</span>
       </div>
       <div class="title black">
           Carta del <br>
@@ -25,19 +25,24 @@
             <div class="cube-large animated rollIn delay-1s"></div>
           </div>
           <div class="col  p-0">
-            <div class="static-logo">
+            <div class="static-logo menu-aux">
               <div class="logo-empresa"  ui-sref="app.pages.home">
                 <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
               </div>
               <div class="icon" ng-click="openSearch()">
                 <img src="./assets/icono-buscar-blanco.svg" alt="" />
               </div>
-              <div class="icon"  ng-click="share($event)">
-                <img src="./assets/icono-compartir-blanco.svg" alt="" />
+            <div class="icon share-rrss">
+              <img src="./assets/icono-compartir-blanco.svg" alt="" />
+              <div class="box-rrss">
+	          	<img src="./assets/facebook-light.svg" alt="" ng-click="setShareLinks('facebook',$event)" />
+	          	<img src="./assets/twitter-light.svg" alt="" ng-click="setShareLinks('twitter',$event)" />
+	          	<img src="./assets/linkedin-light.svg" alt="" ng-click="setShareLinks('linkedin',$event)" />    
               </div>
-              <div class="icon">
-                <img src="./assets/icono-download-blanco.svg" alt="" />
-              </div>
+            </div>
+            <div class="icon download-chapter">
+              <img src="./assets/icono-download-blanco.svg" alt="" ng-click="download('capitulo-carta-presidente.pdf')" />
+            </div>
             </div>
           </div>
         </div>
@@ -46,7 +51,7 @@
  <img width="40" height="40" alt="" src="./assets/chevron.svg" />
 </div>
   </div>
-  <div class="cita ">
+  <div class="cita " data-aos="fade-up">
       La visión general de la empresa ha apuntado a fortalecer nuestra capacidad para generar acuerdos. La compañía privilegia las soluciones conversadas por sobre la judicialización.
   </div>
   <div class="divider"></div>
@@ -103,7 +108,7 @@
   </section>  
   <div class="sub-menu row align-items-center justify-content-between ">
     <div class="col section " ui-sref="app.pages.highlight-equipo">
-      <i class="fas fa-chevron-left"></i> Pensar en Equipo
+      <i class="fas fa-chevron-left"></i> Talento y trabajo colaborativo
     </div>
     <div class="col section  text-right" ui-sref="app.pages.carta-gerente-general">
         Carta del Gerente General <i class="fas fa-chevron-right"></i>
@@ -112,7 +117,7 @@
   <div class="footer row justify-content-center">
     <button
       type="button"
-      class="btn btn-outline-secondary button-soco-outline  "
+      class="btn btn-outline-secondary button-soco-outline  " ng-click="download('capitulo-carta-presidente.pdf')"
     >
     Descargar Capítulo
     </button>

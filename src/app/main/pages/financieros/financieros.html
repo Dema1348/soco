@@ -8,7 +8,7 @@
 		<div class="col  p-0">
 				
 			<div class="header">
-				Home /<span class="white">Highlights financieros</span>
+				<span class="home-breadcrumb light" ui-sref="app.pages.home">Home</span> / <span class="white">Highlights financieros</span>
 			</div>
 			<div class="title white">
 				Highlights <br />
@@ -35,19 +35,24 @@
 					<div class="cube-large animated rollIn delay-1s"></div>
 				</div>
 				<div class="col  p-0">
-					<div class="static-logo">
-						<div class="logo-empresa"  ui-sref="app.pages.home">
-							<img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
-						</div>
-						<div class="icon" ng-click="openSearch()">
-							<img src="./assets/icono-buscar-blanco.svg" alt="" />
-						</div>
-						<div class="icon"  ng-click="share($event)">
-							<img src="./assets/icono-compartir-blanco.svg" alt="" />
-						</div>
-						<div class="icon">
-							<img src="./assets/icono-download-blanco.svg" alt="" />
-						</div>
+            <div class="static-logo menu-aux">
+              <div class="logo-empresa"  ui-sref="app.pages.home">
+                <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
+              </div>
+              <div class="icon" ng-click="openSearch()">
+                <img src="./assets/icono-buscar-blanco.svg" alt="" />
+              </div>
+            <div class="icon share-rrss">
+              <img src="./assets/icono-compartir-blanco.svg" alt="" />
+              <div class="box-rrss">
+	          	<img src="./assets/facebook-light.svg" alt="" ng-click="setShareLinks('facebook',$event)" />
+	          	<img src="./assets/twitter-light.svg" alt="" ng-click="setShareLinks('twitter',$event)" />
+	          	<img src="./assets/linkedin-light.svg" alt="" ng-click="setShareLinks('linkedin',$event)" />    
+              </div>
+            </div>
+            <div class="icon download-chapter">
+              <img src="./assets/icono-download-blanco.svg" alt="" ng-click="download('capitulo-financieros.pdf')" />
+            </div>
 					</div>
 				</div>
 			</div>
@@ -193,7 +198,7 @@
 		<div class="col section " ui-sref="app.pages.home">
 			<i class="fas fa-chevron-left"></i> Inicio
 		</div>
-		<div class="col section  text-right">
+		<div class="col section  text-right" ui-sref="app.pages.highlight-futura">
 			Modernización de la estructura organizacional
 			<i class="fas fa-chevron-right"></i>
 		</div>
@@ -201,7 +206,7 @@
 	<div class="footer row justify-content-center">
 		<button
 			type="button"
-			class="btn btn-outline-secondary button-soco-outline  "
+			class="btn btn-outline-secondary button-soco-outline  " ng-click="download('capitulo-financieros.pdf')"
 		>
 			Descargar Capítulo
 		</button>

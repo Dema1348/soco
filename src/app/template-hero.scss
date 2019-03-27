@@ -574,9 +574,16 @@
     font-stretch: normal;
     line-height: 1.04;
     letter-spacing: normal;
-    color: $greenwater-dark;
-    margin-bottom: 30px;
+    color: $periwinkle-dark;
+    margin-bottom: 5px;
   }
+	.subtitle-sostenibilidad {
+	    font-size: 24px;
+	    color: #333;
+	    font-weight: bold;
+	    line-height: initial;
+	    margin-bottom: 30px;
+	}
   .title-sostenibilidad-2 {
     font-family: 'Roboto';
     font-size: 48px;
@@ -585,7 +592,7 @@
     font-stretch: normal;
     line-height: 1.04;
     letter-spacing: normal;
-    color: $greenwater-dark;
+    color: $periwinkle-dark;
     margin-bottom: 30px;
     max-width: 580px;
     margin-top: 50px;
@@ -598,7 +605,7 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: $greenwater-dark;
+    color: $periwinkle-dark;
     margin-bottom: 30px;
   }
   .text-sostenibilidad-2 {
@@ -609,7 +616,7 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: $greenwater-dark;
+    color: $periwinkle-dark;
     margin-left: 60px;
     margin-bottom: 30px;
   }
@@ -741,6 +748,7 @@
    bottom: 0;
    right: -62px;
    z-index: -1;
+   max-width: 550px;
   }
   .chart-proyecciones{
     margin-top: 60px;
@@ -1301,8 +1309,8 @@
           line-height: normal;
           letter-spacing: normal;
           text-align: center;
-          color: $greenwater-dark;
-          border-bottom: 2px solid $greenwater-dark;
+          color: $periwinkle-dark;
+          border-bottom: 2px solid $periwinkle-dark;
         }
       }
     }

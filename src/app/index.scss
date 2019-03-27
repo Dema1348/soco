@@ -380,7 +380,109 @@ animation: bounce 3s infinite;
   opacity: 1;
 }
 
+//Seba
+.menu-aux img {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;	
+}
+.menu-aux img:hover {
+	opacity: .6;
+	cursor: pointer;
+}
+
+*:focus {
+    outline: none;
+}
+
+.box-rrss {
+    position: absolute;
+    right: 50px;
+    bottom: 42px;
+    width: 130px;
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.box-rrss img {
+    margin-right: 10px;
+}
+
+.icon.share-rrss:hover .box-rrss {
+    opacity: 1;
+}
+
+.info-tab div.text {
+    padding: 0 70px 0 0;
+    line-height: 1.8 !important;
+}
+
+.row.contendor-menu .item-link:hover {
+    opacity: .4;
+}
+
+.row.chart-proyecciones div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row.wrapp-data .data {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.row.wrapp-data:hover {
+    background-color: #f7f7f7;
+}
+.row.wrapp-data:hover .data {
+    color: #333 !important;
+}
+
+.row.header, .row.wrapp-data {
+    padding: 12px 15px !important;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.home-breadcrumb {
+	opacity: 1;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;	
+}
+
+.home-breadcrumb:hover {
+	opacity: .5;
+	cursor: pointer;
+}
+
+.home-breadcrumb.light {
+	color: #ddd;
+}
+
+.home-breadcrumb.dark {
+	color: #999;
+}
+
 @media  (max-width: 580px) {
+
+.row.contendor-menu {
+    display: block;
+}
 
   .sub-menu {
       height: 80px;
@@ -393,7 +495,28 @@ animation: bounce 3s infinite;
         }
       }
     }
-  
+
+	.info-tab div.text {
+	    padding: 0 10px;
+	    margin-bottom: 20px;
+	}
+
+	ul.nav.nav-tabs li.uib-tab {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-basis: 100%;
+	    margin-bottom: 20px;
+	}
+	ul.nav.nav-tabs li.uib-tab a.active {
+	    border: none !important;
+	    background-color: #f7f7f7;
+	    padding: 10px 20px !important;
+	    -webkit-border-radius: 50px;
+	    border-radius: 50px;
+	}
+
+
 }
 
 /**

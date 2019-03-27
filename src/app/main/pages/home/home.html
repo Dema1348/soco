@@ -105,18 +105,23 @@
           <div class="cube-large animated rollIn delay-1s"></div>
         </div>
         <div class="col  p-0">
-          <div class="static-logo">
+          <div class="static-logo menu-aux">
             <div class="logo-empresa"  ui-sref="app.pages.home">
               <img src="./assets/empresas-socovesa-logo.svg" alt="" />
             </div>
             <div class="icon" ng-click="openSearch()">
               <img src="./assets/icono-buscar.svg" alt="" />
             </div>
-            <div class="icon" ng-click="setShareLinks('facebook',$event)">
+            <div class="icon share-rrss">
               <img src="./assets/icono-compartir.svg" alt="" />
+              <div class="box-rrss">
+	          	<img src="./assets/facebook-dark.svg" alt="" ng-click="setShareLinks('facebook',$event)" />
+	          	<img src="./assets/twitter-dark.svg" alt="" ng-click="setShareLinks('twitter',$event)" />
+	          	<img src="./assets/linkedin-dark.svg" alt="" ng-click="setShareLinks('linkedin',$event)" />    
+              </div>
             </div>
-            <div class="icon">
-              <img src="./assets/icono-download.svg" alt="" />
+            <div class="icon download-chapter">
+              <img src="./assets/icono-download.svg" alt="" ng-click="download('capitulo-home.pdf')" />
             </div>
           </div>
         </div>

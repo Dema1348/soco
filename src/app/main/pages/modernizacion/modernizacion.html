@@ -7,7 +7,7 @@
     
     <div class="col  p-0">
       <div class="header">
-        Home /<span class="white">Desafío de modernización</span>
+        <span class="home-breadcrumb light" ui-sref="app.pages.home">Home</span> / <span class="white">Desafío de modernización</span>
       </div>
       <div class="title white">
           Desafío de <br>
@@ -25,19 +25,24 @@
             <div class="cube-large animated rollIn delay-1s"></div>
           </div>
           <div class="col  p-0">
-            <div class="static-logo">
+            <div class="static-logo menu-aux">
               <div class="logo-empresa"  ui-sref="app.pages.home">
                 <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
               </div>
-              <div class="icon" ng-click="openSearch()"> 
+              <div class="icon" ng-click="openSearch()">
                 <img src="./assets/icono-buscar-blanco.svg" alt="" />
               </div>
-              <div class="icon"  ng-click="share($event)">
-                <img src="./assets/icono-compartir-blanco.svg" alt="" />
+            <div class="icon share-rrss">
+              <img src="./assets/icono-compartir-blanco.svg" alt="" />
+              <div class="box-rrss">
+	          	<img src="./assets/facebook-light.svg" alt="" ng-click="setShareLinks('facebook',$event)" />
+	          	<img src="./assets/twitter-light.svg" alt="" ng-click="setShareLinks('twitter',$event)" />
+	          	<img src="./assets/linkedin-light.svg" alt="" ng-click="setShareLinks('linkedin',$event)" />    
               </div>
-              <div class="icon">
-                <img src="./assets/icono-download-blanco.svg" alt="" />
-              </div>
+            </div>
+            <div class="icon download-chapter">
+              <img src="./assets/icono-download-blanco.svg" alt="" ng-click="download('capitulo-modernizacion.pdf')" />
+            </div>
             </div>
           </div>
         </div>
@@ -130,9 +135,9 @@
                               </uib-tab-heading>
                                <div class="row">
                                  <div class="col col-sm-4 p-0">
-                                    <img src="./assets/cultura-trabajo-colaborativo.png"
-                                    srcset="./assets/cultura-trabajo-colaborativo@2x.png 2x,
-                                            ./assets/cultura-trabajo-colaborativo@3x.png 3x"
+                                    <img src="./assets/8-pilares-1.png"
+                                    srcset="./assets/8-pilares-1@2x.png 2x,
+                                            ./assets/8-pilares-1@3x.png 3x"
                                     class="img-fluid ">
                                  </div>
                                  <div class="col-sm-8 p-0">
@@ -147,9 +152,9 @@
                               </uib-tab-heading>
                               <div class="row">
                                   <div class="col col-sm-4 p-0">
-                                     <img src="./assets/cultura-trabajo-colaborativo.png"
-                                     srcset="./assets/cultura-trabajo-colaborativo@2x.png 2x,
-                                             ./assets/cultura-trabajo-colaborativo@3x.png 3x"
+                                     <img src="./assets/8-pilares-2.png"
+                                     srcset="./assets/8-pilares-2@2x.png 2x,
+                                             ./assets/8-pilares-2@3x.png 3x"
                                      class="img-fluid ">
                                   </div>
                                   <div class="col-sm-8 p-0">
@@ -164,9 +169,9 @@
                                 </uib-tab-heading>  
                                 <div class="row">
                                     <div class="col col-sm-4 p-0">
-                                       <img src="./assets/cultura-trabajo-colaborativo.png"
-                                       srcset="./assets/cultura-trabajo-colaborativo@2x.png 2x,
-                                               ./assets/cultura-trabajo-colaborativo@3x.png 3x"
+                                       <img src="./assets/8-pilares-3.png"
+                                       srcset="./assets/8-pilares-3@2x.png 2x,
+                                               ./assets/8-pilares-3@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
                                     <div class="col-sm-8 p-0">
@@ -181,9 +186,9 @@
                                 </uib-tab-heading> 
                                 <div class="row">
                                     <div class="col col-sm-4 p-0">
-                                       <img src="./assets/cultura-trabajo-colaborativo.png"
-                                       srcset="./assets/cultura-trabajo-colaborativo@2x.png 2x,
-                                               ./assets/cultura-trabajo-colaborativo@3x.png 3x"
+                                       <img src="./assets/8-pilares-4.png"
+                                       srcset="./assets/8-pilares-4@2x.png 2x,
+                                               ./assets/8-pilares-4@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
                                     <div class="col-sm-8 p-0">
@@ -198,9 +203,9 @@
                                 </uib-tab-heading>  
                                 <div class="row">
                                     <div class="col col-sm-4 p-0">
-                                       <img src="./assets/cultura-trabajo-colaborativo.png"
-                                       srcset="./assets/cultura-trabajo-colaborativo@2x.png 2x,
-                                               ./assets/cultura-trabajo-colaborativo@3x.png 3x"
+                                       <img src="./assets/8-pilares-5.png"
+                                       srcset="./assets/8-pilares-5@2x.png 2x,
+                                               ./assets/8-pilares-5@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
                                     <div class="col-sm-8 p-0">
@@ -215,9 +220,9 @@
                                 </uib-tab-heading>  
                                 <div class="row">
                                     <div class="col col-sm-4 p-0">
-                                       <img src="./assets/cultura-trabajo-colaborativo.png"
-                                       srcset="./assets/cultura-trabajo-colaborativo@2x.png 2x,
-                                               ./assets/cultura-trabajo-colaborativo@3x.png 3x"
+                                       <img src="./assets/8-pilares-6.png"
+                                       srcset="./assets/8-pilares-6@2x.png 2x,
+                                               ./assets/8-pilares-6@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
                                     <div class="col-sm-8 p-0">
@@ -232,9 +237,9 @@
                                 </uib-tab-heading>  
                                 <div class="row">
                                     <div class="col col-sm-4 p-0">
-                                       <img src="./assets/cultura-trabajo-colaborativo.png"
-                                       srcset="./assets/cultura-trabajo-colaborativo@2x.png 2x,
-                                               ./assets/cultura-trabajo-colaborativo@3x.png 3x"
+                                       <img src="./assets/8-pilares-7.png"
+                                       srcset="./assets/8-pilares-7@2x.png 2x,
+                                               ./assets/8-pilares-7@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
                                     <div class="col-sm-8 p-0">
@@ -249,9 +254,9 @@
                                 </uib-tab-heading>  
                                 <div class="row">
                                     <div class="col col-sm-4 p-0">
-                                       <img src="./assets/cultura-trabajo-colaborativo.png"
-                                       srcset="./assets/cultura-trabajo-colaborativo@2x.png 2x,
-                                               ./assets/cultura-trabajo-colaborativo@3x.png 3x"
+                                       <img src="./assets/8-pilares-8.png"
+                                       srcset="./assets/8-pilares-8@2x.png 2x,
+                                               ./assets/8-pilares-8@3x.png 3x"
                                        class="img-fluid ">
                                     </div>
                                     <div class="col-sm-8 p-0">
@@ -324,7 +329,7 @@
   <div class="footer row justify-content-center">
     <button
       type="button"
-      class="btn btn-outline-secondary button-soco-outline  "
+      class="btn btn-outline-secondary button-soco-outline  " ng-click="download('capitulo-modernizacion.pdf')"
     >
     Descargar Capítulo
     </button>

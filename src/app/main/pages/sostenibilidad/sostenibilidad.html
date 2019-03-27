@@ -7,7 +7,7 @@
     
     <div class="col  p-0">
       <div class="header">
-        Home /<span class="black">Sostenibilidad</span>
+        <span class="home-breadcrumb dark" ui-sref="app.pages.home">Home</span> / <span class="black">Sostenibilidad</span>
       </div>
       <div class="title black">
           Sostenibilidad
@@ -24,19 +24,24 @@
             <div class="cube-large animated rollIn delay-1s"></div>
           </div>
           <div class="col  p-0">
-            <div class="static-logo">
+            <div class="static-logo menu-aux">
               <div class="logo-empresa"  ui-sref="app.pages.home">
                 <img src="./assets/empresas-socovesa-logo-blanco.svg" alt="" />
               </div>
               <div class="icon" ng-click="openSearch()">
                 <img src="./assets/icono-buscar-blanco.svg" alt="" />
               </div>
-              <div class="icon"  ng-click="share($event)">
-                <img src="./assets/icono-compartir-blanco.svg" alt="" />
+            <div class="icon share-rrss">
+              <img src="./assets/icono-compartir-blanco.svg" alt="" />
+              <div class="box-rrss">
+	          	<img src="./assets/facebook-light.svg" alt="" ng-click="setShareLinks('facebook',$event)" />
+	          	<img src="./assets/twitter-light.svg" alt="" ng-click="setShareLinks('twitter',$event)" />
+	          	<img src="./assets/linkedin-light.svg" alt="" ng-click="setShareLinks('linkedin',$event)" />    
               </div>
-              <div class="icon">
-                <img src="./assets/icono-download-blanco.svg" alt="" />
-              </div>
+            </div>
+            <div class="icon download-chapter">
+              <img src="./assets/icono-download-blanco.svg" alt="" ng-click="download('capitulo-sostenibilidad.pdf')" />
+            </div>
             </div>
           </div>
         </div>
@@ -53,27 +58,28 @@
  
   <section class="row box-parrafos  n-p-r">
       <div class="col-sm-5 p-0 one">
-          <div class="title-sostenibilidad">Empresas Socovesa y la densificación equilibrada</div> 
+          <div class="title-sostenibilidad">Densificación equilibrada:</div>
+          <div class="subtitle-sostenibilidad">el aporte de Empresas Socovesa la discusión gremial</div>
           <p class="parrafo">Las tensiones frente al desarrollo han aumentado de forma considerable los últimos años. En particular, durante el 2018,  el tema cobró mayor interés dentro de la opinión pública tras los permanentes cuestionamientos a una densificación desmedida y la posterior paralización de proyectos inmobiliarios.</p>
-          <p class="parrafo">Mientras, en la Asociación de Desarrolladores Inmobiliarios (ADI) hace ya tres años que se estudiaba la forma de darle mayor legitimidad al negocio, aumentar la certeza jurídica y promover un desarrollo urbano más sostenible y armónico. Esta discusión se instaló con fuerza en el gremio, especialmente tras el cambio de la presidencia de la ADI que fue asumida por Mauricio Varela, gerente general de Empresas Socovesa, el 2017. </p>
+          <p class="parrafo">Mientras, en la Asociación de Desarrolladores Inmobiliarios (ADI) hace ya tres años que se estudiaba la forma de darle mayor legitimidad al negocio, aumentar la certeza jurídica y promover un desarrollo urbano más sostenible y armónico. Esta discusión se instaló con fuerza en el gremio, especialmente tras el cambio de la presidencia de la ADI que fue asumida por Mauricio Varela, gerente general de Empresas Socovesa, el 2017.</p>
       </div>
       
       <div class="col-sm-7 p-0 three-special ">
           <div class="text-sostenibilidad margin-sostenibilidad">Esta nueva mirada se instaló junto con el cambio de liderazgo al interior de la ADI que, a partir del 2017, fue asumido por Mauricio Varela, gerente general de Empresas Socovesa.</div>
-          <p class="parrafo margin-sostenibilidad">Bajo esta nueva administración se determinó, en conjunto con todos los participantes del gremio, que los 4 ejes de trabajo para la ADI de cara a los próximos años, serían el estudio de una nueva gobernanza urbana, impulsar la densificación equilibrada como modelo de crecimiento, la participación ciudadana como método vinculante y fomentar una mayor transparencia en el mercado financiero. De estas 4 líneas de acción y bajo consenso interno, la ADI definió que el mayor acento estaría en promover la densificación equilibrada como la alternativa más viable y legítima de desarrollo urbano.   </p>
+          <p class="parrafo margin-sostenibilidad">Bajo esta nueva administración se determinó, en conjunto con todos los participantes del gremio, que los 4 ejes de trabajo para la ADI de cara a los próximos años, serían el estudio de una nueva gobernanza urbana, impulsar la densificación equilibrada como modelo de crecimiento, la participación ciudadana como método vinculante y fomentar una mayor transparencia en el mercado financiero. De estas 4 líneas de acción y bajo consenso interno, la ADI definió que el mayor acento estaría en promover la densificación equilibrada como la alternativa más viable y legítima de desarrollo urbano.</p>
           <img src="./assets/croquis-x.png"
           srcset="./assets/croquis-x@2x.png 2x,
                   ./assets/croquis-x@3x.png 3x" class="croquis-sostenibilidad">
       </div> 
       
-  </section> 
-  <section class="row box-parrafos  n-p-r p-b-50 background-sostenibilidad ">
-      <div class="col-sm-12 p-0 ">
+  </section>
+  <div class="col col-sm-12  p-0">
           <img src="./assets/img-sostenibilidad.png"
           srcset="./assets/img-sostenibilidad@2x.png 2x,
                   ./assets/img-sostenibilidad@3x.png 3x"
           class="img-fluid w-100 img-sostenibilidad">
-      </div> 
+  </div>
+  <section class="row box-parrafos  n-p-r p-b-50 ">
       <div class="col-sm-5 p-0 one">
         <p class="parrafo">Mirando en retrospectiva, el 2017 fue el año en que la ADI logró posicionar el concepto de densificación equilibrada dentro de la agenda gremial y política. Ya el 2018 la discusión cambia de escala y alcance, al incluirse por primera vez en la historia, una mesa de trabajo pro densificación equilibrada dentro del plan del Consejo Nacional de Desarrollo Urbano. Mauricio Varela, como presidente de la ADI, fue invitado a integrar este grupo del CNDU. </p>
         <p class="parrafo">La presentación de un proyecto de ley de integración social y territorial vía densificación equilibrada por parte del propio Presidente Sebastián Piñera y el Ministro de Vivienda y Urbanismo, Cristián Monckeberg, es el ejemplo más claro de los resultados del trabajo de esta mesa del CNDU. </p>
@@ -84,43 +90,28 @@
   </section>
   <section class="row box-parrafos  ">
       <div class="col-sm-12 p-0">
-          <div class="title-sostenibilidad-2">Comunidad y vinculación con el entorno</div> 
-          <div class="cita-sostenibilidad">El acento fundamental del desarrollo sostenible en Empresas Socovesa está en la construcción de vínculos  con las comunidades. Lo anterior tiene 3 líneas de acción: gestionar la relación con sus vecinos, contribuir a la mitigación de externalidades negativas del proceso de la construcción e impulsar la materialización del concepto de densificación equilibrada en los proyectos de la Compañía.</div>
-          <div class="divider"></div>
+          <div class="title-sostenibilidad-2">Comunidad y vinculación con el entorno</div>
+<div class="row">
+<div class="col-sm-6 p-0 one">
+                <p>Uno de los acentos fundamentales del desarrollo sostenible en Empresas Socovesa está en la construcción de vínculos con las comunidades que permitan una relación virtuosa entre la empresa y su entorno. </p>
+              <p>El diálogo es una herramienta y un método poderoso para lograr este objetivo. A través de la socialización temprana de proyectos inmobiliarios, la instalación de mesas de trabajo, programas preventivos para mitigar las externalidades negativas de la construcción y la búsqueda de soluciones conversadas con los vecinos, Empresas Socovesa ha logrado establecer vínculos positivos y de confianza con gran parte de las comunidades de sus proyectos. Al 2018, la empresa solo registró un caso en sede judicial en un universo de más de 100 proyectos y nuevas etapas en ejecución.</p>
+            </div>
+            <div class="col-sm-6 p-0 three">
+              <p>Para fortalecer su capacidad de vinculación con las comunidades, durante el 2018 la Compañía generó alianzas con distintas organizaciones como Gestión Social, Casa Parque y Techo Chile, las que se han transformado en casos de éxito para la Compañía.</p>
+            </div>
+                    <img class="img-fluid croquis-4" src="./assets/croquis-20.jpg"
+                    srcset="./assets/croquis-20@2x.jpg 2x,
+                            ./assets/croquis-20@3x.jpg 3x"
+                    >
+</div>
 
        </div>    
   </section> 
 
   <section class="tabs-sostenibilidad">
       <uib-tabset active="0" justified="true">
-        <uib-tab class="sostenibilidad " index="0" >
-          <uib-tab-heading>
-              COMUNIDAD Y ENTORNO
-          </uib-tab-heading>
-          <div class="row">
-            <div class="col-sm-4 p-0">
-                <img src="./assets/img-sostenibilidad-2.jpg"
-                srcset="./assets/img-sostenibilidad-2@2x.jpg 2x,
-                        ./assets/img-sostenibilidad-2@3x.jpg 3x"
-                class="img-fluid">
-            </div>
-            <div class="col-sm-8 p-0">
-                <div class="text-sostenibilidad-2 margin-sostenibilidad">Poner a las personas al centro de la organización es parte importante de las definiciones estratégicas de Empresas Socovesa, y también tiene implicancias en la forma en que la Compañía se relaciona con su entorno.</div>
-                <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad">El desarrollo no se puede hacer de espaldas a la comunidad, sino que integrándola.  Por eso, la filosofía de la Compañía para vincularse con la comunidad, tiene que ver con abrir más espacios de conversación y contribuir a su desarrollo integral.</p>
-                <div class="row">
-                  <div class="col-sm-6 p-0">
-                    <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >En relación al diálogo, se privilegia el trabajo preventivo y las soluciones conversadas por sobre el conflicto. Un ejemplo es lo que Almagro realiza hace varios años con su programa de Buen Vecino, socializando tempranamente sus proyectos frente a la comunidad e incluso, desarrollando conjuntamente proyectos de mejoramiento del barrio. Con el tiempo, se han sumado nuevas iniciativas que van en esta dirección y cuyos resultados han sido siempre positivos, promoviendo la confianza, la transparencia y disminuyendo los riesgos de conflicto.</p>
-                  </div>
-                  <div class="col-sm-6 p-0">
-                    <p class="parrafo  margin-sostenibilidad-3">Finalmente, en relación al desarrollo de las comunidades, durante el 2018 la Compañía generó alianzas con distintas organizaciones como Gestión Social y Un Techo para Chile, con el objetivo de entregarle herramientas de “autogestión”, enseñándoles a administrar la nueva vida en comunidad.</p>
-                  </div>
-                </div>
-            </div>
-           
-          </div>
-         
-        </uib-tab>
-        <uib-tab class="modernizacion" index="1">
+
+        <uib-tab class="modernizacion" index="0">
           <uib-tab-heading>
               HACIENDA RENCA 
           </uib-tab-heading>
@@ -133,14 +124,13 @@
               </div>
               <div class="col-sm-8 p-0">
                   <div class="text-sostenibilidad-2 margin-sostenibilidad">El proyecto La Hacienda en Renca tiene la característica de ser un barrio mixto, es decir, en una misma zona convive lo residencial con lo industrial. </div>
-                  <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad">Frente a esto, el primer objetivo que se planteó Socovesa Santiago, fue lograr una convivencia armónica entre las dos partes, co-diseñando soluciones que minimizaran las externalidades negativas de esta coexistencia.</p>
                   <div class="row">
                     <div class="col-sm-6 p-0">
-                        <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >Junto a la Municipalidad de Renca y a la Junta de Vecinos, en octubre del 2016 se firmó un acuerdo que habló de 3 medidas concretas que aportaran al mejor vivir de la comunidad: la construcción de un Centro Comunitario,  mejoras viales que resguarden tanto la seguridad como la calidad de vida de las personas y por último, el mejoramiento de la infraestructura deportiva.</p>
-                        <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >En estos 2 años, no sólo se han concretado los objetivos anteriores casi en su totalidad, sino que la filial ha trabajado de la mano con la comunidad renquina en cada uno de esos objetivos, con el apoyo de la consultora Gestión Social.</p>
+                        <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >Frente a esto, el primer objetivo que se planteó Socovesa Santiago, fue lograr una convivencia armónica entre las dos partes, co-diseñando soluciones que minimizaran las externalidades negativas de esta coexistencia.</p>
+	                    <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >Junto a la Municipalidad de Renca y a la Junta de Vecinos, en octubre del 2016 se firmó un acuerdo que habló de 3 medidas concretas que aportaran al mejor vivir de la comunidad: la construcción de un Centro Comunitario,  mejoras viales que resguarden tanto la seguridad como la calidad de vida de las personas y por último, el mejoramiento de la infraestructura deportiva.</p>
                       </div>
                     <div class="col-sm-6 p-0">
-                        <p class="parrafo  margin-sostenibilidad-3">Con ellos se ha venido acompañando y guiando a la comunidad para que adquiera la capacidad de autogestionar tanto del Centro Comunitario como otros proyectos existentes, entre otras acciones destacadas.</p>
+						<p class="parrafo  margin-sostenibilidad-3" >En estos 2 años, no sólo se han concretado los objetivos anteriores casi en su totalidad, sino que la filial ha trabajado de la mano con la comunidad renquina en cada uno de esos objetivos, con el apoyo de la consultora Gestión Social. Con ellos se ha venido acompañando y guiando a la comunidad para que adquiera la capacidad de autogestionar tanto del Centro Comunitario como otros proyectos existentes, entre otras acciones destacadas.</p>
                         <p class="parrafo  margin-sostenibilidad-3">El 2018 se terminó un proyecto que consiste en un mural en las torres del Centro Comunitario, el que fue pintado por un artista local y que retrata parte de la historia de la comuna y del barrio. Este mural es hoy un orgullo para los vecinos.</p>
                       </div>
                   </div>
@@ -148,7 +138,7 @@
              
             </div>
         </uib-tab>
-        <uib-tab class="modernizacion" index="2">
+        <uib-tab class="modernizacion" index="1">
             <uib-tab-heading>
                 INTEGRACIÓN SOCIAL 
             </uib-tab-heading>
@@ -161,9 +151,9 @@
                 </div>
                 <div class="col-sm-8 p-0">
                     <div class="text-sostenibilidad-2 margin-sostenibilidad">Durante el 2018, Socovesa Santiago y Techo Chile trabajaron conjuntamente en un plan de convivencia comunitaria dirigido a las familias que co-habitan en los proyectos de integración social DS19.</div>
-                    <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad">El programa llamado “Activa tu Barrio” ha permitido que muchas familias se conozcan antes de mudarse definitivamente al nuevo proyecto, contribuyendo a una mayor cercanía entre vecinos.</p>
                     <div class="row">
                       <div class="col-sm-6 p-0">
+	                      <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3">El programa llamado “Activa tu Barrio” ha permitido que muchas familias se conozcan antes de mudarse definitivamente al nuevo proyecto, contribuyendo a una mayor cercanía entre vecinos.</p>
                           <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >Una de las iniciativas más valoradas durante el 2018 fueron las charlas sobre cómo vivir en comunidad. En cada una de ellas, se les entregó apoyo enseñándoles temas de copropiedad, qué implica vivir en un condominio, aspectos legales de cómo se constituye la administración de los mismos, sus derechos y deberes, cuáles son los bienes de uso común, entre otros temas.</p>
                         </div>
                       <div class="col-sm-6 p-0">
@@ -177,7 +167,7 @@
         </uib-tab>
         <uib-tab class="modernizacion" index="3">
             <uib-tab-heading>
-              CASA VILLASECA
+              CASA PARQUE VILLASECA
             </uib-tab-heading>
             <div class="row">
                 <div class="col-sm-4 p-0">
@@ -188,13 +178,13 @@
                 </div>
                 <div class="col-sm-8 p-0">
                     <div class="text-sostenibilidad-2 margin-sostenibilidad">Fue hace 4 años cuando un grupo de jóvenes, hoy Corporación Cultural Casa Parque, se acercó a Almagro para presentar un proyecto donde solicitaban a la inmobiliaria la activación de una de sus propiedades para la creación de un programa cultural para la comunidad. </div>
-                    <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad">Esta propiedad, mientras esperaba ser demolida para un nuevo edificio, estaría en manos de dicha agrupación para ser utilizada en beneficio de los vecinos.</p>
                     <div class="row">
                       <div class="col-sm-6 p-0">
+                          <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >Esta propiedad, mientras esperaba ser demolida para un nuevo edificio, estaría en manos de dicha agrupación para ser utilizada en beneficio de los vecinos.</p>
                           <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >De esta manera, este grupo de jóvenes, con el apoyo de Almagro, creó Casa Parque Villaseca: un espacio de historia recuperado para la cultura, y que invita a la comunidad a realizar diferentes actividades en torno al arte, el deporte y la música. “Este centro cultural se pudo llevar a cabo gracias a la buena voluntad de Almagro. Fuimos una especie de puente entre la inmobiliaria y la comunidad”, explica Diego Encina, presidente de la Corporación.</p>
-                          <p class="parrafo margin-sostenibilidad-2 margin-sostenibilidad-3" >Desde la activación de la casa en 2014 y hasta el 2018, se arrendaron continuamente 6 espacios de trabajo, que contaron con más de 25 residentes de diversas disciplinas.</p>
                         </div>
                       <div class="col-sm-6 p-0">
+                          <p class="parrafo margin-sostenibilidad-3" >Desde la activación de la casa en 2014 y hasta el 2018, se arrendaron continuamente 6 espacios de trabajo, que contaron con más de 25 residentes de diversas disciplinas.</p>
                           <p class="parrafo  margin-sostenibilidad-3">En este mismo período se realizaron 105 eventos abiertos a la comunidad, incluyendo encuentros, ferias,  exposiciones de arte, música, danza, literatura, cine y teatro, además de actividades participativas. A estos asistieron cerca de 5.300 personas, con un promedio de 51 por evento y 1.340 por año. Asimismo, CPV ha acogido más de 9 talleres permanentes, con clases semanales de karate, Yoga Ashtanga, Chi Kung, entre otros, con más de 3.000 asistencias totales.</p>
                         </div>
                     </div>
@@ -203,25 +193,21 @@
               </div>
         </uib-tab>
       </uib-tabset>
-      <img src="./assets/croquis-9.png"
-     srcset="./assets/croquis-9@2x.png 2x,
-             ./assets/croquis-9@3x.png 3x"
-     class="croquis-9">
         
   </section>
 
   <div class="sub-menu row align-items-center justify-content-between ">
     <div class="col section " ui-sref="app.pages.marcas">
-      <i class="fas fa-chevron-left"></i> Resultados por marca - Socovesa
+      <i class="fas fa-chevron-left"></i> Resultados por marca
     </div>
-    <div class="col section  text-right" ui-sref="app.pages.descargables">
-        Descargables<i class="fas fa-chevron-right"></i>
+    <div class="col section  text-right" ui-sref="app.pages.compromisos">
+        Compromiso con la educación<i class="fas fa-chevron-right"></i>
     </div>
   </div>
   <div class="footer row justify-content-center">
     <button
       type="button"
-      class="btn btn-outline-secondary button-soco-outline  "
+      class="btn btn-outline-secondary button-soco-outline  " ng-click="download('capitulo-sostenibilidad.pdf')"
     >
     Descargar Capítulo
     </button>
