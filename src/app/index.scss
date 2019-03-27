@@ -478,6 +478,31 @@ animation: bounce 3s infinite;
 	color: #999;
 }
 
+.wrapp-play-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    margin-top: 23%;
+}
+
+.tabs-financiero img, img.img-chart, .tabs-tendencias img, .info-tab .charts img, img.chart-tendencia, .chart-proyecciones img, .tabs-marcas-2 img {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;	
+}
+.tabs-financiero img:hover, img.img-chart:hover, .tabs-tendencias img:hover, .info-tab .charts img:hover, img.chart-tendencia:hover, .chart-proyecciones img:hover, .tabs-marcas-2 img:hover {
+	filter: none;
+	-webkit-filter: grayscale(0%);
+}
+
 @media  (max-width: 580px) {
 
 .row.contendor-menu {
