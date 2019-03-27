@@ -10,7 +10,10 @@
 </div>
 <div class="overlay" ng-class="{'w-100': isOpen}">
         <div class="title-menu">Memoria anual 2018
-            <span class="close-menu" ng-click="vm.close()">X</span>
+            <span class="close-menu" ng-click="vm.close()">
+                        <img src="./assets/close-grey.svg" alt="" srcset="">
+
+            </span>
         </div>
         <div class="divider-header black"></div>
         <div class="row">
@@ -72,14 +75,21 @@
         </div>
     
 </div>
-<div  class="overlay-search">
+<div  class="overlay-search" ng-class="{'w-100': isOpenSearch}">
         
-        <div class="title-search">
-                        <span class="close-search" ng-click="vm.close()">X</span>
-                    </div>
+        <span class="close-search" ng-click="vm.closeSearch()">
+                <img src="./assets/close-light.svg" alt="" srcset="">
+        </span>
         <div class="overlay-content">
-        <input type="text"  placeholder="Buscar" ng-model="vm.keywokd"class="input-find" aria-label="Large" >
-
+                <input type="text"  ng-model-options="{ debounce: 500 }" ng-change="vm.changeValue()" placeholder="Buscar" ng-model="vm.keywokd"class="input-find" aria-label="Large" >
+                <div ng-repeat="resultado in vm.data |  filter:{parrafo:vm.keywokd}| limitTo:3 "  ng-if="vm.keywokd" ui-sref="{{resultado.uri}}">
+                        <div class="title-search">
+                                {{resultado.titulo}}
+                        </div>
+                        <div  class="parrafo-search" ng-click="vm.closeFind()" > {{resultado.parrafo}}</div>
+                      
+                </div>
+                
         </div>
  </div>
       
