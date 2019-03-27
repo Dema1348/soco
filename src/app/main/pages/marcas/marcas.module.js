@@ -13,7 +13,8 @@
                 url: '/marcas',
                 views: {
                     'content@app': {
-                        templateUrl: 'app/main/pages/marcas/marcas.html'
+                        templateUrl: 'app/main/pages/marcas/marcas.html',
+                        controller: 'MarcasController as vm'
                     }
                 },
         });

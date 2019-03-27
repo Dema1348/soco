@@ -54,7 +54,7 @@
       <section class="row box-parrafos">
             <section class="col-sm-12 p-0 tabs-marcas">
                 <uib-tabset active="0" justified="true">
-                  <uib-tab class="marcas " index="0" >
+                  <uib-tab class="marcas " index="0" select="vm.clickTabs('A')" >
                     <uib-tab-heading>
                            ALMAGRO
                     </uib-tab-heading>
@@ -92,7 +92,7 @@
                     
                     </div>
                   </uib-tab>
-                  <uib-tab class="marcas pilares-active" index="1">
+                  <uib-tab class="marcas pilares-active" index="1" select="vm.clickTabs('P')" >
                     <uib-tab-heading >
                             PILARES 
                     </uib-tab-heading>
@@ -127,7 +127,7 @@
                                   
                     </div>
                   </uib-tab>
-                  <uib-tab class="marcas socovesa-active" index="2">
+                  <uib-tab class="marcas socovesa-active" index="2" select="vm.clickTabs('S')" >
                       <uib-tab-heading>
                           SOCOVESA 
                       </uib-tab-heading>
@@ -230,9 +230,26 @@
                     </uib-tabset>
                   </section>  
             </section>
-            <section class="row box-parrafos">
-                <div class="title">Proyectos Destacados</div>
-            </section>
+          
+        <section class="row box-parrafos">
+            <div class="title">Proyectos Destacados</div>     
+        </section>
+        <!-- <div class="w-100">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+              <div uib-slide ng-repeat="slide in vm.slides track by slide.id" index="slide.id" >
+                <img ng-src="{{slide.image}}" >
+              </div>
+            </div>
+          </div> -->
+            <slick ng-if="vm.reload"  class="w-100" autoplay=true infinite=true speed=200 slides-to-show=3 touch-move=false slides-to-scroll=1>
+                <div ng-repeat="slide in vm.slides">
+                    <div class="row">
+                        <div class="col">
+                            <img ng-src="{{slide.image}}" class="img-fluid"  >
+                        </div>
+                    </div>
+                </div>
+              </slick>
       <div class="sub-menu row align-items-center justify-content-between ">
           <div class="col section " ui-sref="app.pages.equipo"> 
             <i class="fas fa-chevron-left"></i> Equipo
